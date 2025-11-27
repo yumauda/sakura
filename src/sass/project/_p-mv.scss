@@ -1,0 +1,62 @@
+@use "../global" as *;
+
+.p-mv {
+  background: #fff;
+  padding-top: rem(40);
+  padding-bottom: rem(40);
+}
+
+.p-mv__content {
+  margin-left: calc(50% - 50vw);
+  margin-right: calc(50% - 50vw);
+  width: 100vw;
+}
+
+.swiper {
+}
+
+.slider-main {
+}
+
+.swiper-wrapper {
+}
+
+.p-mv .swiper-slide {
+  
+}
+
+.p-mv__slide__link {
+}
+
+.p-mv__img {
+}
+.p-mv__img img {
+  aspect-ratio: 580 / 400;
+  object-fit: cover;
+  width: 100%;
+  height: auto;
+}
+
+.swiper-pagination {
+}
+
+.swiper-button-prev {
+}
+
+.swiper-button-next {
+}
+
+.p-mv .swiper-pagination {
+  margin-top: rem(28);
+}
+.p-mv .swiper-pagination-bullet {
+  background: #fff;
+  opacity: 1;
+  border: 1px solid #9e9e9e;
+  width: rem(14);
+  height: rem(14);
+}
+.p-mv .swiper-pagination-bullet-active {
+  background: #ee819d;
+  border: 1px solid #ee819d;
+}

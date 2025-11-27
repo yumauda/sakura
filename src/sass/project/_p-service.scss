@@ -1,0 +1,43 @@
+@use "../global" as *;
+
+.p-service {
+  background: #fcf3ef;
+  padding-bottom: rem(83);
+}
+
+.p-service__content {
+  @include mq(md) {
+    display: flex;
+    align-items: center;
+    gap: rem(60);
+  }
+}
+.p-service__textArea {
+}
+
+.p-service__title {
+  margin-top: rem(40);
+}
+
+.p-service__text {
+  margin-top: rem(34);
+}
+
+.p-service__imageArea {
+  max-width: rem(540);
+  width: 100%;
+}
+
+.p-service__image {
+}
+.p-service__image img {
+  width: 100%;
+  height: auto;
+  object-fit: cover;
+  object-position: center center;
+}
+.p-service__btn {
+  display: flex;
+  justify-content: center;
+  margin-top: rem(40);
+}

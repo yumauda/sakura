@@ -1,0 +1,17 @@
+@use "../global" as *;
+
+.c-main-text {
+  color: #000000;
+  line-height: 1.7;
+  font-size: rem(16);
+  @include mq(md) {
+    font-size: rem(17);
+  }
+}
+.c-main-text + .c-main-text {
+  margin-top: rem(32);
+}
+.c-main-text span {
+  color: #cc0000;
+  font-weight: 700;
+}

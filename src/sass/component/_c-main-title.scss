@@ -1,0 +1,11 @@
+@use "../global" as *;
+
+.c-main-title {
+  font-size: rem(30);
+  font-weight: 700;
+  color: #000000;
+  line-height: 1.8;
+}
+.c-main-title span {
+  color: #ee819d;
+}
