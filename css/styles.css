@@ -535,12 +535,14 @@ select::-ms-expand {
   object-fit: cover;
   top: 0;
   right: 0;
-  z-index: -1;
+  z-index: 1;
 }
 
 .p-contact__content {
   display: flex;
   gap: 5rem;
+  position: relative;
+  z-index: 2;
 }
 
 .p-contact__title {
