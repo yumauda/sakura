@@ -515,6 +515,148 @@ select::-ms-expand {
   gap: 1.9375rem;
 }
 
+.p-contact {
+  padding-top: 5rem;
+  padding-bottom: 5rem;
+  background: #ee819d;
+  position: relative;
+}
+
+.p-contact::before {
+  position: absolute;
+  content: "";
+  background: url(../images/common/contact_sakura.png);
+  background-repeat: no-repeat;
+  background-position: center;
+  background-size: cover;
+  width: 35rem;
+  height: auto;
+  aspect-ratio: 560/340;
+  object-fit: cover;
+  top: 0;
+  right: 0;
+  z-index: -1;
+}
+
+.p-contact__content {
+  display: flex;
+  gap: 5rem;
+}
+
+.p-contact__title {
+  font-size: 1.875rem;
+  color: #fff;
+  font-weight: 700;
+  margin-top: 2.5rem;
+}
+
+.p-contact__text {
+  margin-top: 2.5rem;
+  color: #fff;
+  font-size: 1.0625rem;
+  line-height: 1.7;
+  font-weight: 400;
+}
+
+.p-contact__right {
+  display: grid;
+  grid-template-columns: repeat(2, 1fr);
+  gap: 1.875rem;
+  max-width: 49.375rem;
+  width: 100%;
+}
+
+.p-contact__btn {
+  background: #fff;
+  border-radius: 0.625rem;
+  padding-top: 2.5rem;
+  padding-bottom: 2.5rem;
+  filter: drop-shadow(0 0 10px rgba(0, 0, 0, 0.1));
+}
+
+.p-contact__icon {
+  width: 2.5625rem;
+  margin-left: auto;
+  margin-right: auto;
+}
+
+.p-contact__icon img {
+  width: 100%;
+  height: auto;
+  object-fit: cover;
+  object-position: center center;
+}
+
+.p-contact__tel {
+  font-size: 1.75rem;
+  color: #000;
+  font-weight: 700;
+  margin-top: 1.5625rem;
+  text-align: center;
+}
+
+.p-contact__btn-text {
+  font-size: 0.875rem;
+  color: #000;
+  font-weight: 400;
+  margin-top: 1.25rem;
+  text-align: center;
+}
+
+.p-flow {
+  padding-top: 6.25rem;
+  padding-bottom: 6.25rem;
+}
+
+.p-flow__mainTitle {
+  margin-top: 2.5rem;
+}
+
+.p-flow__topText {
+  margin-top: 2.125rem;
+}
+
+.p-flow__lists {
+  margin-top: 3.375rem;
+  display: grid;
+  grid-template-columns: repeat(4, 1fr);
+  gap: 3.3125rem;
+}
+
+.p-flow__img {
+  max-width: 5.625rem;
+  width: 100%;
+  margin-left: auto;
+  margin-right: auto;
+}
+
+.p-flow__img img {
+  width: 100%;
+  height: auto;
+  object-fit: cover;
+  object-position: center center;
+}
+
+.p-flow__list-title {
+  font-size: 1.25rem;
+  color: #000;
+  font-weight: 700;
+  margin-top: 1.625rem;
+  text-align: center;
+}
+
+.p-flow__list-text {
+  font-size: 1.0625rem;
+  line-height: 1.7;
+  color: #000;
+  margin-top: 1.5625rem;
+}
+
+.p-flow__list-text span {
+  color: #cc0000;
+  font-weight: 700;
+}
+
 .p-form__row-wrapper {
   position: relative;
   padding-top: 1.5rem;
@@ -1475,6 +1617,72 @@ input::placeholder {
   object-position: center center;
 }
 
+.p-top-news {
+  padding-top: 7.375rem;
+  background: #fcf3ef;
+}
+
+.p-top-news__content {
+  display: flex;
+  gap: 6.8125rem;
+}
+
+.p-top-news__left {
+  max-width: 15rem;
+  width: 100%;
+}
+
+.p-top-news__title {
+  color: #010101;
+  font-size: 1.875rem;
+  font-weight: 700;
+}
+
+.p-top-news__btn {
+  margin-top: 2.5rem;
+}
+
+.p-top-news__right {
+  flex: 1;
+}
+
+.p-top-news__link {
+  display: block;
+  padding-top: 1.375rem;
+  padding-bottom: 1.375rem;
+  border-top: 1px solid #cccccc;
+}
+
+.p-top-news__link:last-child {
+  border-bottom: 1px solid #cccccc;
+}
+
+.p-top-news__category {
+  display: flex;
+  align-items: center;
+  gap: 1rem;
+}
+
+.p-top-news__time {
+  font-size: 1.0625rem;
+  color: #000;
+  font-weight: 400;
+}
+
+.p-top-news__category-text {
+  color: #fff;
+  background: #ee819d;
+  padding: 0.3125rem 0.625rem;
+  font-size: 0.625rem;
+}
+
+.p-top-news__link-title {
+  font-size: 1.0625rem;
+  color: #000;
+  font-weight: 400;
+  margin-top: 1.25rem;
+}
+
 .c-btn {
   display: flex;
   align-items: center;
@@ -1577,6 +1785,10 @@ input::placeholder {
   font-weight: 700;
 }
 
+.c-sub-title--white {
+  color: #fff;
+}
+
 .c-sub-title::before {
   position: absolute;
   content: "";
@@ -1591,4 +1803,24 @@ input::placeholder {
   top: 50%;
   transform: translateY(-50%);
   left: 0;
+}
+
+.c-sub-title--white::before {
+  position: absolute;
+  content: "";
+  background: url(../images/common/sakura_white.png);
+  background-repeat: no-repeat;
+  background-position: center;
+  background-size: cover;
+  width: 1.25rem;
+  height: auto;
+  aspect-ratio: 20/20;
+  object-fit: cover;
+  top: 50%;
+  transform: translateY(-50%);
+  left: 0;
+}
+
+.test {
+  position: relative;
 }

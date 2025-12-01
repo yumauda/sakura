@@ -54,7 +54,6 @@
           <div class="swiper-button-next"></div>
 
         </div>
-
       </div>
     </div>
   </div>
@@ -219,6 +218,150 @@
       </div>
     </div>
   </section>
+  <section class="p-service">
+    <div class="l-inner">
+      <div class="p-service__content">
+        <div class="p-service__textArea">
+          <p class="c-sub-title">不動産登記</p>
+          <div class="p-service__title">
+            <h2 class="c-main-title">家・土地・マンションなどの不動産登記に関して<span>豊富な経験と実績</span>を有しています。</h2>
+          </div>
+
+          <div class="p-service__text">
+            <p class="c-main-text">不動産登記は、家、土地、マンションなどの不動産を購入したときのほか、相続、遺贈、生前贈与、財産分与などの際にも行います。また、住宅ローンを完済したときには抵当権抹消登記が必要です。</p>
+            <p class="c-main-text">さくら司法書士事務所は、2005年4月に東京都西東京市で開業して以来、不動産登記に関する豊富な経験と実績を有しています。</p>
+            <p class="c-main-text">土地や建物、マンションなどの不動産登記手続きのことなら、些細なことでも結構ですので、お気軽にお問い合わせください。</p>
+          </div>
+
+        </div>
+        <div class="p-service__imageArea">
+          <figure class="p-service__image">
+            <img src="<?php echo get_template_directory_uri() ?>/images/common/service_illustration2.webp" alt="司法書士による相談業務" width="400" height="300">
+          </figure>
+        </div>
+
+      </div>
+
+      <div class="p-service__btn">
+        <a href="#" class="c-btn">
+          <p class="c-btn__text">不動産登記</p>
+          <div class="c-btn__arrow">
+            <svg
+              xmlns="http://www.w3.org/2000/svg"
+              xmlns:xlink="http://www.w3.org/1999/xlink"
+              width="12" height="12">
+              <path fill-rule="evenodd"
+                d="M5.683,-0.003 L4.684,0.948 L9.290,5.325 L-0.001,5.325 L-0.001,6.669 L9.290,6.669 L4.684,11.047 L5.683,11.997 L11.997,5.996 L5.683,-0.003 Z" />
+            </svg>
+          </div>
+        </a>
+      </div>
+    </div>
+  </section>
+  <section class="p-top-news">
+    <div class="l-inner">
+      <div class="p-top-news__content">
+        <div class="p-top-news__left">
+          <div class="p-top-news__title-wrapper">
+            <p class="c-sub-title">不動産登記</p>
+            <h2 class="p-top-news__title">更新内容</h2>
+          </div>
+          <div class="p-top-news__btn">
+            <a href="#" class="c-btn">
+              <p class="c-btn__text">ブログ一覧</p>
+              <div class="c-btn__arrow">
+                <svg
+                  xmlns="http://www.w3.org/2000/svg"
+                  xmlns:xlink="http://www.w3.org/1999/xlink"
+                  width="12" height="12">
+                  <path fill-rule="evenodd"
+                    d="M5.683,-0.003 L4.684,0.948 L9.290,5.325 L-0.001,5.325 L-0.001,6.669 L9.290,6.669 L4.684,11.047 L5.683,11.997 L11.997,5.996 L5.683,-0.003 Z" />
+                </svg>
+              </div>
+            </a>
+          </div>
+        </div>
+        <div class="p-top-news__right">
+          <a href="#" class="p-top-news__link">
+            <div class="p-top-news__category">
+              <time datetime="2025-12-01" class="p-top-news__time">2025.09.15</time>
+              <p class="p-top-news__category-text">相続、遺産分割</p>
+            </div>
+            <p class="p-top-news__link-title">相続した空き家（自宅不動産）の売却 ～3000万円の控除（税金対策）～</p>
+          </a>
+          <a href="#" class="p-top-news__link">
+            <div class="p-top-news__category">
+              <time datetime="2025-12-01" class="p-top-news__time">2025.08.04</time>
+              <p class="p-top-news__category-text">Info</p>
+            </div>
+            <p class="p-top-news__link-title">相続した空き家（自宅不動産）の売却 ～3000万円の控除（税金対策）～</p>
+          </a>
+          <a href="#" class="p-top-news__link">
+            <div class="p-top-news__category">
+              <time datetime="2025-12-01" class="p-top-news__time">2025.12.01</time>
+              <p class="p-top-news__category-text">相続、遺産分割</p>
+            </div>
+            <p class="p-top-news__link-title">2025年（令和7年）夏季休業のお知らせ《8月9日～17日》</p>
+          </a>
+          <a href="#" class="p-top-news__link">
+            <div class="p-top-news__category">
+              <time datetime="2025.06.19" class="p-top-news__time">2025.06.19</time>
+              <p class="p-top-news__category-text">不動産登記</p>
+              <p class="p-top-news__category-text">相続、遺産分割</p>
+            </div>
+            <p class="p-top-news__link-title">【相続登記の義務化】相続登記をしないことのデメリット（相続登記をしないとどうなる？）</p>
+          </a>
+        </div>
+      </div>
+    </div>
+  </section>
+  <section class="p-flow">
+    <div class="l-inner">
+      <div class="p-flow__content">
+        <div class="p-flow__title">
+          <p class="c-sub-title">ご相談の流れ</p>
+          <div class="p-flow__mainTitle">
+            <h2 class="c-main-title">お気軽にご相談いただくために、<span>初回ご相談無料</span>にて対応させていただきます。</h2>
+          </div>
+        </div>
+        <div class="p-flow__topText">
+          <p class="c-main-text">お問い合わせをいただいてから、現状のヒアリング、ご提案、お見積り、ご契約、そして実施までの一連の流れは以下の通りです。<br>
+            お客様のご要望を丁寧にお伺いし、最適なプランをご提案することで、安心してご相談いただけるようサポートいたします。</p>
+        </div>
+        <ul class="p-flow__lists">
+          <li class="p-flow__list">
+            <figure class="p-flow__img">
+              <img decoding="async" loading="lazy" src="<?php echo get_template_directory_uri() ?>/images/common/flow_1.png" alt="お問い合わせ" width="90" height="86">
+            </figure>
+            <p class="p-flow__list-title">お問い合わせ</p>
+            <p class="p-flow__list-text">まずはお電話かメールフォームにてお問い合わせください。その際に簡単なご相談内容をご記入いただくとスムーズです。</p>
+          </li>
+          <li class="p-flow__list">
+            <figure class="p-flow__img">
+              <img decoding="async" loading="lazy" src="<?php echo get_template_directory_uri() ?>/images/common/flow_2.png" alt="初回ご相談無料" width="90" height="86">
+            </figure>
+            <p class="p-flow__list-title">初回ご相談無料</p>
+            <p class="p-flow__list-text">メール相談（1回）、電話相談（1回20分まで）、面談相談（30分まで）のいずれかを<span>初回無料</span>にて対応させていただきます。</p>
+          </li>
+          <li class="p-flow__list">
+            <figure class="p-flow__img">
+              <img decoding="async" loading="lazy" src="<?php echo get_template_directory_uri() ?>/images/common/flow_3.png" alt="お問い合わせ" width="90" height="86">
+            </figure>
+            <p class="p-flow__list-title">解決案の提案</p>
+            <p class="p-flow__list-text">ご相談いただいた内容を踏まえて最善のご提案とお見積りを提示させていただきます。<span>お見積りは無料</span>です。</p>
+          </li>
+          <li class="p-flow__list">
+            <figure class="p-flow__img">
+              <img decoding="async" loading="lazy" src="<?php echo get_template_directory_uri() ?>/images/common/flow_4.png" alt="お問い合わせ" width="90" height="86">
+            </figure>
+            <p class="p-flow__list-title">契約とサポート開始</p>
+            <p class="p-flow__list-text">サポート内容にご納得いただけましたら正式な契約を行った上で、サポートを開始させて頂きます。</p>
+          </li>
+        </ul>
+      </div>
+    </div>
+  </section>
+  <?php get_template_part('includes/contact'); ?>
 
 </main>
 <?php get_footer() ?>

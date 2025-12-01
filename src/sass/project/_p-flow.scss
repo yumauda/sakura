@@ -1,0 +1,62 @@
+@use "../global" as *;
+
+.p-flow {
+  padding-top: rem(100);
+  padding-bottom: rem(100);
+}
+
+.p-flow__content {
+}
+
+.p-flow__title {
+}
+
+.p-flow__mainTitle {
+  margin-top: rem(40);
+}
+
+.p-flow__topText {
+  margin-top: rem(34);
+}
+
+.p-flow__lists {
+  margin-top: rem(54);
+  display: grid;
+  grid-template-columns: repeat(4, 1fr);
+  gap: rem(53);
+}
+
+.p-flow__list {
+}
+
+.p-flow__img {
+  max-width: rem(90);
+  width: 100%;
+  margin-left: auto;
+  margin-right: auto;
+}
+.p-flow__img img {
+  width: 100%;
+  height: auto;
+  object-fit: cover;
+  object-position: center center;
+}
+
+.p-flow__list-title {
+  font-size: rem(20);
+  color: #000;
+  font-weight: 700;
+  margin-top: rem(26);
+  text-align: center;
+}
+
+.p-flow__list-text {
+  font-size: rem(17);
+  line-height: 1.7;
+  color: #000;
+  margin-top: rem(25);
+}
+.p-flow__list-text span {
+  color: #cc0000;
+  font-weight: 700;
+}

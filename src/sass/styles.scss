@@ -11,12 +11,15 @@
 // Project
 @use "./project/_p-404";
 @use "./project/_p-about";
+@use "./project/_p-contact";
+@use "./project/_p-flow";
 @use "./project/_p-form";
 @use "./project/_p-home-topics";
 @use "./project/_p-mv";
 @use "./project/_p-service";
 @use "./project/_p-single-topics";
 @use "./project/_p-support";
+@use "./project/_p-top-news";
 
 // Component
 @use "./component/_c-btn";

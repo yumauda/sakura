@@ -8,6 +8,9 @@
   padding-left: rem(30);
   font-weight: 700;
 }
+.c-sub-title--white {
+  color: #fff;
+}
 .c-sub-title::before {
   position: absolute;
   content: "";
@@ -22,4 +25,23 @@
   top: 50%;
   transform: translateY(-50%);
   left: 0;
+}
+.c-sub-title--white::before {
+  position: absolute;
+  content: "";
+  background: url(../images/common/sakura_white.png);
+  background-repeat: no-repeat;
+  background-position: center;
+  background-size: cover;
+  width: rem(20);
+  height: auto;
+  aspect-ratio: 20/20;
+  object-fit: cover;
+  top: 50%;
+  transform: translateY(-50%);
+  left: 0; 
+}
+
+.test {
+  position: relative;
 }
