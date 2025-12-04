@@ -361,6 +361,45 @@
       </div>
     </div>
   </section>
+  <section class="p-link">
+    <div class="l-inner">
+      <div class="p-link__content">
+        <div class="p-link__title-wrapper">
+          <p class="c-sub-title">関連リンク</p>
+          <h2 class="p-link__title">運営ブログ</h2>
+        </div>
+        <ul class="p-link__cards">
+          <li class="p-link__card">
+            <figure class="p-link__img">
+              <img decoding="async" loading="lazy" src="<?php echo get_template_directory_uri() ?>/images/common/link_1.png" alt="所長ブログ" width="60" height="60">
+            </figure>
+            <div class="p-link__detail">
+              <p class="p-link__detail-small">さくら司法書士事務所</p>
+              <p class="p-link__detail-title">所長ブログ</p>
+            </div>
+          </li>
+          <li class="p-link__card">
+            <figure class="p-link__img">
+              <img decoding="async" loading="lazy" src="<?php echo get_template_directory_uri() ?>/images/common/link_2.png" alt="成年後見と任意後見" width="60" height="60">
+            </figure>
+            <div class="p-link__detail">
+              <p class="p-link__detail-small">教えて！</p>
+              <p class="p-link__detail-title">成年後見と任意後見</p>
+            </div>
+          </li>
+          <li class="p-link__card">
+            <figure class="p-link__img">
+              <img decoding="async" loading="lazy" src="<?php echo get_template_directory_uri() ?>/images/common/link_3.png" alt="相続登記相談ガイド" width="60" height="60">
+            </figure>
+            <div class="p-link__detail">
+              <p class="p-link__detail-small">西東京市・小平市</p>
+              <p class="p-link__detail-title">相続登記相談ガイド</p>
+            </div>
+          </li>
+        </ul>
+      </div>
+    </div>
+  </section>
   <?php get_template_part('includes/contact'); ?>
 
 </main>
