@@ -256,3 +256,11 @@ jQuery(".p-digital-modal__close").on("click", function (e) {
   jQuery(".p-digital-modal").removeClass("is-active");
   return false;
 });
+
+// 遺産相続ページのサイドバートグルメニュー
+jQuery(document).ready(function ($) {
+  $(".p-sidebar__menu-toggle").on("click", function () {
+    const parentItem = $(this).closest(".p-sidebar__menu-item--parent");
+    parentItem.toggleClass("is-open");
+  });
+});

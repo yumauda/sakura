@@ -1,0 +1,30 @@
+@use "../global" as *;
+
+.p-page-mv {
+}
+
+.p-page-mv__content {
+  position: relative;
+}
+
+.p-page-mv__img {
+  margin-left: calc(50% - 50vw);
+  margin-right: calc(50% - 50vw);
+  width: 100vw;
+}
+.p-page-mv__img img {
+  aspect-ratio: 1500 / 150;
+  object-fit: cover;
+  width: 100%;
+  height: auto;
+}
+
+.p-page-mv__title {
+  position: absolute;
+  top: 50%;
+  transform: translateY(-50%);
+  left: 0;
+  color: #fff;
+  font-size: rem(30);
+  font-weight: 700;
+}

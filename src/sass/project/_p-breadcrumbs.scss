@@ -1,0 +1,31 @@
+@use "../global" as *;
+
+.p-breadcrumbs {
+  padding-top: rem(20);
+}
+
+.p-breadcrumbs__content {
+}
+
+.p-breadcrumbs__lists {
+  display: flex;
+  align-items: center;
+  gap: rem(10);
+}
+
+.p-breadcrumbs__list {
+}
+
+.p-breadcrumbs__link {
+  font-size: rem(14);
+  color: #000;
+  font-weight: 400;
+}
+
+.p-breadcrumbs__icon {
+  display: inline-block;
+  width: rem(6);
+  height: rem(10);
+}
+.p-breadcrumbs__icon svg {
+}

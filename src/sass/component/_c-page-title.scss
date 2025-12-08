@@ -1,0 +1,19 @@
+@use "../global" as *;
+
+.c-page-title {
+  font-weight: 700;
+  color: #000;
+  font-size: rem(25);
+  position: relative;
+  padding-left: rem(19);
+}
+.c-page-title::before {
+  position: absolute;
+  content: "";
+  background: #ee819d;
+  width: rem(5);
+  height: rem(40);
+  top: 50%;
+  transform: translateY(-50%);
+  left: 0;
+}

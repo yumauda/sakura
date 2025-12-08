@@ -1,0 +1,67 @@
+@use "../global" as *;
+
+.p-inheritance {
+  padding-top: rem(120);
+  padding-bottom: rem(100);
+}
+
+.p-inheritance__container {
+  display: flex;
+  flex-direction: column;
+  gap: rem(30);
+
+  @include mq("md") {
+    flex-direction: row;
+    gap: rem(65);
+  }
+}
+
+.p-inheritance__main {
+  flex: 1;
+
+  @include mq("md") {
+    max-width: calc(100% - 320px);
+  }
+}
+
+.p-inheritance__content {
+  display: flex;
+  align-items: center;
+  gap: rem(50);
+  width: 100%;
+}
+.p-inheritance__detail {
+  width: 100%;
+  max-width: rem(400);
+}
+
+.p-inheritance__text-wrapper {
+  margin-top: rem(40);
+}
+.p-inheritance__text {
+  font-size: rem(17);
+  line-height: 1.8;
+  color: #000;
+}
+.p-inheritance__text + .p-inheritance__text {
+  margin-top: rem(37);
+}
+.p-inheritance__text--bold {
+  font-weight: 700;
+}
+.p-inheritance__text--attention {
+  font-weight: 700;
+  background: linear-gradient(transparent 60%, #fff0b2 60%);
+}
+
+.p-inheritance__illustration {
+  width: 100%;
+  max-width: rem(390);
+}
+.p-inheritance__illustration img {
+  width: 100%;
+  height: auto;
+  object-fit: cover;
+  object-position: center center;
+}
+
