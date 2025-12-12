@@ -1459,6 +1459,10 @@ input::placeholder {
   margin-top: 2.5rem;
 }
 
+.mt0 {
+  margin-top: initial;
+}
+
 .p-inheritance__text {
   font-size: 1.0625rem;
   line-height: 1.8;
@@ -1716,6 +1720,75 @@ input::placeholder {
   top: 50%;
   transform: translateY(-50%);
   right: 0.9375rem;
+}
+
+.p-inheritance__flow {
+  margin-top: 3.875rem;
+}
+
+.p-inheritance__flow-lists {
+  counter-reset: flow-counter;
+}
+
+.p-inheritance__flow-list {
+  counter-increment: flow-counter;
+  position: relative;
+  padding-left: 3.5rem;
+}
+
+.p-inheritance__flow-list::before {
+  position: absolute;
+  content: "";
+  background: #fff;
+  border: 5px solid #a0ce9c;
+  width: 1.25rem;
+  height: 1.25rem;
+  border-radius: 9999px;
+  margin-top: 0.25rem;
+  left: 0;
+}
+
+.p-inheritance__flow-list::after {
+  position: absolute;
+  content: "";
+  background: #cccccc;
+  width: 0.1875rem;
+  height: 100%;
+  top: 0.375rem;
+  left: 0.5rem;
+  z-index: -1;
+}
+
+.p-inheritance__flow-list:last-child::after {
+  height: 25%;
+}
+
+.p-inheritance__flow-list + .p-inheritance__flow-list {
+  padding-top: 1.25rem;
+}
+
+.p-inheritance__flow-listTitle {
+  position: relative;
+  padding-left: 1.5rem;
+  color: #000;
+  font-size: 1.125rem;
+  font-weight: 700;
+}
+
+.p-inheritance__flow-listTitle::before {
+  position: absolute;
+  content: counter(flow-counter) ". ";
+  left: 0;
+  font-size: 1.125rem;
+  font-weight: 700;
+  color: #000;
+}
+
+.p-inheritance__flow-listText {
+  font-size: 1.0625rem;
+  color: #000;
+  line-height: 1.8;
+  margin-top: 1.25rem;
 }
 
 .p-link {
@@ -2122,6 +2195,41 @@ input::placeholder {
   height: auto;
   object-fit: cover;
   object-position: center center;
+}
+
+.mt30 {
+  margin-top: 1.875rem;
+}
+
+.p-sidebar__map-wrapper {
+  margin-top: 0.9375rem;
+}
+
+.p-sidebar__map iframe {
+  aspect-ratio: 300/200;
+  object-fit: cover;
+  width: 100%;
+  height: auto;
+}
+
+.p-sidebar__map-detail {
+  margin-top: 1rem;
+}
+
+.p-sidebar__map-title {
+  font-size: 0.875rem;
+  color: #000;
+  font-weight: 700;
+}
+
+.p-sidebar__map-text {
+  font-size: 0.875rem;
+  color: #000;
+  line-height: 1.8;
+}
+
+.p-sidebar__map-text a {
+  color: #3366cc;
 }
 
 .p-single-topics {

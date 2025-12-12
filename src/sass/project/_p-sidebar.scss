@@ -232,3 +232,37 @@
   object-fit: cover;
   object-position: center center;
 }
+.mt30 {
+  margin-top: rem(30);
+}
+.p-sidebar__map-wrapper {
+  margin-top: rem(15);
+}
+
+.p-sidebar__map {
+}
+.p-sidebar__map iframe {
+  aspect-ratio: 300 / 200;
+  object-fit: cover;
+  width: 100%;
+  height: auto;
+}
+
+.p-sidebar__map-detail {
+  margin-top: rem(16);
+}
+
+.p-sidebar__map-title {
+  font-size: rem(14);
+  color: #000;
+  font-weight: 700;
+}
+
+.p-sidebar__map-text {
+  font-size: rem(14);
+  color: #000;
+  line-height: 1.8;
+}
+.p-sidebar__map-text a {
+  color: #3366cc;
+}
