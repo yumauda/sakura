@@ -118,6 +118,22 @@
               <p class="p-inheritance__text">一方、遺言書がない場合には、民法で定められた方法に沿って遺産を相続することになりますが、相続人全員で話し合って、民法で定められた分け方とは異なる内容で遺産を相続することもできます。</p>
               <p class="p-inheritance__text">親（父母）や夫、妻など近い親族が亡くなり<span class="p-inheritance__text--bold">相続が開始すると、遺産分割協議をはじめ、預貯金の解約、相続放棄、不動産の名義変更（相続登記）などの</span>遺産相続…様々な相続手続が待っており、なかなか悲しんでもいられないのが現実です。</p>
             </div>
+            <div class="p-inheritance__bubble">
+              <div class="p-inheritance__bubble-left">
+                <figure class="p-inheritance__bubble-img">
+                  <img decoding="async" loading="lazy" src="<?php echo get_template_directory_uri() ?>/images/common/bubble_img.png" alt="所長" width="80" height="80">
+                </figure>
+                <p class="p-inheritance__bubble-text">所長</p>
+              </div>
+              <div class="p-inheritance__right">
+                <p class="p-inheritance__right-bubbleText"><span>司法書士はこれら預貯金の解約や相続登記、遺産分割など、遺産相続に関する手続に深く関与する相続手続の専門家</span>ですので、相続に関するお悩みや手続き、費用のことなどは信頼・用できる司法書士にご相談ください。</p>
+              </div>
+            </div>
+            <div class="p-inheritance__btn-wrapper">
+              <a href="#" class="p-inheritance__btn">
+                次のページ：遺産整理業務
+              </a>
+            </div>
 
 
           </div>
