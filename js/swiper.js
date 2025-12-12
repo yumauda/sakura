@@ -53,6 +53,27 @@ const slider3 = new Swiper(".slider3", {
     el: ".swiper-scrollbar",
   },
 });
+const sliderSidebar = new Swiper(".slider-sidebar", {
+  slidesPerView: 1,
+  centeredSlides: true,
+  loop: true,
+  initialSlide: 0,
+  breakpoints: {
+    768: {
+      effect: "slide",
+      slidesPerView: 1,
+      centeredSlides: false,
+      autoplay: {
+        delay: 3000,
+        disableOnInteraction: false,
+      },
+    },
+  },
+  navigation: {
+    nextEl: ".swiper-button-next",
+    prevEl: ".swiper-button-prev",
+  },
+});
 
 // ピックアップタブスライダー
 const sliderPickup = new Swiper(".slider-pickup", {

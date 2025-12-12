@@ -147,7 +147,87 @@
             <ul class="p-sidebar__menu-list">
               <li class="p-sidebar__menu-item p-sidebar__menu-item--parent">
                 <button class="p-sidebar__menu-toggle" type="button">
-                  遺産相続
+                  <p class="p-sidebar__menu-toggleText">遺産相続</p>
+                  <span class="p-sidebar__menu-icon"></span>
+                </button>
+                <ul class="p-sidebar__submenu">
+                  <li class="p-sidebar__submenu-item">
+                    <a href="#inheritance" class="p-sidebar__submenu-link">遺産相続</a>
+                  </li>
+                  <li class="p-sidebar__submenu-item">
+                    <a href="#inheritance-property" class="p-sidebar__submenu-link">遺産相続財産</a>
+                  </li>
+                  <li class="p-sidebar__submenu-item">
+                    <a href="#inheritance-flow" class="p-sidebar__submenu-link">遺産相続財産の流れ</a>
+                  </li>
+                  <li class="p-sidebar__submenu-item">
+                    <a href="#heir" class="p-sidebar__submenu-link">相続権者</a>
+                  </li>
+                </ul>
+              </li>
+              <li class="p-sidebar__menu-item p-sidebar__menu-item--parent">
+                <button class="p-sidebar__menu-toggle" type="button">
+                  <p class="p-sidebar__menu-toggleText">遺産の知識</p>
+                  <span class="p-sidebar__menu-icon"></span>
+                </button>
+                <ul class="p-sidebar__submenu">
+                  <li class="p-sidebar__submenu-item">
+                    <a href="#inheritance" class="p-sidebar__submenu-link">遺産相続</a>
+                  </li>
+                  <li class="p-sidebar__submenu-item">
+                    <a href="#inheritance-property" class="p-sidebar__submenu-link">遺産相続財産</a>
+                  </li>
+                  <li class="p-sidebar__submenu-item">
+                    <a href="#inheritance-flow" class="p-sidebar__submenu-link">遺産相続財産の流れ</a>
+                  </li>
+                  <li class="p-sidebar__submenu-item">
+                    <a href="#heir" class="p-sidebar__submenu-link">相続権者</a>
+                  </li>
+                </ul>
+              </li>
+              <li class="p-sidebar__menu-item p-sidebar__menu-item--parent">
+                <button class="p-sidebar__menu-toggle" type="button">
+                  <p class="p-sidebar__menu-toggleText">遺言</p>
+                  <span class="p-sidebar__menu-icon"></span>
+                </button>
+                <ul class="p-sidebar__submenu">
+                  <li class="p-sidebar__submenu-item">
+                    <a href="#inheritance" class="p-sidebar__submenu-link">遺産相続</a>
+                  </li>
+                  <li class="p-sidebar__submenu-item">
+                    <a href="#inheritance-property" class="p-sidebar__submenu-link">遺産相続財産</a>
+                  </li>
+                  <li class="p-sidebar__submenu-item">
+                    <a href="#inheritance-flow" class="p-sidebar__submenu-link">遺産相続財産の流れ</a>
+                  </li>
+                  <li class="p-sidebar__submenu-item">
+                    <a href="#heir" class="p-sidebar__submenu-link">相続権者</a>
+                  </li>
+                </ul>
+              </li>
+              <li class="p-sidebar__menu-item p-sidebar__menu-item--parent">
+                <button class="p-sidebar__menu-toggle" type="button">
+                  <p class="p-sidebar__menu-toggleText">不動産登記</p>
+                  <span class="p-sidebar__menu-icon"></span>
+                </button>
+                <ul class="p-sidebar__submenu">
+                  <li class="p-sidebar__submenu-item">
+                    <a href="#inheritance" class="p-sidebar__submenu-link">遺産相続</a>
+                  </li>
+                  <li class="p-sidebar__submenu-item">
+                    <a href="#inheritance-property" class="p-sidebar__submenu-link">遺産相続財産</a>
+                  </li>
+                  <li class="p-sidebar__submenu-item">
+                    <a href="#inheritance-flow" class="p-sidebar__submenu-link">遺産相続財産の流れ</a>
+                  </li>
+                  <li class="p-sidebar__submenu-item">
+                    <a href="#heir" class="p-sidebar__submenu-link">相続権者</a>
+                  </li>
+                </ul>
+              </li>
+              <li class="p-sidebar__menu-item p-sidebar__menu-item--parent">
+                <button class="p-sidebar__menu-toggle" type="button">
+                  <p class="p-sidebar__menu-toggleText">成年後見</p>
                   <span class="p-sidebar__menu-icon"></span>
                 </button>
                 <ul class="p-sidebar__submenu">
@@ -166,24 +246,67 @@
                 </ul>
               </li>
               <li class="p-sidebar__menu-item">
-                <a href="#succession-order" class="p-sidebar__menu-link">相続の順番</a>
-              </li>
-              <li class="p-sidebar__menu-item">
-                <a href="#gift" class="p-sidebar__menu-link">贈与</a>
-              </li>
-              <li class="p-sidebar__menu-item">
-                <a href="#property-registration" class="p-sidebar__menu-link">不動産登記</a>
-              </li>
-              <li class="p-sidebar__menu-item">
-                <a href="#guardianship" class="p-sidebar__menu-link">成年後見</a>
-              </li>
-              <li class="p-sidebar__menu-item">
-                <a href="#other-contracts" class="p-sidebar__menu-link">その他契約</a>
+                <a href="#other-contracts" class="p-sidebar__menu-link">その他業務</a>
               </li>
               <li class="p-sidebar__menu-item">
                 <a href="#price-list" class="p-sidebar__menu-link">料金表</a>
               </li>
             </ul>
+            <div class="p-sidebar__slider-wrapper">
+              <div class="swiper slider-sidebar">
+                <!-- Additional required wrapper -->
+                <div class="swiper-wrapper">
+                  <!-- Slides -->
+                  <div class="swiper-slide">
+                    <a href="#" class="p-sidebar__slide-link">
+                      <figure class="p-sidebar__slide-img">
+                        <img decoding="async" loading="lazy" src="<?php echo get_template_directory_uri() ?>/images/common/mv_01.webp" alt="遺産整理" width="180" height="180">
+                      </figure>
+                    </a>
+                  </div>
+                  <div class="swiper-slide">
+                    <a href="#" class="p-sidebar__slide-link">
+                      <figure class="p-sidebar__slide-img">
+                        <img decoding="async" loading="lazy" src="<?php echo get_template_directory_uri() ?>/images/common/mv_02.webp" alt="遺産整理" width="180" height="180">
+                      </figure>
+                    </a>
+                  </div>
+                  <div class="swiper-slide">
+                    <a href="#" class="p-sidebar__slide-link">
+                      <figure class="p-sidebar__slide-img">
+                        <img decoding="async" loading="lazy" src="<?php echo get_template_directory_uri() ?>/images/common/mv_03.webp" alt="遺産整理" width="180" height="180">
+                      </figure>
+                    </a>
+                  </div>
+                  <div class="swiper-slide">
+                    <a href="#" class="p-sidebar__slide-link">
+                      <figure class="p-sidebar__slide-img">
+                        <img decoding="async" loading="lazy" src="<?php echo get_template_directory_uri() ?>/images/common/mv_04.webp" alt="遺産整理" width="180" height="180">
+                      </figure>
+                    </a>
+                  </div>
+                  <div class="swiper-slide">
+                    <a href="#" class="p-sidebar__slide-link">
+                      <figure class="p-sidebar__slide-img">
+                        <img decoding="async" loading="lazy" src="<?php echo get_template_directory_uri() ?>/images/common/mv_05.webp" alt="遺産整理" width="180" height="180">
+                      </figure>
+                    </a>
+                  </div>
+
+                </div>
+                <!-- If we need pagination -->
+                <div class="swiper-pagination"></div>
+
+                <!-- If we need navigation buttons -->
+                <div class="swiper-button-prev"></div>
+                <div class="swiper-button-next"></div>
+
+                <!-- If we need scrollbar -->
+                <div class="swiper-scrollbar"></div>
+              </div>
+            </div>
+            <!-- Slider main container -->
+
           </div>
         </aside>
       </div>
