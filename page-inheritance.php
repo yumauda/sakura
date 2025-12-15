@@ -79,7 +79,7 @@
             </figure>
           </div>
           <div class="p-inheritance__example">
-            <h4 class="p-inheritance__example-title">遺産の例</h4>
+            <h4 class="c-page-title--h4">遺産の例</h4>
             <div class="p-inheritance__example-box">
               <ol class="p-inheritance__example-list p-inheritance__example-list--left">
                 <li class="p-inheritance__example-item">現金や預貯金</li>

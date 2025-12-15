@@ -17,3 +17,20 @@
   transform: translateY(-50%);
   left: 0;
 }
+.c-page-title--h4 {
+  font-size: rem(22);
+  font-weight: 700;
+  color: #000;
+  padding-bottom: rem(8);
+  border-bottom: 1px solid #cccccc;
+  position: relative;
+}
+.c-page-title--h4::before {
+  position: absolute;
+  content: "";
+  background: #ee819d;
+  width: rem(150);
+  height: 2px;
+  bottom: -1px;
+  left: 0;
+}
