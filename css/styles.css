@@ -2226,6 +2226,120 @@ input::placeholder {
   font-weight: 700;
 }
 
+.p-price {
+  flex: 1;
+}
+
+.p-price__block {
+  margin-top: 3.75rem;
+}
+
+.p-price__block + .p-price__block {
+  margin-top: 5rem;
+}
+
+.p-price__table {
+  margin-top: 2.5rem;
+  width: 100%;
+  border-collapse: collapse;
+  border: 1px solid #ee819d;
+}
+
+.p-price__table thead {
+  background: #ee819d;
+}
+
+.p-price__table th {
+  padding: 0.8125rem;
+  font-size: 1rem;
+  font-weight: 700;
+  color: #fff;
+  border: 1px solid #ccc;
+}
+
+.p-price__table th:first-child,
+.p-price__table th:nth-child(2),
+.p-price__table th:nth-child(3) {
+  width: 33.3333333333%;
+  text-align: left;
+}
+
+.p-price__table tbody tr {
+  background: #fff;
+}
+
+.p-price__table tbody tr:nth-child(even) {
+  background: #f9f9f9;
+}
+
+.p-price__table td {
+  padding: 0.8125rem;
+  font-size: 1rem;
+  color: #000;
+  border: 1px solid #ccc;
+  vertical-align: middle;
+  background: #fdedf1;
+  font-weight: 700;
+}
+
+.p-price__table td:nth-child(2),
+.p-price__table td:nth-child(3) {
+  background: #fff;
+}
+
+.p-price__table td:nth-child(2) {
+  font-weight: 400;
+}
+
+.p-price__table td:first-child {
+  text-align: left;
+}
+
+.p-price__table--half th {
+  width: 50%;
+}
+
+.p-price__table--half td {
+  width: 50%;
+}
+
+.fw700 {
+  font-weight: 700 !important;
+}
+
+.p-price__block-yellow {
+  display: flex;
+  gap: 1.25rem;
+  padding-top: 1.5rem;
+  padding-bottom: 1.3125rem;
+  padding-right: 1.5rem;
+  padding-left: 1.625rem;
+  background: #fff8eb;
+  border: 1px solid #f59b5f;
+  margin-top: 2.5rem;
+}
+
+.p-price__block-yellowIcon {
+  min-width: 2rem;
+  min-height: 2rem;
+  max-width: 2rem;
+  max-height: 2rem;
+  margin-top: 0.5rem;
+}
+
+.p-price__block-yellowIcon img {
+  width: 100%;
+  height: auto;
+  object-fit: cover;
+  object-position: center center;
+}
+
+.p-price__block-yellowText {
+  font-size: 1rem;
+  line-height: 1.8;
+  color: #000;
+}
+
 .p-service {
   background: #fcf3ef;
   padding-bottom: 5.1875rem;
