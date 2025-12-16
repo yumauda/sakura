@@ -1,0 +1,144 @@
+body {
+  font-family: "source-han-sans-japanese", sans-serif;
+}
+
+.u-desktop {
+  display: none;
+}
+@media screen and (min-width: 768px) {
+  .u-desktop {
+    display: block;
+  }
+}
+
+@media screen and (min-width: 768px) {
+  .u-mobile {
+    display: none;
+  }
+}
+
+body.drawer-open {
+  overflow: hidden;
+}
+
+body {
+  overflow-x: clip;
+}
+
+.p-qa__block {
+  margin-top: 2.5rem;
+}
+
+.p-qa__box {
+  border: 1px solid #ccc;
+  padding-left: 2.9375rem;
+  padding-right: 1.4375rem;
+}
+
+.p-qa__content + .p-qa__content {
+  margin-top: 1.25rem;
+}
+
+.p-qa__summary {
+  color: #fff;
+  cursor: pointer;
+  position: relative;
+  padding-top: 1.25rem;
+  padding-bottom: 1.25rem;
+  list-style: none;
+}
+
+.p-qa__summary::before,
+.p-qa__summary::after {
+  content: "";
+  position: absolute;
+  top: 50%;
+  right: 0.625rem;
+  background: #ee819d;
+  transition: all 0.3s ease-out;
+}
+
+.p-qa__summary::before {
+  width: 1rem;
+  height: 0.125rem;
+  transform: translate(50%, -50%);
+}
+@media screen and (min-width: 768px) {
+  .p-qa__summary::before {
+    width: 0.875rem;
+  }
+}
+
+.p-qa__summary::after {
+  width: 0.125rem;
+  height: 1rem;
+  transform: translate(50%, -50%);
+}
+@media screen and (min-width: 768px) {
+  .p-qa__summary::after {
+    height: 0.875rem;
+  }
+}
+
+.p-qa__summary.is-opened::after {
+  transform: translate(50%, -50%) rotate(90deg);
+  opacity: 0;
+}
+
+.p-qa__ttl {
+  font-size: 0.625rem;
+  font-weight: 700;
+  position: relative;
+  color: #000;
+}
+@media screen and (min-width: 768px) {
+  .p-qa__ttl {
+    font-size: 1.125rem;
+    line-height: 1.8;
+  }
+}
+
+.p-qa__ttl::before {
+  content: "Q.";
+  position: absolute;
+  font-size: 1.125rem;
+  font-weight: 700;
+  color: #e77492;
+  left: -1.5rem;
+  top: 50%;
+  transform: translateY(-50%);
+}
+
+.p-qa__ttl span {
+  font-weight: 500;
+  font-size: 0.875rem;
+}
+@media screen and (min-width: 768px) {
+  .p-qa__ttl span {
+    font-size: 1.25rem;
+  }
+}
+
+.p-qa__inner {
+  overflow: hidden;
+}
+
+.p-qa__wrap {
+  padding-top: 1.125rem;
+  padding-bottom: 1.125rem;
+}
+
+.p-qa__txt {
+  font-size: 1.0625rem;
+  line-height: 1.8;
+  color: #000;
+  position: relative;
+}
+
+.p-qa__txt + .p-qa__txt {
+  margin-top: 1.75rem;
+}
+
+.p-qa__link {
+  color: #3366cc;
+}

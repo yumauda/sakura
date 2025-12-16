@@ -264,3 +264,11 @@ jQuery(document).ready(function ($) {
     parentItem.toggleClass("is-open");
   });
 });
+
+// よくある質問のアコーディオンメニュー
+jQuery(document).ready(function ($) {
+  $(".p-accordion__question").on("click", function () {
+    const accordionItem = $(this).closest(".p-accordion__item");
+    accordionItem.toggleClass("p-accordion__item--open");
+  });
+});
