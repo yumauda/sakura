@@ -327,7 +327,7 @@ function custom_hiragana_validation_filter($result, $tag)
 }
 
 //投稿タイプの作成(カスタム投稿)
-register_post_type(
+/* register_post_type(
 	'allcolumn',
 	array(
 		'labels' => array(
@@ -361,7 +361,7 @@ register_taxonomy('allcolumn_tag', 'allcolumn', array(
 	'show_ui' => true,
 	'public' => true,
 	'show_in_rest' => true,
-));
+)); */
 
 add_filter('body_class', function ($classes) {
 	if (is_front_page()) {

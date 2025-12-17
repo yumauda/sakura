@@ -90,3 +90,77 @@
   margin-top: rem(20);
   text-align: center;
 }
+
+// お問い合わせページの注意事項セクション
+.p-contact__info {
+  margin-top: rem(40);
+  padding-left: rem(16);
+}
+
+.p-contact__list {
+  list-style: decimal;
+  padding-left: rem(24);
+  counter-reset: list-counter;
+}
+
+.p-contact__item {
+  font-size: rem(17);
+  line-height: 1.8;
+  color: #000;
+  margin-top: rem(16);
+  list-style: decimal;
+
+  &:first-child {
+    margin-top: 0;
+  }
+}
+
+.p-contact__link {
+  color: #3366cc;
+  text-decoration: underline;
+
+  &:hover {
+    text-decoration: none;
+  }
+}
+
+.p-contact__text-red {
+  color: #cc0000;
+  font-weight: 700;
+}
+.p-contact__text-bold {
+  color: #000;
+  font-weight: 700;
+}
+
+.p-contact__tel-block {
+  margin-top: rem(80);
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  gap: rem(32);
+}
+
+.p-contact__tel-text {
+  font-size: rem(18);
+  color: #000;
+  font-weight: 700;
+}
+
+.p-contact__tel-number {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  gap: rem(12);
+}
+
+.p-contact__tel-icon {
+  width: rem(28);
+  height: rem(28);
+}
+
+.p-contact__tel-link {
+  font-size: rem(28);
+  color: #000;
+  font-weight: 700;
+}

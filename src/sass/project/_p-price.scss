@@ -155,12 +155,20 @@
   position: relative;
   border: 1px solid #e77492;
   border-radius: 9999px;
+  transition: 0.3s ease-in-out;
+}
+.p-price__btn:hover {
+  background: #fff;
 }
 
 .p-price__btn-text {
   color: #e77492;
   font-size: rem(16);
+  transition: 0.3s ease-in-out;
   font-weight: 400;
+}
+.p-price__btn:hover .p-price__btn-text {
+  color: #fff;
 }
 
 .p-price__btn-icon {
@@ -179,6 +187,12 @@
   display: flex;
   align-items: center;
   justify-content: center;
+}
+.p-price__btn-icon svg path {
+  transition: 0.3s ease-in-out;
+}
+.p-price__btn:hover .p-price__btn-icon svg path {
+  fill: #fff;
 }
 .p-price__profile {
   max-width: rem(260);
@@ -246,6 +260,6 @@
   width: rem(7);
   height: rem(7);
   top: rem(12);
-  left: rem(0);
+  left: rem(8);
   border-radius: 9999px;
 }
