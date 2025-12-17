@@ -6,7 +6,7 @@
         <figure class="p-page-mv__img">
           <img decoding="async" loading="lazy" src="<?php echo get_template_directory_uri() ?>/images/common/page_mv_bg.webp" alt="" width="1500" height="150">
         </figure>
-        <h2 class="p-page-mv__title">よくある質問</h2>
+        <h2 class="p-page-mv__title">個人情報保護方針</h2>
 
       </div>
     </div>
@@ -50,99 +50,40 @@
         <!-- メインコンテンツ -->
         <section class="p-price">
           <div class="p-price__content">
-            <h3 class="c-page-title">全般的な質問</h3>
+            <p class="c-main-text">さくら司法書士事務所（以下、「当事務所」といいます。）では、https://www.shihou.cc（以下、「本サイト」といいます。）の運営に際し、お客様のプライバシーを尊重し個人情報に対して十分な配慮を行うと共に大切に保護し、適正な管理を行うことに努めております。</p>
 
-            <div class="p-qa__block">
-              <details class="p-qa__content p-qa__box js-details is-opened" open>
-                <summary class="p-qa__summary js-summary is-opened">
-                  <h4 class="p-qa__ttl">
-                    一般歯科との違いは何ですか？
-                  </h4>
-                </summary>
-                <div class="p-qa__inner js-content">
-                  <div class="p-qa__wrap">
-                    <div class="p-qa__content p-qa__content--open01">
-                      <p class="p-qa__txt">当事務所では、事前にお見積りを提示いたします。<br>
-                      事前に正確な費用を算出することができない場合には、まずおおよその概算金額をお伝えし、算出が可能となった時点で正確な金額をお伝えします。</p>
-                      <p class="p-qa__txt">当事務所では、事前にお見積りを提示いたします。<br>
-                      事前に正確な費用を算出することができない場合には、まずおおよその概算金額をお伝えし、算出が可能となった時点で正確な金額をお伝えします。</p>
-                      <p class="p-qa__txt">具体的な料金に関しては<a href="#" class="p-qa__link">「料金表」ページ</a>をご覧ください。</p>
-                      
-                    </div>
-                  </div>
-                </div>
-              </details>
-              <details class="p-qa__content p-qa__box js-details">
-                <summary class="p-qa__summary js-summary">
-                  <h4 class="p-qa__ttl">
-                    一般歯科との違いは何ですか？
-                  </h4>
-                </summary>
-                <div class="p-qa__inner js-content">
-                  <div class="p-qa__wrap">
-                    <div class="p-qa__content p-qa__content--open01">
-                      <p class="p-qa__txt">当事務所では、事前にお見積りを提示いたします。<br>
-                      事前に正確な費用を算出することができない場合には、まずおおよその概算金額をお伝えし、算出が可能となった時点で正確な金額をお伝えします。</p>
-                      <p class="p-qa__txt">当事務所では、事前にお見積りを提示いたします。<br>
-                      事前に正確な費用を算出することができない場合には、まずおおよその概算金額をお伝えし、算出が可能となった時点で正確な金額をお伝えします。</p>
-                      <p class="p-qa__txt">具体的な料金に関しては<a href="#" class="p-qa__link">「料金表」ページ</a>をご覧ください。</p>
-                      
-                    </div>
-                  </div>
-                </div>
-              </details>
-
+            <h3 class="c-page-title mt87">個人情報の保護</h3>
+            <div class="p-price__text-wrapper">
+              <p class="c-main-text">当事務所は、業務上、依頼人の個人情報を知る機会が多いため、その保護には格別注意を払うとともに、常に司法書士としての社会的信用性の維持並びに向上に努め、公正誠実な職務を行って参ります。</p>
+            </div>
+            <h3 class="c-page-title mt87">個人情報の取得</h3>
+            <div class="p-price__text-wrapper">
+              <p class="c-main-text">当事務所は、司法書士法に定められた業務（任意整理や過払い請求などの債務整理無料相談）を遂行するため、必要な範囲で依頼人の個人情報を取得することがあります。<br>
+                個人情報の提供を希望されない場合は、依頼人の意思により提供を拒否することができます。ただし、この場合には、さくら司法書士事務所はその業務（任意整理や過払い請求などの債務整理無料相談）の受託をお断りする場合があります。</p>
+            </div>
+            <h3 class="c-page-title mt87">個人情報の利用と第三者への提供</h3>
+            <div class="p-price__text-wrapper">
+              <p class="c-main-text">当事務所が依頼人から提供を受けた個人情報は、目的達成に必要な範囲でのみ利用します。<br>
+                当事務所は、依頼人の個人情報を、依頼人の同意を得ることなく第三者に提供しません。<br>
+                ただし、訴訟や証人尋問などの手続において証言せざるを得ない場合などの法令上の制限がある場合や、依頼人の目的を達成するため、提携する他の士業に業務を委託する場合（不要な情報は開示せず、厳格な業務委託契約のもとに行います）は、この限りではありません。</p>
+            </div>
+            <h3 class="c-page-title mt87">司法書士法24条</h3>
+            <div class="p-price__text-wrapper">
+              <p class="c-main-text">司法書士は、司法書士法24条（秘密保持義務）によって、依頼人の個人情報（氏名・住所・電話番号・メールアドレス・相談内容など）を正当な理由なくして漏洩、開示してはならない義務があります。</p>
+            </div>
+            <h3 class="c-page-title mt87">サイト利用上のご注意</h3>
+            <div class="p-price__text-wrapper">
+              <p class="c-main-text">当サイトは当事務所によって運営しておりますが、当事務所は当サイト掲載情報の一切について、その正確性、安全性、有用性等を保証するものではありません。<br>
+                従いまして、当サイト及びリンク先の情報によって損害が生じた場合でも、当事務所は一切責任を持つものではありませんので、掲載情報については、自己責任のもとにご活用ください。</p>
+            </div>
+            <h3 class="c-page-title mt87">著作権</h3>
+            <div class="p-price__text-wrapper">
+              <p class="c-main-text">当サイトの情報や画像などの著作権は、すべて当事務所に帰属しますので、権利保有者本人の許諾なくして複製・翻訳・翻案、有線送信、上映等の使用を禁止します。</p>
             </div>
 
-          </div>
-          <div class="p-price__content">
-            <h3 class="c-page-title">全般的な質問</h3>
 
-            <div class="p-qa__block">
-              <details class="p-qa__content p-qa__box js-details is-opened" open>
-                <summary class="p-qa__summary js-summary is-opened">
-                  <h4 class="p-qa__ttl">
-                    一般歯科との違いは何ですか？
-                  </h4>
-                </summary>
-                <div class="p-qa__inner js-content">
-                  <div class="p-qa__wrap">
-                    <div class="p-qa__content p-qa__content--open01">
-                      <p class="p-qa__txt">当事務所では、事前にお見積りを提示いたします。<br>
-                      事前に正確な費用を算出することができない場合には、まずおおよその概算金額をお伝えし、算出が可能となった時点で正確な金額をお伝えします。</p>
-                      <p class="p-qa__txt">当事務所では、事前にお見積りを提示いたします。<br>
-                      事前に正確な費用を算出することができない場合には、まずおおよその概算金額をお伝えし、算出が可能となった時点で正確な金額をお伝えします。</p>
-                      <p class="p-qa__txt">具体的な料金に関しては<a href="#" class="p-qa__link">「料金表」ページ</a>をご覧ください。</p>
-                      
-                    </div>
-                  </div>
-                </div>
-              </details>
-              <details class="p-qa__content p-qa__box js-details">
-                <summary class="p-qa__summary js-summary">
-                  <h4 class="p-qa__ttl">
-                    一般歯科との違いは何ですか？
-                  </h4>
-                </summary>
-                <div class="p-qa__inner js-content">
-                  <div class="p-qa__wrap">
-                    <div class="p-qa__content p-qa__content--open01">
-                      <p class="p-qa__txt">当事務所では、事前にお見積りを提示いたします。<br>
-                      事前に正確な費用を算出することができない場合には、まずおおよその概算金額をお伝えし、算出が可能となった時点で正確な金額をお伝えします。</p>
-                      <p class="p-qa__txt">当事務所では、事前にお見積りを提示いたします。<br>
-                      事前に正確な費用を算出することができない場合には、まずおおよその概算金額をお伝えし、算出が可能となった時点で正確な金額をお伝えします。</p>
-                      <p class="p-qa__txt">具体的な料金に関しては<a href="#" class="p-qa__link">「料金表」ページ</a>をご覧ください。</p>
-                      
-                    </div>
-                  </div>
-                </div>
-              </details>
-
-            </div>
 
           </div>
-
-
         </section>
 
         <!-- サイドバー -->

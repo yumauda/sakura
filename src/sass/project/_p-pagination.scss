@@ -1,0 +1,83 @@
+@use "../global" as *;
+
+.p-pagination {
+  margin-top: rem(60);
+}
+
+.p-pagination__list {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  gap: rem(16);
+  list-style: none;
+}
+
+.p-pagination__item {
+  a,
+  span {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    min-width: rem(40);
+    height: rem(40);
+    padding: 0 rem(12);
+    border: 1px solid #ee819d;
+    background: #fff;
+    color: #ee819d;
+    text-decoration: none;
+    font-size: rem(15);
+    transition: all 0.3s ease;
+
+    @include mq(md) {
+      min-width: rem(48);
+      height: rem(48);
+    }
+
+    &:hover {
+      border-color: #ee819d;
+      background: #ee819d;
+      color: #fff;
+    }
+  }
+
+  span.current {
+    border-color: #ee819d;
+    background: #ee819d;
+    color: #fff;
+    pointer-events: none;
+  }
+}
+
+.p-pagination__arrow {
+  position: relative;
+  width: rem(6);
+  height: rem(10);
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  svg {
+    width: rem(6);
+    height: rem(10);
+  }
+}
+.next {
+  padding-left: initial !important;
+  padding-right: initial !important;
+  border-left: initial !important;
+  border-right: initial !important;
+}
+.prev {
+  padding-right: initial !important;
+  padding-left: initial !important;
+  border-right: initial !important;
+  border-left: initial !important;
+}
+.p-pagination__arrow path {
+  transition: 0.3s ease-in-out;
+}
+.next:hover .p-pagination__arrow path {
+  fill: #fff;
+}
+.prev:hover .p-pagination__arrow path {
+  fill: #fff;
+}

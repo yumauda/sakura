@@ -266,3 +266,57 @@
 .p-sidebar__map-text a {
   color: #3366cc;
 }
+
+// カテゴリーリスト
+.p-sidebar__category-list {
+  list-style: none;
+  padding: 0;
+  margin: 0;
+  margin-top: rem(25);
+
+  a {
+    display: block;
+    font-size: rem(15);
+    color: #000;
+    text-decoration: none;
+    transition: background-color 0.3s ease;
+  }
+
+  // 投稿数
+  .count {
+    margin-left: rem(4);
+  }
+
+  // 子カテゴリー
+  .children {
+    list-style: none;
+    padding: 0;
+    margin: 0;
+
+    a {
+      padding-left: rem(30);
+      position: relative;
+
+      &::before {
+        content: "－ ";
+        position: absolute;
+        left: rem(15);
+      }
+
+      &:hover {
+        background-color: #efefef;
+      }
+    }
+  }
+}
+.p-sidebar__category-item {
+  border: initial;
+}
+.p-sidebar__category-link {
+  display: block;
+  padding: rem(6) rem(15);
+  font-size: rem(15);
+  color: #000;
+  text-decoration: none;
+  transition: background-color 0.3s ease;
+}

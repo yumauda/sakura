@@ -253,7 +253,7 @@ function Change_menulabel()
 {
 	global $menu;
 	global $submenu;
-	$name = 'お知らせ';
+	$name = '所長ブログ';
 	$menu[5][0] = $name;
 	$submenu['edit.php'][5][0] = $name . '一覧';
 	$submenu['edit.php'][10][0] = '新しい' . $name;
@@ -261,7 +261,7 @@ function Change_menulabel()
 function Change_objectlabel()
 {
 	global $wp_post_types;
-	$name = 'お知らせ';
+	$name = '所長ブログ';
 	$labels = &$wp_post_types['post']->labels;
 	$labels->name = $name;
 	$labels->singular_name = $name;

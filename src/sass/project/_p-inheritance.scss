@@ -1,8 +1,12 @@
 @use "../global" as *;
 
 .p-inheritance {
-  padding-top: rem(120);
+  padding-top: rem(66);
   padding-bottom: rem(100);
+  @include mq(md){
+    padding-top: rem(120);
+    
+  }
 }
 
 .p-inheritance__container {
