@@ -1,15 +1,21 @@
 @use "../global" as *;
 
 .p-pagination {
-  margin-top: rem(60);
+  margin-top: rem(40);
+  @include mq(md) {
+    margin-top: rem(60);
+  }
 }
 
 .p-pagination__list {
   display: flex;
   align-items: center;
   justify-content: center;
-  gap: rem(16);
   list-style: none;
+  gap: rem(10);
+  @include mq(md) {
+    gap: rem(16);
+  }
 }
 
 .p-pagination__item {
@@ -18,8 +24,8 @@
     display: flex;
     align-items: center;
     justify-content: center;
-    min-width: rem(40);
-    height: rem(40);
+    min-width: rem(30);
+    height: rem(30);
     padding: 0 rem(12);
     border: 1px solid #ee819d;
     background: #fff;
