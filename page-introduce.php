@@ -63,7 +63,7 @@
                   </tr>
                   <tr>
                     <td>資格</td>
-                    <td>
+                    <td class="border-bottom-none">
                       <ul class="p-price__list">
                         <li class="p-price__list-item">
                           司法書士登録番号 東京第3974号
