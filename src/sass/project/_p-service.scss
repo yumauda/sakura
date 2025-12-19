@@ -2,7 +2,10 @@
 
 .p-service {
   background: #fcf3ef;
-  padding-bottom: rem(83);
+  padding-bottom: rem(51);
+  @include mq(md) {
+    padding-bottom: rem(83);
+  }
 }
 
 .p-service__content {
@@ -16,16 +19,26 @@
 }
 
 .p-service__title {
-  margin-top: rem(40);
+  margin-top: rem(24);
+  @include mq(md) {
+    margin-top: rem(40);
+  }
 }
 
 .p-service__text {
-  margin-top: rem(34);
+  margin-top: rem(27);
+  @include mq(md) {
+    margin-top: rem(34);
+  }
 }
 
 .p-service__imageArea {
-  max-width: rem(540);
+  margin-top: rem(24);
   width: 100%;
+  @include mq(md) {
+    margin-top: initial;
+    max-width: rem(540);
+  }
 }
 
 .p-service__image {

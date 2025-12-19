@@ -154,8 +154,11 @@
 }
 
 .p-sidebar__menu-toggleText {
-  font-size: rem(14);
   color: $black;
+  font-size: rem(15);
+  @include mq(md) {
+    font-size: rem(14);
+  }
 }
 .p-sidebar__submenu {
   list-style: none;
@@ -219,6 +222,12 @@
 }
 .p-sidebar__slider-wrapper {
   margin-top: rem(15);
+  padding-left: rem(20);
+  padding-right: rem(20);
+  @include mq(md) {
+    padding-left: initial;
+    padding-right: initial;
+  }
 }
 .p-sidebar__slide-link {
   display: block;
@@ -242,10 +251,14 @@
 .p-sidebar__map {
 }
 .p-sidebar__map iframe {
-  aspect-ratio: 300 / 200;
   object-fit: cover;
   width: 100%;
   height: auto;
+  aspect-ratio: 340 / 200;
+
+  @include mq(md) {
+    aspect-ratio: 300 / 200;
+  }
 }
 
 .p-sidebar__map-detail {

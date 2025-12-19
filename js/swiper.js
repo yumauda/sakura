@@ -1,10 +1,10 @@
 "use strict";
 
 const slider2 = new Swiper(".slider-main", {
-  slidesPerView: 1,
-  centeredSlides: false,
+  slidesPerView: 1.2,
+  centeredSlides: true,
   loop: true,
-  spaceBetween: 20,
+  spaceBetween: 10,
   initialSlide: 0,
   breakpoints: {
     768: {

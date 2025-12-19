@@ -1,25 +1,41 @@
 @use "../global" as *;
 
 .p-footer {
-  padding-top: rem(52);
-  padding-bottom: rem(50);
   background: #fcf3ef;
+  padding-top: rem(40);
+  @include mq(md) {
+    padding-top: rem(52);
+    padding-bottom: rem(50);
+  }
 }
 
 .p-footer__content {
-  display: flex;
-  justify-content: space-between;
+  @include mq(md) {
+    display: flex;
+    justify-content: space-between;
+  }
 }
 
 .p-footer__left {
 }
 
 .p-footer__logo {
+  text-align: center;
+  @include mq(md) {
+    text-align: initial;
+  }
 }
 
 .p-footer__home {
   display: inline-block;
-  width: rem(311);
+  width: rem(239);
+  margin-left: auto;
+  margin-right: auto;
+  @include mq(md) {
+    margin-left: initial;
+    margin-right: initial;
+    width: rem(311);
+  }
 }
 .p-footer__home img {
   width: 100%;
@@ -29,7 +45,10 @@
 }
 
 .p-footer__address {
-  margin-top: rem(26);
+  margin-top: rem(20);
+  @include mq(md) {
+    margin-top: rem(26);
+  }
 }
 
 .p-footer__address-text {
@@ -42,17 +61,29 @@
   color: #3366cc;
 }
 .p-footer__small {
-  margin-top: rem(55);
+  text-align: center;
+  margin-top: rem(30);
+  @include mq(md) {
+    text-align: initial;
+    margin-top: rem(55);
+  }
 }
 .p-footer__small small {
   color: #333333;
-  font-size: rem(14);
   font-weight: 400;
   line-height: 1.7;
+  font-size: rem(13);
+  @include mq(md) {
+    font-size: rem(14);
+  }
 }
 
 .p-footer__right {
-  margin-left: auto;
+  display: none;
+  @include mq(md) {
+    display: block;
+    margin-left: auto;
+  }
 }
 
 .p-footer__lists {
@@ -96,4 +127,31 @@
   top: 50%;
   left: 0;
   transform: translateY(-50%);
+}
+.p-footer__contact-sp {
+  text-align: center;
+  margin-top: rem(32);
+  @include mq(md) {
+    display: none;
+  }
+}
+
+.p-footer__contact-link {
+  background: #ee819d;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  gap: rem(6);
+  height: rem(50);
+}
+
+.p-footer__contact-link-icon {
+  width: rem(16);
+  height: rem(12);
+}
+
+.p-footer__contact-link-text {
+  color: #fff;
+  font-size: rem(15);
+  font-weight: 400;
 }

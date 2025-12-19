@@ -9,7 +9,10 @@
   }
 }
 .c-main-text + .c-main-text {
-  margin-top: rem(32);
+  margin-top: rem(22);
+  @include mq(md) {
+    margin-top: rem(32);
+  }
 }
 .c-main-text span {
   color: #cc0000;

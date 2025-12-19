@@ -4,12 +4,15 @@
             <div class="p-footer__left">
                 <div class="p-footer__logo">
                     <a href="<?php echo esc_url(home_url('/')); ?>" class="p-footer__home">
-                        <img decoding="async" loading="lazy" src="<?php echo get_template_directory_uri() ?>/images/common/footer_logo.png" alt="さくら司法書士事務所" width="431" height="38">
+                        <picture>
+                            <source srcset="<?php echo get_template_directory_uri(); ?>/images/common/footer_logo.png" media="(min-width: 768px)" width="1238" height="570" />
+                            <img src="<?php echo get_template_directory_uri(); ?>/images/common/footer_logo_sp.png" alt="さくら司法書士事務所" width="355" height="227">
+                        </picture>
                     </a>
                 </div>
                 <div class="p-footer__address">
                     <p class="p-footer__address-text">
-                        〒188-0011 東京都西東京市田無町5-2-17-304 <a href="#">[地図]</a><br>
+                        〒188-0011 <br class="u-mobile">東京都西東京市田無町5-2-17-304 <a href="#">[地図]</a><br>
                         平日 9:00-18:00（休日:土日祝）<br>
                         代表司法書士：志村 理<br>
                         東京司法書士会所属 第3974号
@@ -62,6 +65,14 @@
                 </ul>
             </div>
         </div>
+    </div>
+    <div class="p-footer__contact-sp">
+        <a href="#" class="p-footer__contact-link">
+            <div class="p-footer__contact-link-icon">
+                <img decoding="async" loading="lazy" src="<?php echo get_template_directory_uri(); ?>/images/common/mail_sp.png" alt="" width="16" height="12">
+            </div>
+            <p class="p-footer__contact-link-text">ご相談・お問い合わせ</p>
+        </a>
     </div>
 </footer>
 <?php wp_footer(); ?>

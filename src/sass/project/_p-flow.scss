@@ -1,8 +1,12 @@
 @use "../global" as *;
 
 .p-flow {
-  padding-top: rem(100);
-  padding-bottom: rem(100);
+  padding-top: rem(50);
+  padding-bottom: rem(50);
+  @include mq(md) {
+    padding-top: rem(100);
+    padding-bottom: rem(100);
+  }
 }
 
 .p-flow__content {
@@ -12,21 +16,56 @@
 }
 
 .p-flow__mainTitle {
-  margin-top: rem(40);
+  margin-top: rem(30);
+  @include mq(md) {
+    margin-top: rem(40);
+  }
 }
 
 .p-flow__topText {
-  margin-top: rem(34);
+  margin-top: rem(27);
+  @include mq(md) {
+    margin-top: rem(34);
+  }
 }
-
+.p-flow__lists-scroll {
+  overflow-x: auto;
+  margin-top: rem(38);
+  @include mq(md) {
+    margin-top: rem(54);
+  }
+}
 .p-flow__lists {
-  margin-top: rem(54);
   display: grid;
   grid-template-columns: repeat(4, 1fr);
-  gap: rem(53);
+  gap: rem(32);
+  @include mq(md) {
+    gap: rem(53);
+  }
 }
 
 .p-flow__list {
+  width: rem(264);
+  position: relative;
+  @include mq(md) {
+    width: initial;
+  }
+}
+.p-flow__list::before {
+  content: attr(data-number);
+  position: absolute;
+  top: 0;
+  left: 0;
+  font-size: rem(20);
+  color: #fff;
+  background: #ee819d;
+  border-radius: 9999px;
+  width: rem(40);
+  height: rem(40);
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  font-weight: 700;
 }
 
 .p-flow__img {
@@ -34,6 +73,7 @@
   width: 100%;
   margin-left: auto;
   margin-right: auto;
+  margin-top: rem(35);
 }
 .p-flow__img img {
   width: 100%;
@@ -51,10 +91,13 @@
 }
 
 .p-flow__list-text {
-  font-size: rem(17);
   line-height: 1.7;
   color: #000;
   margin-top: rem(25);
+  font-size: rem(15);
+  @include mq(md) {
+    font-size: rem(17);
+  }
 }
 .p-flow__list-text span {
   color: #cc0000;

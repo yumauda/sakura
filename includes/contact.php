@@ -18,7 +18,7 @@
                     <div class="p-contact__icon">
                         <img decoding="async" loading="lazy" src="<?php echo get_template_directory_uri() ?>/images/common/contact_mail.png" alt="" width="45" height="35">
                     </div>
-                    <p class="p-contact__tel">お問い合わせフォーム</p>
+                    <p class="p-contact__tel p-contact__tel--mail">お問い合わせフォーム</p>
                     <p class="p-contact__btn-text">24時間メールにて受付</p>
                 </a>
             </div>

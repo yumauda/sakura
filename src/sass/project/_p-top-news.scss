@@ -1,32 +1,52 @@
 @use "../global" as *;
 
 .p-top-news {
-  padding-top: rem(118);
-  padding-bottom: rem(100);
   background: #fcf3ef;
+  padding-top: rem(50);
+  padding-bottom: rem(50);
+  @include mq(md) {
+    padding-top: rem(118);
+    padding-bottom: rem(100);
+  }
 }
 
 .p-top-news__content {
   display: flex;
-  gap: rem(109);
+  flex-direction: column;
+  gap: rem(30);
+  @include mq(md) {
+    flex-direction: row;
+    gap: rem(109);
+  }
 }
 
 .p-top-news__left {
-  max-width: rem(240);
   width: 100%;
+  @include mq(md) {
+    max-width: rem(240);
+  }
 }
 
 .p-top-news__title-wrapper {
 }
 
 .p-top-news__title {
+  margin-top: rem(24);
   color: #010101;
-  font-size: rem(30);
   font-weight: 700;
+  font-size: rem(22);
+  @include mq(md) {
+    margin-top: initial;
+    font-size: rem(30);
+  }
 }
 
 .p-top-news__btn {
-  margin-top: rem(40);
+  display: none;
+  @include mq(md) {
+    display: block;
+    margin-top: rem(40);
+  }
 }
 
 .p-top-news__right {
@@ -35,9 +55,13 @@
 
 .p-top-news__link {
   display: block;
-  padding-top: rem(22);
-  padding-bottom: rem(22);
   border-top: 1px solid #cccccc;
+  padding-top: rem(20);
+  padding-bottom: rem(20);
+  @include mq(md) {
+    padding-top: rem(22);
+    padding-bottom: rem(22);
+  }
 }
 .p-top-news__link:last-child {
   border-bottom: 1px solid #cccccc;
@@ -45,8 +69,13 @@
 
 .p-top-news__category {
   display: flex;
-  align-items: center;
-  gap: rem(16);
+  flex-direction: column;
+  gap: rem(12);
+  @include mq(md) {
+    gap: rem(16);
+    align-items: center;
+    flex-direction: row;
+  }
 }
 
 .p-top-news__time {
@@ -59,12 +88,27 @@
   color: #fff;
   background: #ee819d;
   padding: rem(5) rem(10);
+  display: inline-block;
+  width: fit-content;
   font-size: rem(10);
 }
 
 .p-top-news__link-title {
-  font-size: rem(17);
   color: #000;
   font-weight: 400;
-  margin-top: rem(20);
+  margin-top: rem(12);
+  font-size: rem(16);
+  @include mq(md) {
+    font-size: rem(17);
+
+    margin-top: rem(20);
+  }
+}
+.p-top-news__btn-mobile {
+  display: block;
+  margin-left: auto;
+  margin-right: auto;
+  @include mq(md) {
+    display: none;
+  }
 }

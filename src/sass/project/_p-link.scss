@@ -1,31 +1,48 @@
 @use "../global" as *;
 
 .p-link {
-  padding-top: rem(100);
-  padding-bottom: rem(100);
   background: #fcf3ef;
+  padding-top: rem(50);
+  padding-bottom: rem(50);
+  @include mq(md) {
+    padding-top: rem(100);
+    padding-bottom: rem(100);
+  }
 }
 
 .p-link__content {
   display: flex;
-  gap: rem(113);
+  flex-direction: column;
+  gap: rem(32);
+  @include mq(md) {
+    gap: rem(113);
+    flex-direction: row;
+  }
 }
 
 .p-link__title-wrapper {
 }
 
 .p-link__title {
-  margin-top: rem(16);
   color: #010101;
-  font-size: rem(30);
   font-weight: 700;
+  margin-top: rem(30);
+  font-size: rem(22);
+  @include mq(md) {
+    margin-top: rem(16);
+    font-size: rem(30);
+  }
 }
 
 .p-link__cards {
   display: grid;
-  grid-template-columns: repeat(3, 1fr);
-  gap: rem(20);
-  flex: 1;
+  grid-template-columns: repeat(1, 1fr);
+  gap: rem(15);
+  @include mq(md) {
+    gap: rem(20);
+    grid-template-columns: repeat(3, 1fr);
+    flex: 1;
+  }
 }
 
 .p-link__card {
@@ -36,8 +53,18 @@
   background: #fff;
   display: flex;
   align-items: center;
+  max-width: rem(300);
+  width: 100%;
+  margin-left: auto;
+  margin-right: auto;
   height: rem(90);
   gap: rem(15);
+  @include mq(md) {
+    margin-left: initial;
+    margin-right: initial;
+    max-width: initial;
+    
+  }
 }
 
 .p-link__img {

@@ -13,10 +13,14 @@
   width: 100vw;
 }
 .p-page-mv__img img {
-  aspect-ratio: 1500 / 150;
   object-fit: cover;
   width: 100%;
   height: auto;
+  aspect-ratio: 380 / 100;
+
+  @include mq(md) {
+    aspect-ratio: 1500 / 150;
+  }
 }
 
 .p-page-mv__title {
@@ -25,6 +29,9 @@
   transform: translateY(-50%);
   left: 0;
   color: #fff;
-  font-size: rem(30);
   font-weight: 700;
+  font-size: rem(22);
+  @include mq(md) {
+    font-size: rem(30);
+  }
 }

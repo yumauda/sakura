@@ -1,12 +1,16 @@
 @use "../global" as *;
 
 .c-sub-title {
-  font-size: rem(20);
   color: #e77492;
-  font-weight: 400;
-  position: relative;
-  padding-left: rem(30);
   font-weight: 700;
+  position: relative;
+  font-weight: 700;
+  font-size: rem(16);
+  padding-left: rem(22);
+  @include mq(md) {
+    padding-left: rem(30);
+    font-size: rem(20);
+  }
 }
 .c-sub-title--white {
   color: #fff;
@@ -18,13 +22,16 @@
   background-repeat: no-repeat;
   background-position: center;
   background-size: cover;
-  width: rem(20);
+  width: rem(16);
   height: auto;
   aspect-ratio: 20 / 20;
   object-fit: cover;
   top: 50%;
   transform: translateY(-50%);
   left: 0;
+  @include mq(md) {
+    width: rem(20);
+  }
 }
 .c-sub-title--white::before {
   position: absolute;
@@ -39,7 +46,7 @@
   object-fit: cover;
   top: 50%;
   transform: translateY(-50%);
-  left: 0; 
+  left: 0;
 }
 
 .test {

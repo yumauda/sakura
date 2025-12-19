@@ -71,6 +71,7 @@ jQuery(function ($) {
 
 document.addEventListener("DOMContentLoaded", () => {
   setUpAccordion();
+  setUpDrawerAccordion();
 });
 
 const setUpAccordion = () => {
@@ -130,6 +131,52 @@ const setUpAccordion = () => {
 
         icon.classList.toggle(IS_OPENED_CLASS);
         // アニメーション完了後にアニメーション実行中用の値を取り除く
+        openingAnim.onfinish = () => {
+          element.dataset.animStatus = "";
+        };
+      }
+    });
+  });
+};
+
+// ドロワーメニュー用のアコーディオン
+const setUpDrawerAccordion = () => {
+  const details = document.querySelectorAll(".js-drawer-details");
+  const RUNNING_VALUE = "running";
+  const IS_OPENED_CLASS = "is-opened";
+
+  details.forEach((element) => {
+    const summary = element.querySelector(".js-drawer-summary");
+    const content = element.querySelector(".js-drawer-content");
+
+    summary.addEventListener("click", (event) => {
+      event.preventDefault();
+
+      if (element.dataset.animStatus === RUNNING_VALUE) {
+        return;
+      }
+
+      if (element.open) {
+        element.classList.toggle(IS_OPENED_CLASS);
+        const closingAnim = content.animate(
+          closingAnimKeyframes(content),
+          animTiming
+        );
+        element.dataset.animStatus = RUNNING_VALUE;
+
+        closingAnim.onfinish = () => {
+          element.removeAttribute("open");
+          element.dataset.animStatus = "";
+        };
+      } else {
+        element.setAttribute("open", "true");
+        element.classList.toggle(IS_OPENED_CLASS);
+        const openingAnim = content.animate(
+          openingAnimKeyframes(content),
+          animTiming
+        );
+        element.dataset.animStatus = RUNNING_VALUE;
+
         openingAnim.onfinish = () => {
           element.dataset.animStatus = "";
         };

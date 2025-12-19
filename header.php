@@ -114,7 +114,7 @@
                 <nav class="p-header__nav">
                     <div class="p-header__nav-top">
                         <p class="p-header__nav-text">[ 受付時間 ] 平日 9:00-18:00</p>
-                        <a href="#" class="p-header__nav-btn">
+                        <a href="tel:0424693092" class="p-header__nav-btn">
                             <div class="p-header__nav-icon">
                                 <img src="<?php echo get_template_directory_uri() ?>/images/common/header_tel.png" alt="" width="41" height="41">
                             </div>
@@ -139,6 +139,166 @@
                         </li>
                     </ul>
                 </nav>
+                <div class="p-header__sp-tel">
+                    <a href="tel:0424693092" class="p-header__sp-tel-link">
+                        <div class="p-header__nav-icon">
+                            <img src="<?php echo get_template_directory_uri() ?>/images/common/header_tel.png" alt="" width="41" height="41">
+                        </div>
+                    </a>
+                </div>
+                <button class="p-header__drawer p-drawer-icon">
+                    <span class="p-drawer-icon__bars">
+                        <span class="p-drawer-icon__bar1"></span>
+                        <span class="p-drawer-icon__bar2"></span>
+                        <span class="p-drawer-icon__bar3"></span>
+                    </span>
+                </button>
+                <div class="p-header__drawer-content p-drawer-content">
+                    <div class="p-drawer-content__items">
+                        <ul class="p-drawer-content__lists">
+                            <li class="p-drawer-content__list">
+                                <a href="<?php echo esc_url(home_url('/')); ?>" class="p-drawer-content__link">ホーム</a>
+                            </li>
+                            <li class="p-drawer-content__list p-drawer-content__list--accordion">
+                                <details class="p-drawer-accordion js-drawer-details">
+                                    <summary class="p-drawer-accordion__summary js-drawer-summary">
+                                        <span>遺産相続</span>
+                                        <span class="p-drawer-accordion__icon"></span>
+                                    </summary>
+                                    <div class="p-drawer-accordion__content js-drawer-content">
+                                        <ul class="p-drawer-accordion__sub-lists">
+                                            <li class="p-drawer-accordion__sub-list">
+                                                <a href="#" class="p-drawer-accordion__sub-link">遺産相続</a>
+                                            </li>
+                                            <li class="p-drawer-accordion__sub-list">
+                                                <a href="#" class="p-drawer-accordion__sub-link">遺産整理業務</a>
+                                            </li>
+                                            <li class="p-drawer-accordion__sub-list">
+                                                <a href="#" class="p-drawer-accordion__sub-link">遺産登記費用の概算</a>
+                                            </li>
+                                            <li class="p-drawer-accordion__sub-list">
+                                                <a href="#" class="p-drawer-accordion__sub-link">相続放棄</a>
+                                            </li>
+                                        </ul>
+                                    </div>
+                                </details>
+                            </li>
+                            <li class="p-drawer-content__list p-drawer-content__list--accordion">
+                                <details class="p-drawer-accordion js-drawer-details">
+                                    <summary class="p-drawer-accordion__summary js-drawer-summary">
+                                        <span>相続の知識</span>
+                                        <span class="p-drawer-accordion__icon"></span>
+                                    </summary>
+                                    <div class="p-drawer-accordion__content js-drawer-content">
+                                        <ul class="p-drawer-accordion__sub-lists">
+                                            <li class="p-drawer-accordion__sub-list">
+                                                <a href="#" class="p-drawer-accordion__sub-link">相続の基礎知識</a>
+                                            </li>
+                                            <li class="p-drawer-accordion__sub-list">
+                                                <a href="#" class="p-drawer-accordion__sub-link">相続手続きの流れ</a>
+                                            </li>
+                                            <li class="p-drawer-accordion__sub-list">
+                                                <a href="#" class="p-drawer-accordion__sub-link">相続税について</a>
+                                            </li>
+                                        </ul>
+                                    </div>
+                                </details>
+                            </li>
+                            <li class="p-drawer-content__list p-drawer-content__list--accordion">
+                                <details class="p-drawer-accordion js-drawer-details">
+                                    <summary class="p-drawer-accordion__summary js-drawer-summary">
+                                        <span>遺言</span>
+                                        <span class="p-drawer-accordion__icon"></span>
+                                    </summary>
+                                    <div class="p-drawer-accordion__content js-drawer-content">
+                                        <ul class="p-drawer-accordion__sub-lists">
+                                            <li class="p-drawer-accordion__sub-list">
+                                                <a href="#" class="p-drawer-accordion__sub-link">遺言</a>
+                                            </li>
+                                            <li class="p-drawer-accordion__sub-list">
+                                                <a href="#" class="p-drawer-accordion__sub-link">遺言書作成</a>
+                                            </li>
+                                            <li class="p-drawer-accordion__sub-list">
+                                                <a href="#" class="p-drawer-accordion__sub-link">公正証書遺言</a>
+                                            </li>
+                                        </ul>
+                                    </div>
+                                </details>
+                            </li>
+                            <li class="p-drawer-content__list p-drawer-content__list--accordion">
+                                <details class="p-drawer-accordion js-drawer-details">
+                                    <summary class="p-drawer-accordion__summary js-drawer-summary">
+                                        <span>不動産登記</span>
+                                        <span class="p-drawer-accordion__icon"></span>
+                                    </summary>
+                                    <div class="p-drawer-accordion__content js-drawer-content">
+                                        <ul class="p-drawer-accordion__sub-lists">
+                                            <li class="p-drawer-accordion__sub-list">
+                                                <a href="#" class="p-drawer-accordion__sub-link">不動産登記</a>
+                                            </li>
+                                            <li class="p-drawer-accordion__sub-list">
+                                                <a href="#" class="p-drawer-accordion__sub-link">所有権移転登記</a>
+                                            </li>
+                                            <li class="p-drawer-accordion__sub-list">
+                                                <a href="#" class="p-drawer-accordion__sub-link">抵当権設定・抹消</a>
+                                            </li>
+                                        </ul>
+                                    </div>
+                                </details>
+                            </li>
+                            <li class="p-drawer-content__list p-drawer-content__list--accordion">
+                                <details class="p-drawer-accordion js-drawer-details">
+                                    <summary class="p-drawer-accordion__summary js-drawer-summary">
+                                        <span>成年後見</span>
+                                        <span class="p-drawer-accordion__icon"></span>
+                                    </summary>
+                                    <div class="p-drawer-accordion__content js-drawer-content">
+                                        <ul class="p-drawer-accordion__sub-lists">
+                                            <li class="p-drawer-accordion__sub-list">
+                                                <a href="#" class="p-drawer-accordion__sub-link">成年後見</a>
+                                            </li>
+                                            <li class="p-drawer-accordion__sub-list">
+                                                <a href="#" class="p-drawer-accordion__sub-link">任意後見</a>
+                                            </li>
+                                            <li class="p-drawer-accordion__sub-list">
+                                                <a href="#" class="p-drawer-accordion__sub-link">後見申立て</a>
+                                            </li>
+                                        </ul>
+                                    </div>
+                                </details>
+                            </li>
+                            <li class="p-drawer-content__list">
+                                <a href="#" class="p-drawer-content__link">その他業務</a>
+                            </li>
+                            <li class="p-drawer-content__list">
+                                <a href="#" class="p-drawer-content__link">料金表</a>
+                            </li>
+                            <li class="p-drawer-content__list">
+                                <a href="#" class="p-drawer-content__link">事務所案内</a>
+                            </li>
+                            <li class="p-drawer-content__list">
+                                <a href="#" class="p-drawer-content__link">司法書士紹介</a>
+                            </li>
+                            <li class="p-drawer-content__list">
+                                <a href="#" class="p-drawer-content__link">よくある質問</a>
+                            </li>
+                            <li class="p-drawer-content__list">
+                                <a href="#" class="p-drawer-content__link">所長ブログ</a>
+                            </li>
+                            <li class="p-drawer-content__list">
+                                <a href="#" class="p-drawer-content__link">個人情報保護方針</a>
+                            </li>
+                        </ul>
+                        <div class="p-drawer-content__footer">
+                            <a href="tel:0424693092" class="p-drawer-content__contact">
+                                <img decoding="async" loading="lazy" src="<?php echo get_template_directory_uri() ?>/images/common/drawer_tel.png" alt="" width="340" height="80">
+                            </a>
+                            <a href="<?php echo esc_url(home_url('/contact')); ?>" class="p-drawer-content__contact">
+                                <img decoding="async" loading="lazy" src="<?php echo get_template_directory_uri() ?>/images/common/drawer_mail.png" alt="" width="340" height="80">
+                            </a>
+                        </div>
+                    </div>
+                </div>
             </div>
             <ul class="p-header__page-lists">
                 <li class="p-header__page-list">

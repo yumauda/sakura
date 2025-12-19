@@ -1,4 +1,5 @@
 <?php get_header(); ?>
+<link rel="stylesheet" href="<?php echo get_template_directory_uri(); ?>/css/scroll-hint.css">
 <main>
   <div class="p-mv">
     <div class="l-inner">
@@ -67,7 +68,7 @@
               <h2 class="c-main-title">皆さまの<span>身近な存在</span>でありたい。<br>相続や遺産整理は私たちにお任せください。</h2>
             </div>
             <div class="p-about__text">
-              <p class="c-main-text">相続に関する手続きは、相続放棄や遺言書の検認、預貯金口座や不動産の名義変更、年金手続き、保険金の請求など多岐に亘りとても複雑で面倒です。<br>
+              <p class="c-main-text">相続に関する手続きは、相続放棄や遺言書の検認、預貯金口座や不動産の名義変更、年金手続き、保険金の請求など多岐に亘りとても複雑で面倒です。<br class="u-desktop">
                 そんな相続手続きを、私たち「さくら司法書士事務所」が親身になってサポートいたします。</p>
               <p class="c-main-text">さくら司法書士事務所は、2005年4月に東京都西東京市で開業して以来、地元である西東京市（田無・ひばりが丘・保谷）、小平市（花小金井）をはじめとした近隣地域の皆様から多くのご依頼をいただき、豊富な経験と実績を有しています。</p>
             </div>
@@ -86,7 +87,7 @@
               <div class="p-about__white-detail">
                 <p class="p-about__white-title">さくら司法書士事務所</p>
                 <div class="p-about__white-text">
-                  <p class="c-main-text">〒188-0011 東京都西東京市田無町5-2-17-304</p>
+                  <p class="c-main-text">〒188-0011 <br class="u-mobile">東京都西東京市田無町5-2-17-304</p>
                 </div>
               </div>
               <div class="p-about__mapBtn-wrapper">
@@ -181,7 +182,7 @@
         <div class="p-service__textArea">
           <p class="c-sub-title">遺産相続</p>
           <div class="p-service__title">
-            <h2 class="c-main-title">遺産相続や遺産整理に関するご相談を<br><span>初回無料</span>でお受けしております。</h2>
+            <h2 class="c-main-title">遺産相続や遺産整理に関するご相談を<br class="u-desktop"><span>初回無料</span>でお受けしております。</h2>
           </div>
 
           <div class="p-service__text">
@@ -263,7 +264,7 @@
       <div class="p-top-news__content">
         <div class="p-top-news__left">
           <div class="p-top-news__title-wrapper">
-            <p class="c-sub-title">不動産登記</p>
+            <p class="c-sub-title">所長ブログ</p>
             <h2 class="p-top-news__title">更新内容</h2>
           </div>
           <div class="p-top-news__btn">
@@ -312,6 +313,20 @@
             <p class="p-top-news__link-title">【相続登記の義務化】相続登記をしないことのデメリット（相続登記をしないとどうなる？）</p>
           </a>
         </div>
+        <div class="p-top-news__btn p-top-news__btn-mobile">
+          <a href="#" class="c-btn">
+            <p class="c-btn__text">ブログ一覧</p>
+            <div class="c-btn__arrow">
+              <svg
+                xmlns="http://www.w3.org/2000/svg"
+                xmlns:xlink="http://www.w3.org/1999/xlink"
+                width="12" height="12">
+                <path fill-rule="evenodd"
+                  d="M5.683,-0.003 L4.684,0.948 L9.290,5.325 L-0.001,5.325 L-0.001,6.669 L9.290,6.669 L4.684,11.047 L5.683,11.997 L11.997,5.996 L5.683,-0.003 Z" />
+              </svg>
+            </div>
+          </a>
+        </div>
       </div>
     </div>
   </section>
@@ -328,36 +343,39 @@
           <p class="c-main-text">お問い合わせをいただいてから、現状のヒアリング、ご提案、お見積り、ご契約、そして実施までの一連の流れは以下の通りです。<br>
             お客様のご要望を丁寧にお伺いし、最適なプランをご提案することで、安心してご相談いただけるようサポートいたします。</p>
         </div>
-        <ul class="p-flow__lists">
-          <li class="p-flow__list">
-            <figure class="p-flow__img">
-              <img decoding="async" loading="lazy" src="<?php echo get_template_directory_uri() ?>/images/common/flow_1.png" alt="お問い合わせ" width="90" height="86">
-            </figure>
-            <p class="p-flow__list-title">お問い合わせ</p>
-            <p class="p-flow__list-text">まずはお電話かメールフォームにてお問い合わせください。その際に簡単なご相談内容をご記入いただくとスムーズです。</p>
-          </li>
-          <li class="p-flow__list">
-            <figure class="p-flow__img">
-              <img decoding="async" loading="lazy" src="<?php echo get_template_directory_uri() ?>/images/common/flow_2.png" alt="初回ご相談無料" width="90" height="86">
-            </figure>
-            <p class="p-flow__list-title">初回ご相談無料</p>
-            <p class="p-flow__list-text">メール相談（1回）、電話相談（1回20分まで）、面談相談（30分まで）のいずれかを<span>初回無料</span>にて対応させていただきます。</p>
-          </li>
-          <li class="p-flow__list">
-            <figure class="p-flow__img">
-              <img decoding="async" loading="lazy" src="<?php echo get_template_directory_uri() ?>/images/common/flow_3.png" alt="お問い合わせ" width="90" height="86">
-            </figure>
-            <p class="p-flow__list-title">解決案の提案</p>
-            <p class="p-flow__list-text">ご相談いただいた内容を踏まえて最善のご提案とお見積りを提示させていただきます。<span>お見積りは無料</span>です。</p>
-          </li>
-          <li class="p-flow__list">
-            <figure class="p-flow__img">
-              <img decoding="async" loading="lazy" src="<?php echo get_template_directory_uri() ?>/images/common/flow_4.png" alt="お問い合わせ" width="90" height="86">
-            </figure>
-            <p class="p-flow__list-title">契約とサポート開始</p>
-            <p class="p-flow__list-text">サポート内容にご納得いただけましたら正式な契約を行った上で、サポートを開始させて頂きます。</p>
-          </li>
-        </ul>
+        <div class="p-flow__lists-scroll">
+
+          <ul class="p-flow__lists">
+            <li class="p-flow__list" data-number="1">
+              <figure class="p-flow__img">
+                <img decoding="async" loading="lazy" src="<?php echo get_template_directory_uri() ?>/images/common/flow_1.png" alt="お問い合わせ" width="90" height="86">
+              </figure>
+              <p class="p-flow__list-title">お問い合わせ</p>
+              <p class="p-flow__list-text">まずはお電話かメールフォームにてお問い合わせください。その際に簡単なご相談内容をご記入いただくとスムーズです。</p>
+            </li>
+            <li class="p-flow__list" data-number="2">
+              <figure class="p-flow__img">
+                <img decoding="async" loading="lazy" src="<?php echo get_template_directory_uri() ?>/images/common/flow_2.png" alt="初回ご相談無料" width="90" height="86">
+              </figure>
+              <p class="p-flow__list-title">初回ご相談無料</p>
+              <p class="p-flow__list-text">メール相談（1回）、電話相談（1回20分まで）、面談相談（30分まで）のいずれかを<span>初回無料</span>にて対応させていただきます。</p>
+            </li>
+            <li class="p-flow__list" data-number="3">
+              <figure class="p-flow__img">
+                <img decoding="async" loading="lazy" src="<?php echo get_template_directory_uri() ?>/images/common/flow_3.png" alt="お問い合わせ" width="90" height="86">
+              </figure>
+              <p class="p-flow__list-title">解決案の提案</p>
+              <p class="p-flow__list-text">ご相談いただいた内容を踏まえて最善のご提案とお見積りを提示させていただきます。<span>お見積りは無料</span>です。</p>
+            </li>
+            <li class="p-flow__list" data-number="4">
+              <figure class="p-flow__img">
+                <img decoding="async" loading="lazy" src="<?php echo get_template_directory_uri() ?>/images/common/flow_4.png" alt="お問い合わせ" width="90" height="86">
+              </figure>
+              <p class="p-flow__list-title">契約とサポート開始</p>
+              <p class="p-flow__list-text">サポート内容にご納得いただけましたら正式な契約を行った上で、サポートを開始させて頂きます。</p>
+            </li>
+          </ul>
+        </div>
       </div>
     </div>
   </section>
@@ -403,4 +421,17 @@
   <?php get_template_part('includes/contact'); ?>
 
 </main>
+<script src="<?php echo get_template_directory_uri(); ?>/js/scroll-hint.min.js"></script>
+<script>
+  if (window.innerWidth <= 768) {
+    window.addEventListener('DOMContentLoaded', function() {
+      new ScrollHint('.p-flow__lists-scroll', {
+        suggestiveShadow: true,
+        i18n: {
+          scrollable: "スクロールできます"
+        }
+      });
+    });
+  }
+</script>
 <?php get_footer() ?>

@@ -1,10 +1,14 @@
 @use "../global" as *;
 
 .p-contact {
-  padding-top: rem(80);
-  padding-bottom: rem(80);
   background: #ee819d;
   position: relative;
+  padding-top: rem(40);
+  padding-bottom: rem(40);
+  @include mq(md) {
+    padding-top: rem(80);
+    padding-bottom: rem(80);
+  }
 }
 .p-contact::before {
   position: absolute;
@@ -13,54 +17,85 @@
   background-repeat: no-repeat;
   background-position: center;
   background-size: cover;
-  width: rem(560);
   height: auto;
   aspect-ratio: 560 / 340;
   object-fit: cover;
   top: 0;
   right: 0;
   z-index: 1;
+  width: rem(260);
+  @include mq(md) {
+    width: rem(560);
+  }
 }
 
 .p-contact__content {
   display: flex;
-  gap: rem(80);
   position: relative;
+  flex-direction: column;
   z-index: 2;
+  gap: rem(24);
+  @include mq(md) {
+    flex-direction: row;
+    gap: rem(80);
+  }
 }
 
 .p-contact__left {
 }
 
 .p-contact__title {
-  font-size: rem(30);
   color: #fff;
   font-weight: 700;
-  margin-top: rem(40);
+  margin-top: rem(30);
+  font-size: rem(22);
+  @include mq(md) {
+    font-size: rem(30);
+    margin-top: rem(40);
+  }
 }
 
 .p-contact__text {
-  margin-top: rem(40);
   color: #fff;
-  font-size: rem(17);
   line-height: 1.7;
   font-weight: 400;
+  margin-top: rem(30);
+  font-size: rem(16);
+  @include mq(md) {
+    margin-top: rem(40);
+    font-size: rem(17);
+  }
 }
 
 .p-contact__right {
   display: grid;
-  grid-template-columns: repeat(2, 1fr);
-  gap: rem(30);
-  max-width: rem(790);
+  grid-template-columns: repeat(1, 1fr);
+  gap: rem(20);
   width: 100%;
+  @include mq(md) {
+    max-width: rem(790);
+    grid-template-columns: repeat(2, 1fr);
+    gap: rem(30);
+  }
 }
 
 .p-contact__btn {
   background: #fff;
   border-radius: rem(10);
-  padding-top: rem(40);
-  padding-bottom: rem(40);
   filter: drop-shadow(0 0 10px rgba(0, 0, 0, 0.1));
+  padding-top: rem(20);
+  padding-bottom: rem(20);
+  height: rem(158);
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  flex-direction: column;
+  @include mq(md) {
+    padding-top: rem(40);
+    height: initial;
+    padding-bottom: rem(40);
+    display: block;
+  }
 }
 
 .p-contact__icon {
@@ -79,16 +114,29 @@
   font-size: rem(28);
   color: #000;
   font-weight: 700;
-  margin-top: rem(25);
   text-align: center;
+  margin-top: rem(10);
+  @include mq(md) {
+    margin-top: rem(25);
+  }
+}
+
+.p-contact__tel--mail {
+  font-size: rem(20);
+  @include mq(md) {
+    font-size: rem(28);
+  }
 }
 
 .p-contact__btn-text {
   font-size: rem(14);
   color: #000;
   font-weight: 400;
-  margin-top: rem(20);
   text-align: center;
+  margin-top: rem(10);
+  @include mq(md) {
+    margin-top: rem(20);
+  }
 }
 
 // お問い合わせページの注意事項セクション

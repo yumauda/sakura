@@ -25,12 +25,15 @@
   }
 }
 .c-page-title--h4 {
-  font-size: rem(22);
   font-weight: 700;
   color: #000;
   padding-bottom: rem(8);
   border-bottom: 1px solid #cccccc;
   position: relative;
+  font-size: rem(18);
+  @include mq(md) {
+    font-size: rem(22);
+  }
 }
 .c-page-title--h4::before {
   position: absolute;

@@ -1,40 +1,61 @@
 @use "../global" as *;
 
 .p-about {
-  padding-top: rem(100);
-  padding-bottom: rem(100);
   background: #fcf3ef;
+  padding-top: rem(50);
+  padding-bottom: rem(50);
+  @include mq(md) {
+    padding-top: rem(100);
+    padding-bottom: rem(100);
+  }
 }
 
 .p-about__content {
 }
 
 .p-about__left {
-  max-width: rem(600);
   width: 100%;
+  @include mq(md) {
+    max-width: rem(600);
+  }
 }
 
 .p-about__title {
-  margin-top: rem(40);
+  margin-top: rem(30);
+  @include mq(md) {
+    margin-top: rem(40);
+  }
 }
 
 .p-about__text {
-  margin-top: rem(32);
+  margin-top: rem(27);
+  @include mq(md) {
+    margin-top: rem(32);
+  }
 }
 
 .p-about__row {
-  display: flex;
-  gap: rem(50);
+  @include mq(md) {
+    display: flex;
+    gap: rem(50);
+  }
 }
 .p-about__block {
-  margin-top: rem(80);
-  display: flex;
-  gap: rem(50);
+  margin-top: rem(48);
+  @include mq(md) {
+    display: flex;
+    gap: rem(50);
+    margin-top: rem(80);
+  }
 }
 .p-about__people {
-  max-width: rem(630);
   width: 100%;
-  margin-right: rem(-93);
+  margin-top: rem(28);
+  @include mq(md) {
+    margin-top: initial;
+    margin-right: rem(-93);
+    max-width: rem(630);
+  }
 }
 .p-about__people img {
   width: 100%;
@@ -49,13 +70,20 @@
 }
 
 .p-about__white {
-  margin-top: rem(37);
   border: 1px solid #cccccc;
-  padding: rem(28) rem(23);
   background: #fff;
+  padding: rem(18) rem(20);
   display: flex;
-  align-items: center;
-  gap: rem(35);
+  flex-direction: column;
+  gap: rem(20);
+  margin-top: rem(32);
+  @include mq(md) {
+    padding: rem(28) rem(23);
+    flex-direction: row;
+    align-items: center;
+    margin-top: rem(37);
+    gap: rem(35);
+  }
 }
 
 .p-about__white-detail {
@@ -68,7 +96,10 @@
 }
 
 .p-about__white-text {
-  margin-top: rem(19);
+  margin-top: rem(15);
+  @include mq(md) {
+    margin-top: rem(19);
+  }
 }
 
 .p-about__mapBtn-wrapper {
@@ -88,6 +119,12 @@
   font-size: rem(15);
   color: #ee819d;
   transition: 0.3s ease-in-out;
+  margin-left: auto;
+  margin-right: auto;
+  @include mq(md) {
+    margin-left: initial;
+    margin-right: initial;
+  }
 }
 
 .p-about__mapBtn:hover {
@@ -97,8 +134,12 @@
 }
 
 .p-about__map {
-  flex: 1;
   width: 100%;
+  margin-top: rem(30);
+  @include mq(md) {
+    margin-top: initial;
+    flex: 1;
+  }
 }
 .p-about__map img {
   width: 100%;
@@ -107,8 +148,21 @@
   object-fit: cover;
 }
 .p-about__btn-wrapper {
-  margin-top: rem(60);
   display: flex;
   justify-content: center;
-  gap: rem(31);
+  flex-direction: column;
+  gap: rem(10);
+  margin-top: rem(40);
+  @include mq(md) {
+    justify-content: initial;
+    flex-direction: row;
+    gap: rem(31);
+    margin-top: rem(60);
+  }
+}
+.p-about__btn-wrapper .c-btn {
+  margin-inline: auto;
+  @include mq(md) {
+    margin-inline: initial;
+  }
 }
