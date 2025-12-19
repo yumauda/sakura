@@ -1,23 +1,37 @@
 @use "../global" as *;
 
 .p-qa__block {
-  margin-top: rem(40);
+  margin-top: rem(30);
+  @include mq(md) {
+    margin-top: rem(40);
+  }
 }
 .p-qa__box {
   border: 1px solid #ccc;
-  padding-left: rem(47);
-  padding-right: rem(23);
+  padding-right: rem(16);
+  padding-left: rem(15);
+  @include mq(md) {
+    padding-right: rem(23);
+    padding-left: rem(47);
+  }
 }
 .p-qa__content + .p-qa__content {
-  margin-top: rem(20);
+  margin-top: rem(10);
+  @include mq(md) {
+    margin-top: rem(20);
+  }
 }
 .p-qa__summary {
   color: #fff;
   cursor: pointer;
   position: relative;
-  padding-top: rem(20);
-  padding-bottom: rem(20);
   list-style: none;
+  padding-top: rem(16);
+  padding-bottom: rem(16);
+  @include mq(md) {
+    padding-top: rem(20);
+    padding-bottom: rem(20);
+  }
 }
 .p-qa__summary::before,
 .p-qa__summary::after {
@@ -30,21 +44,15 @@
 }
 
 .p-qa__summary::before {
-  width: rem(16);
+  width: rem(14);
   height: rem(2);
   transform: translate(50%, -50%);
-  @include mq(md) {
-    width: rem(14);
-  }
 }
 
 .p-qa__summary::after {
   width: rem(2);
-  height: rem(16);
+  height: rem(14);
   transform: translate(50%, -50%);
-  @include mq(md) {
-    height: rem(14);
-  }
 }
 
 .p-qa__summary.is-opened::after {
@@ -52,11 +60,15 @@
   opacity: 0;
 }
 .p-qa__ttl {
-  font-size: rem(10);
+  font-size: rem(16);
   font-weight: 700;
   position: relative;
+  margin-left: rem(24);
+  padding-right: rem(20);
   color: #000;
   @include mq(md) {
+    padding-right: initial;
+    margin-left: initial;
     font-size: rem(18);
     line-height: 1.8;
   }
@@ -64,12 +76,16 @@
 .p-qa__ttl::before {
   content: "Q.";
   position: absolute;
-  font-size: rem(18);
   font-weight: 700;
   color: #e77492;
   left: rem(-24);
-  top: 50%;
-  transform: translateY(-50%);
+  top: rem(-2);
+  font-size: rem(16);
+  @include mq(md) {
+    top: 50%;
+    font-size: rem(18);
+    transform: translateY(-50%);
+  }
 }
 .p-qa__ttl span {
   font-weight: 500;
@@ -84,17 +100,27 @@
 }
 
 .p-qa__wrap {
-  padding-top: rem(18);
-  padding-bottom: rem(18);
+  padding-top: rem(10);
+  padding-bottom: rem(10);
+  @include mq(md) {
+    padding-top: rem(18);
+    padding-bottom: rem(18);
+  }
 }
 .p-qa__txt {
-  font-size: rem(17);
   line-height: 1.8;
   color: #000;
   position: relative;
+  font-size: rem(16);
+  @include mq(md) {
+    font-size: rem(17);
+  }
 }
 .p-qa__txt + .p-qa__txt {
-  margin-top: rem(28);
+  margin-top: rem(22);
+  @include mq(md) {
+    margin-top: rem(28);
+  }
 }
 .p-qa__link {
   color: #3366cc;
