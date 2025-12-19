@@ -20,14 +20,18 @@
 }
 
 .p-price__block + .p-price__block {
-  margin-top: rem(80);
+  margin-top: rem(35);
+  @include mq(md) {
+    margin-top: rem(80);
+  }
 }
 
 .p-price__table {
   width: 100%;
   border-collapse: collapse;
+  border-spacing: 1px;
   margin-top: rem(30);
-  border: 1px solid #ee819d;
+  border: 1px solid #ccc;
   @include mq(md) {
     margin-top: rem(40);
   }
@@ -39,10 +43,13 @@
 
 .p-price__table th {
   padding: rem(13);
-  font-size: rem(16);
   font-weight: 700;
   color: #fff;
   border: 1px solid #ccc;
+  font-size: rem(14);
+  @include mq(md) {
+    font-size: rem(16);
+  }
 }
 
 .p-price__table th:first-child,
@@ -61,15 +68,18 @@
 }
 
 .p-price__table td {
-  padding: rem(13);
-  font-size: rem(16);
+  padding: rem(10);
   color: #000;
   vertical-align: middle;
   background: #fdedf1;
   font-weight: 700;
   line-height: 1.8;
-  border-bottom: 1px solid #ccc;
+  /* border-bottom: 1px solid #ccc; */
+  border: 1px solid #ccc;
+  font-size: rem(14);
   @include mq(md) {
+    font-size: rem(16);
+    padding: rem(13);
     border: 1px solid #ccc;
   }
 }
@@ -123,13 +133,17 @@
 .p-price__block-yellow {
   display: flex;
   gap: rem(20);
-  padding-top: rem(24);
-  padding-bottom: rem(21);
-  padding-right: rem(24);
-  padding-left: rem(26);
   background: #fff8eb;
   border: 1px solid #f59b5f;
-  margin-top: rem(40);
+  padding: rem(20);
+  margin-top: rem(30);
+  @include mq(md) {
+    padding-top: rem(24);
+    padding-bottom: rem(21);
+    padding-right: rem(24);
+    padding-left: rem(26);
+    margin-top: rem(40);
+  }
 }
 
 .p-price__block-yellowIcon {
@@ -147,15 +161,21 @@
 }
 
 .p-price__block-yellowText {
-  font-size: rem(16);
   line-height: 1.8;
   color: #000;
+  font-size: rem(15);
+  @include mq(md) {
+    font-size: rem(16);
+  }
 }
 .p-price__link {
   color: #3366cc;
 }
 .p-price__text-wrapper {
-  margin-top: rem(40);
+  margin-top: rem(30);
+  @include mq(md) {
+    margin-top: rem(40);
+  }
 }
 .p-price__text {
   font-size: rem(16);
@@ -163,13 +183,19 @@
   color: #000;
 }
 .p-price__map {
-  margin-top: rem(37);
+  margin-top: rem(30);
+  @include mq(md) {
+    margin-top: rem(37);
+  }
 }
 .p-price__map iframe {
-  aspect-ratio: 830 / 450;
   object-fit: cover;
   width: 100%;
   height: auto;
+  aspect-ratio: 340 / 450;
+  @include mq(md) {
+    aspect-ratio: 830 / 450;
+  }
 }
 .p-price__btn-wrapper {
   margin-top: rem(40);
@@ -299,7 +325,7 @@
   position: relative;
   font-size: rem(16);
   padding-left: rem(24);
-  @include mq(md){
+  @include mq(md) {
     padding-left: rem(18);
     font-size: rem(17);
   }
@@ -314,4 +340,8 @@
   top: rem(12);
   left: rem(8);
   border-radius: 9999px;
+}
+.p-price__table--separate th,
+.p-price__table--separate td {
+  width: 50%;
 }

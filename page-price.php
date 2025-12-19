@@ -119,7 +119,7 @@
             </div>
             <div class="p-price__block">
               <h4 class="c-page-title--h4">2. 遺産分割協議書の作成</h4>
-              <table class="p-price__table p-price__table--half">
+              <table class="p-price__table p-price__table--separate">
                 <thead>
                   <tr>
                     <th>内容</th>
