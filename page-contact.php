@@ -64,7 +64,7 @@
               </ol>
 
               <div class="p-contact__tel-block">
-                <p class="p-contact__tel-text">初回電話の対応時間は予約制です</p>
+                <p class="p-contact__tel-text">初回無料の面談相談のご予約は</p>
                 <p class="p-contact__tel-number">
                   <span class="p-contact__tel-icon">
                     <svg

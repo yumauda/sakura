@@ -5,12 +5,15 @@
 
 .p-single__header {
   margin-top: rem(20);
-  padding-bottom: rem(26);
   border-bottom: 1px solid #ccc;
+  padding-bottom: rem(15);
+  @include mq(md) {
+    padding-bottom: rem(26);
+  }
 }
 
 .p-single__title {
-  font-size: rem(22);
+  font-size: rem(18);
   font-weight: 700;
   color: #000;
   line-height: 1.6;
@@ -22,13 +25,25 @@
 
 .p-single__meta {
   display: flex;
-  align-items: center;
-  gap: rem(16);
+  flex-direction: column;
+  padding-top: rem(20);
+  border-top: 1px solid #ccc;
+  gap: rem(12);
+  @include mq(md) {
+    gap: rem(16);
+    padding-top: initial;
+    border-top: initial;
+    flex-direction: row;
+    align-items: center;
+  }
 }
 
 .p-single__time {
-  font-size: rem(17);
   color: #000;
+  font-size: rem(16);
+  @include mq(md) {
+    font-size: rem(17);
+  }
 }
 
 .p-single__category {
@@ -37,16 +52,21 @@
   padding: rem(5) rem(10);
   font-size: rem(10);
   line-height: 1;
+  width: fit-content;
 }
 
 // ブロックエディタのコンテンツスタイル
 .p-single__content {
   // 段落
   p {
-    font-size: rem(17);
     line-height: 1.8;
     color: #000;
-    margin-top: rem(37);
+    margin-top: rem(27);
+    font-size: rem(16);
+    @include mq(md) {
+      font-size: rem(17);
+      margin-top: rem(37);
+    }
 
     &:first-child {
       margin-top: 0;
@@ -55,11 +75,16 @@
 
   // 見出し
   h2 {
-    font-size: rem(20);
     font-weight: 700;
     color: #000;
-    margin-top: rem(40);
-    margin-bottom: rem(35);
+    margin-top: rem(30);
+    margin-bottom: rem(27);
+    font-size: rem(18);
+    @include mq(md) {
+      font-size: rem(20);
+      margin-top: rem(40);
+      margin-bottom: rem(35);
+    }
   }
 
   h3 {
@@ -71,21 +96,28 @@
   }
 
   h4 {
-    font-size: rem(17);
     font-weight: 700;
     color: #000;
     margin-top: rem(32);
     margin-bottom: rem(12);
+    font-size: rem(16);
+    @include mq(md) {
+      font-size: rem(17);
+    }
   }
 
   // リスト
   ul,
   ol {
-    margin-top: rem(35);
     padding-left: rem(24);
-    font-size: rem(17);
     line-height: 1.8;
+    margin-top: rem(27);
     color: #000;
+    font-size: rem(16);
+    @include mq(md) {
+      font-size: rem(17);
+      margin-top: rem(35);
+    }
 
     li {
       margin-top: rem(8);
@@ -100,17 +132,24 @@
   // テーブル
   table {
     width: 100%;
-    margin-top: rem(30);
+    margin-top: rem(25);
     border-collapse: collapse;
     border: 1px solid #ccc;
+    @include mq(md) {
+      margin-top: rem(30);
+    }
 
     th,
     td {
       padding: rem(12) rem(15);
       border: 1px solid #ccc;
-      font-size: rem(17);
       line-height: 1.8;
       text-align: left;
+      font-size: rem(15);
+      @include mq(md){
+        font-size: rem(17);
+        
+      }
     }
 
     th {
@@ -138,12 +177,15 @@
 
   // 画像
   img {
-    margin-top: rem(40);
     max-width: 100%;
     width: 100%;
     height: auto;
     object-fit: cover;
     object-position: center center;
+    margin-top: rem(29);
+    @include mq(md) {
+      margin-top: rem(40);
+    }
   }
 
   // 引用

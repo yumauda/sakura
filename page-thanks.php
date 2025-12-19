@@ -51,12 +51,26 @@
         <section class="p-price">
           <div class="p-price__content">
             <div class="p-contact__info">
-             <p class="c-main-text">お問い合わせありがとうございました。</p>
-             <p class="c-main-text">内容を確認の上、担当者よりご連絡を差し上げます。</p>
-             <p class="c-main-text">今しばらくお待ちください。</p>
+              <p class="c-main-text">この度は弊所にお問い合わせいただき、誠にありがとうございます。<br>
+                送信内容を確認後、担当者より順次ご連絡させていただきます。<br>
+                今しばらくお待ちくださいますようお願いいたします。</p>
+            </div>
+            <div class="p-thanks__btn-wrapper">
+              <a href="<?php echo esc_url(home_url('/')); ?>" class="c-btn">
+                <p class="c-btn__text">トップページ</p>
+                <div class="c-btn__arrow">
+                  <svg
+                    xmlns="http://www.w3.org/2000/svg"
+                    xmlns:xlink="http://www.w3.org/1999/xlink"
+                    width="12" height="12">
+                    <path fill-rule="evenodd"
+                      d="M5.683,-0.003 L4.684,0.948 L9.290,5.325 L-0.001,5.325 L-0.001,6.669 L9.290,6.669 L4.684,11.047 L5.683,11.997 L11.997,5.996 L5.683,-0.003 Z" />
+                  </svg>
+                </div>
+              </a>
             </div>
           </div>
-       
+
         </section>
 
         <!-- サイドバー -->

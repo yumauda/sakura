@@ -141,8 +141,12 @@
 
 // お問い合わせページの注意事項セクション
 .p-contact__info {
-  margin-top: rem(40);
-  padding-left: rem(16);
+  margin-top: rem(30);
+  padding-left: rem(8);
+  @include mq(md) {
+    padding-left: rem(16);
+    margin-top: rem(40);
+  }
 }
 
 .p-contact__list {
@@ -182,11 +186,17 @@
 }
 
 .p-contact__tel-block {
-  margin-top: rem(80);
   display: flex;
   align-items: center;
   justify-content: center;
-  gap: rem(32);
+  margin-top: rem(40);
+  gap: rem(2);
+  flex-direction: column;
+  @include mq(md) {
+    flex-direction: row;
+    margin-top: rem(80);
+    gap: rem(32);
+  }
 }
 
 .p-contact__tel-text {
@@ -199,12 +209,19 @@
   display: flex;
   align-items: center;
   justify-content: center;
-  gap: rem(12);
+  gap: rem(5);
+  @include mq(md) {
+    gap: rem(12);
+  }
 }
 
 .p-contact__tel-icon {
-  width: rem(28);
-  height: rem(28);
+  width: rem(24);
+  height: rem(24);
+  @include mq(md) {
+    width: rem(28);
+    height: rem(28);
+  }
 }
 
 .p-contact__tel-link {

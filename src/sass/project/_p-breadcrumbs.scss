@@ -13,6 +13,7 @@
 .p-breadcrumbs__lists {
   display: flex;
   align-items: center;
+  flex-wrap: wrap;
   gap: rem(10);
 }
 
