@@ -4,7 +4,10 @@
     <div class="l-inner">
       <div class="p-page-mv__content">
         <figure class="p-page-mv__img">
-          <img decoding="async" loading="lazy" src="<?php echo get_template_directory_uri() ?>/images/common/page_mv_bg.webp" alt="" width="1500" height="150">
+          <picture>
+            <source srcset="<?php echo get_template_directory_uri(); ?>/images/common/page_mv_bg.webp" media="(min-width: 768px)" width="1500" height="150" />
+            <img src="<?php echo get_template_directory_uri() ?>/images/common/page_mv_bg_sp.webp" alt="" width="380" height="100">
+          </picture>
         </figure>
         <h2 class="p-page-mv__title">遺産整理業務の流れ</h2>
 
