@@ -4,9 +4,12 @@
     <div class="l-inner">
       <div class="p-page-mv__content">
         <figure class="p-page-mv__img">
-          <img decoding="async" loading="lazy" src="<?php echo get_template_directory_uri() ?>/images/common/page_mv_bg.webp" alt="" width="1500" height="150">
+          <picture>
+            <source srcset="<?php echo get_template_directory_uri() ?>/images/common/page_mv_bg.webp" media="(min-width: 768px)" width="1500" height="150" />
+            <img src="<?php echo get_template_directory_uri() ?>/images/common/page_mv_bg_sp.webp" alt="" width="380" height="100">
+          </picture>
         </figure>
-        <h2 class="p-page-mv__title">所長ブログ</h2>
+        <h2 class="p-page-mv__title"><?php single_cat_title(); ?></h2>
 
       </div>
     </div>
@@ -16,7 +19,7 @@
       <div class="p-breadcrumbs__content">
         <ul class="p-breadcrumbs__lists">
           <li class="p-breadcrumbs__list">
-            <a href="#" class="p-breadcrumbs__link">
+            <a href="<?php echo esc_url(home_url('/')); ?>" class="p-breadcrumbs__link">
               ホーム
             </a>
           </li>
@@ -32,11 +35,24 @@
             </div>
           </li>
           <li class="p-breadcrumbs__list">
-            <a href="#" class="p-breadcrumbs__link">
+            <a href="<?php echo esc_url(home_url('/blog')); ?>" class="p-breadcrumbs__link">
               所長ブログ
             </a>
           </li>
-
+          <li class="p-breadcrumbs__list">
+            <div class="p-breadcrumbs__icon">
+              <svg
+                xmlns="http://www.w3.org/2000/svg"
+                viewBox="0 0 6 10"
+                xmlns:xlink="http://www.w3.org/1999/xlink">
+                <path fill-rule="evenodd" fill="rgb(0, 0, 0)"
+                  d="M4.873,4.999 L0.241,9.563 L0.683,9.999 L5.758,4.999 L0.683,-0.001 L0.241,0.435 L4.873,4.999 Z" />
+              </svg>
+            </div>
+          </li>
+          <li class="p-breadcrumbs__list">
+            <?php single_cat_title(); ?>
+          </li>
         </ul>
       </div>
     </div>
@@ -73,13 +89,15 @@
                   <div class="p-news__content">
                     <p class="p-news__title">
                       <?php the_title(); ?>
-                      <?php if ($post_count === 1) : ?>
+                      <?php if ($post_count === 1 && !is_paged()) : ?>
                         <span class="p-news__new">NEW</span>
                       <?php endif; ?>
                     </p>
                   </div>
                 </a>
               <?php endwhile; ?>
+            <?php else : ?>
+              <p>この カテゴリーには投稿がありません。</p>
             <?php endif; ?>
 
           </div>

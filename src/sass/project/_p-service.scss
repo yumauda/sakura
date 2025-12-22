@@ -1,7 +1,6 @@
 @use "../global" as *;
 
 .p-service {
-  background: #fcf3ef;
   padding-bottom: rem(51);
   @include mq(md) {
     padding-bottom: rem(83);

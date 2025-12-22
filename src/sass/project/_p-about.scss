@@ -154,7 +154,6 @@
   gap: rem(10);
   margin-top: rem(40);
   @include mq(md) {
-    justify-content: initial;
     flex-direction: row;
     gap: rem(31);
     margin-top: rem(60);

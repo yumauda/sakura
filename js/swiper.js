@@ -58,6 +58,10 @@ const sliderSidebar = new Swiper(".slider-sidebar", {
   centeredSlides: true,
   loop: true,
   initialSlide: 0,
+  pagination: {
+    el: ".swiper-pagination",
+    clickable: true,
+  },
   breakpoints: {
     768: {
       effect: "slide",

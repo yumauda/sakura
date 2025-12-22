@@ -399,3 +399,35 @@ function webp_is_displayable($result, $path)
 	return $result;
 }
 add_filter('file_is_displayable_image', 'webp_is_displayable', 10, 2);
+
+/**
+ * カスタムカテゴリーWalker - サイドバー用
+ */
+class Custom_Category_Walker extends Walker_Category {
+	public function start_lvl(&$output, $depth = 0, $args = array()) {
+		$output .= '<ul class="children">';
+	}
+
+	public function end_lvl(&$output, $depth = 0, $args = array()) {
+		$output .= '</ul>';
+	}
+
+	public function start_el(&$output, $category, $depth = 0, $args = array(), $id = 0) {
+		$cat_name = apply_filters('list_cats', $category->name, $category);
+		$link = '<a class="p-sidebar__category-link" href="' . esc_url(get_term_link($category)) . '">';
+
+		if ($args['show_count']) {
+			$link .= $cat_name . ' (' . $category->count . ')';
+		} else {
+			$link .= $cat_name;
+		}
+
+		$link .= '</a>';
+
+		$output .= '<li class="p-sidebar__category-item">' . $link;
+	}
+
+	public function end_el(&$output, $page, $depth = 0, $args = array()) {
+		$output .= "</li>\n";
+	}
+}

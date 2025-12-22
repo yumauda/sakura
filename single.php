@@ -142,56 +142,35 @@
           <div class="p-sidebar__menu">
             <h3 class="p-sidebar__title">カテゴリー</h3>
             <ul class="p-sidebar__category-list">
-              <li class="p-sidebar__category-item"><a class="p-sidebar__category-link" href="#">不動産登記 (93)</a></li>
-              <li class="p-sidebar__category-item"><a class="p-sidebar__category-link" href="#">相続、遺産分割 (211)</a></li>
-              <li class="p-sidebar__category-item"><a class="p-sidebar__category-link" href="#">遺言（遺言書）(10)</a></li>
-              <li class="p-sidebar__category-item"><a class="p-sidebar__category-link" href="#">成年後見 (122)</a></li>
-              <li class="p-sidebar__category-item">
-                <a class="p-sidebar__category-link" href="#">債務整理・借金問題 (247)</a>
-                <ul class="children">
-                  <li class="p-sidebar__category-item"><a class="p-sidebar__category-link" href="#">債務整理全般 (23)</a></li>
-                  <li class="p-sidebar__category-item"><a class="p-sidebar__category-link" href="#">過払金返還請求 (162)</a></li>
-                  <li class="p-sidebar__category-item"><a class="p-sidebar__category-link" href="#">任意整理 (14)</a></li>
-                  <li class="p-sidebar__category-item"><a class="p-sidebar__category-link" href="#">個人民事再生 (34)</a></li>
-                  <li class="p-sidebar__category-item"><a class="p-sidebar__category-link" href="#">自己破産・免責 (21)</a></li>
-                  <li class="p-sidebar__category-item"><a class="p-sidebar__category-link" href="#">特定調停 (10)</a></li>
-                </ul>
-              </li>
-              <li class="p-sidebar__category-item">
-                <a class="p-sidebar__category-link" href="#">悪質商法、契約トラブル (71)</a>
-                <ul class="children">
-                  <li class="p-sidebar__category-item"><a class="p-sidebar__category-link" href="#">賃貸・不動産トラブル (47)</a></li>
-                  <li class="p-sidebar__category-item"><a class="p-sidebar__category-link" href="#">労働・賃金トラブル (8)</a></li>
-                </ul>
-              </li>
-              <li class="p-sidebar__category-item"><a class="p-sidebar__category-link" href="#">裁判・訴訟 (57)</a></li>
-              <li class="p-sidebar__category-item"><a class="p-sidebar__category-link" href="#">司法書士業務全般・活動 (77)</a></li>
-              <li class="p-sidebar__category-item">
-                <a class="p-sidebar__category-link" href="#">日々の雑感 (112)</a>
-                <ul class="children">
-                  <li class="p-sidebar__category-item"><a class="p-sidebar__category-link" href="#">時事、話題、その他 (53)</a></li>
-                  <li class="p-sidebar__category-item"><a class="p-sidebar__category-link" href="#">趣味 (25)</a></li>
-                </ul>
-              </li>
-              <li class="p-sidebar__category-item"><a class="p-sidebar__category-link" href="#">info (108)</a></li>
+              <?php
+              wp_list_categories(array(
+                'title_li'    => '',
+                'show_count'  => 1,
+                'hierarchical' => 1,
+                'depth'       => 2,
+                'walker'      => new Custom_Category_Walker()
+              ));
+              ?>
             </ul>
 
             <!-- Slider main container -->
             <h3 class="p-sidebar__title mt30">アーカイブ</h3>
             <ul class="p-sidebar__category-list">
-              <li class="p-sidebar__category-item"><a class="p-sidebar__category-link" href="#">2025 (25)</a></li>
-              <li class="p-sidebar__category-item"><a class="p-sidebar__category-link" href="#">2024 (25)</a></li>
-              <li class="p-sidebar__category-item"><a class="p-sidebar__category-link" href="#">2023 (25)</a></li>
-              <li class="p-sidebar__category-item"><a class="p-sidebar__category-link" href="#">2022 (23)</a></li>
-              <li class="p-sidebar__category-item"><a class="p-sidebar__category-link" href="#">2021 (21)</a></li>
-              <li class="p-sidebar__category-item"><a class="p-sidebar__category-link" href="#">2020 (19)</a></li>
-              <li class="p-sidebar__category-item"><a class="p-sidebar__category-link" href="#">2019 (17)</a></li>
-              <li class="p-sidebar__category-item"><a class="p-sidebar__category-link" href="#">2018 (15)</a></li>
-              <li class="p-sidebar__category-item"><a class="p-sidebar__category-link" href="#">2017 (13)</a></li>
-              <li class="p-sidebar__category-item"><a class="p-sidebar__category-link" href="#">2016 (11)</a></li>
-              <li class="p-sidebar__category-item"><a class="p-sidebar__category-link" href="#">2015 (9)</a></li>
-              <li class="p-sidebar__category-item"><a class="p-sidebar__category-link" href="#">2014 (7)</a></li>
-
+              <?php
+              $archives = wp_get_archives(array(
+                'type'            => 'yearly',
+                'show_post_count' => 1,
+                'format'          => 'custom',
+                'before'          => '<li class="p-sidebar__category-item">',
+                'after'           => '</li>',
+                'echo'            => 0
+              ));
+              // リンクにカスタムクラスを追加
+              $archives = str_replace('<a href=', '<a class="p-sidebar__category-link" href=', $archives);
+              // 投稿数をリンク内に移動
+              $archives = preg_replace('/<\/a>&nbsp;\((\d+)\)/', ' ($1)</a>', $archives);
+              echo $archives;
+              ?>
             </ul>
 
           </div>

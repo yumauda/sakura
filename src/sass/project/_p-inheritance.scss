@@ -22,9 +22,6 @@
 
 .p-inheritance__main {
   flex: 1;
-  @include mq("md") {
-    max-width: calc(100% - 320px);
-  }
 }
 
 .p-inheritance__content {

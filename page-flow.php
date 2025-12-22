@@ -494,13 +494,6 @@
                 </div>
                 <!-- If we need pagination -->
                 <div class="swiper-pagination"></div>
-
-                <!-- If we need navigation buttons -->
-                <div class="swiper-button-prev"></div>
-                <div class="swiper-button-next"></div>
-
-                <!-- If we need scrollbar -->
-                <div class="swiper-scrollbar"></div>
               </div>
             </div>
             <!-- Slider main container -->
@@ -529,11 +522,11 @@
               </div>
               <div class="p-sidebar__map-detail">
                 <p class="p-sidebar__map-title">さくら司法書士事務所</p>
-                <p class="p-sidebar__map-text">東京都西東京市田無町5-2-17-304[<a href="#">地図</a>]<br>田無駅北口より徒歩4分</p>
+                <p class="p-sidebar__map-text">東京都西東京市田無町5-2-17-304[<a href="https://maps.app.goo.gl/LYeEyak4zKD49ThFA" target="_blank" rel="noopener noreferrer">地図</a>]<br>田無駅北口より徒歩4分</p>
               </div>
               <ul class="p-sidebar__menu-list">
                 <li class="p-sidebar__menu-item">
-                  <a href="#other-contracts" class="p-sidebar__menu-link">アクセス</a>
+                  <a href="https://maps.app.goo.gl/LYeEyak4zKD49ThFA" class="p-sidebar__menu-link" target="_blank" rel="noopener noreferrer">アクセス</a>
                 </li>
 
               </ul>

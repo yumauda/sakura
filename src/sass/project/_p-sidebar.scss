@@ -156,9 +156,6 @@
 .p-sidebar__menu-toggleText {
   color: $black;
   font-size: rem(15);
-  @include mq(md) {
-    font-size: rem(14);
-  }
 }
 .p-sidebar__submenu {
   list-style: none;
@@ -332,4 +329,27 @@
   color: #000;
   text-decoration: none;
   transition: background-color 0.3s ease;
+}
+.slider-sidebar {
+}
+.slider-sidebar .swiper-pagination {
+  margin-top: rem(8);
+  @include mq(md) {
+    margin-top: rem(10);
+  }
+}
+.slider-sidebar .swiper-pagination-bullet {
+  background: #fff;
+  opacity: 1;
+  border: 1px solid #ee819d;
+  width: rem(6);
+  height: rem(6);
+  @include mq(md) {
+    width: rem(10);
+    height: rem(10);
+  }
+}
+.slider-sidebar .swiper-pagination-bullet-active {
+  background: #ee819d;
+  border: 1px solid #ee819d;
 }

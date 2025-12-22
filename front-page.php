@@ -91,7 +91,7 @@
                 </div>
               </div>
               <div class="p-about__mapBtn-wrapper">
-                <a href="#" class="p-about__mapBtn">アクセスマップ</a>
+                <a href="https://maps.app.goo.gl/LYeEyak4zKD49ThFA" class="p-about__mapBtn" target="_blank" rel="noopener noreferrer">アクセスマップ</a>
               </div>
             </div>
           </div>
@@ -268,7 +268,7 @@
             <h2 class="p-top-news__title">更新内容</h2>
           </div>
           <div class="p-top-news__btn">
-            <a href="#" class="c-btn">
+            <a href="<?php echo esc_url(home_url('/blog')); ?>" class="c-btn">
               <p class="c-btn__text">ブログ一覧</p>
               <div class="c-btn__arrow">
                 <svg
@@ -283,35 +283,42 @@
           </div>
         </div>
         <div class="p-top-news__right">
-          <a href="#" class="p-top-news__link">
-            <div class="p-top-news__category">
-              <time datetime="2025-12-01" class="p-top-news__time">2025.09.15</time>
-              <p class="p-top-news__category-text">相続、遺産分割</p>
-            </div>
-            <p class="p-top-news__link-title">相続した空き家（自宅不動産）の売却 ～3000万円の控除（税金対策）～</p>
-          </a>
-          <a href="#" class="p-top-news__link">
-            <div class="p-top-news__category">
-              <time datetime="2025-12-01" class="p-top-news__time">2025.08.04</time>
-              <p class="p-top-news__category-text">Info</p>
-            </div>
-            <p class="p-top-news__link-title">相続した空き家（自宅不動産）の売却 ～3000万円の控除（税金対策）～</p>
-          </a>
-          <a href="#" class="p-top-news__link">
-            <div class="p-top-news__category">
-              <time datetime="2025-12-01" class="p-top-news__time">2025.12.01</time>
-              <p class="p-top-news__category-text">相続、遺産分割</p>
-            </div>
-            <p class="p-top-news__link-title">2025年（令和7年）夏季休業のお知らせ《8月9日～17日》</p>
-          </a>
-          <a href="#" class="p-top-news__link">
-            <div class="p-top-news__category">
-              <time datetime="2025.06.19" class="p-top-news__time">2025.06.19</time>
-              <p class="p-top-news__category-text">不動産登記</p>
-              <p class="p-top-news__category-text">相続、遺産分割</p>
-            </div>
-            <p class="p-top-news__link-title">【相続登記の義務化】相続登記をしないことのデメリット（相続登記をしないとどうなる？）</p>
-          </a>
+          <?php
+          // パラメータの設定
+          $args = array(
+            'posts_per_page' => 4,
+            'post_status' => 'publish',
+            'post_type' => 'post',
+            'orderby' => 'date',
+          );
+
+          // WP_Queryインスタンスの生成
+          $my_query = new WP_Query($args);
+          if ($my_query->have_posts()) :
+            while ($my_query->have_posts()) : $my_query->the_post();
+          ?>
+
+              <a href="<?php the_permalink(); ?>" class="p-top-news__link">
+                <div class="p-top-news__category">
+                  <time datetime="<?php the_time('Y-m-d'); ?>" class="p-top-news__time"><?php the_time('Y.m.d'); ?></time>
+                  <p class="p-top-news__category-text">
+                    <?php
+                    $categories = get_the_category();
+                    if (!empty($categories)) {
+                      echo esc_html($categories[0]->name);
+                    }
+                    ?>
+                  </p>
+                </div>
+                <p class="p-top-news__link-title"><?php the_title(); ?></p>
+              </a>
+
+          <?php
+            endwhile;
+          endif;
+          wp_reset_postdata();
+          ?>
+
         </div>
         <div class="p-top-news__btn p-top-news__btn-mobile">
           <a href="#" class="c-btn">
