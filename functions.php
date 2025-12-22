@@ -50,7 +50,12 @@ function my_script_init()
 		wp_enqueue_script('js-swiper-bundle', get_template_directory_uri() . '/js/swiper.min.js', array('jquery'), filemtime(get_theme_file_path('/js/swiper.min.js')), true);
 		wp_enqueue_script('js-swiper-init', get_template_directory_uri() . '/js/swiper.js', array('jquery'), filemtime(get_theme_file_path('/js/swiper.js')), true);
 	}
-	
+
+	// お問い合わせページで郵便番号自動入力を有効化
+	if (is_page('contact')) {
+		wp_enqueue_script('postal-code', get_template_directory_uri() . '/js/postal-code.js', array('jquery'), filemtime(get_theme_file_path('/js/postal-code.js')), true);
+	}
+
 	wp_enqueue_script('script', get_template_directory_uri() . '/js/script.js', array('jquery'), filemtime(get_theme_file_path('/js/script.js')), true);
 }
 add_action('wp_enqueue_scripts', 'my_script_init');
@@ -310,16 +315,17 @@ function exclude_multiple_categories_from_homepage($query)
 }
 add_action('pre_get_posts', 'exclude_multiple_categories_from_homepage');
 
-add_filter('wpcf7_validate_text', 'custom_hiragana_validation_filter', 20, 2);
-add_filter('wpcf7_validate_text*', 'custom_hiragana_validation_filter', 20, 2);
+add_filter('wpcf7_validate_text', 'custom_katakana_validation_filter', 20, 2);
+add_filter('wpcf7_validate_text*', 'custom_katakana_validation_filter', 20, 2);
 
-function custom_hiragana_validation_filter($result, $tag)
+function custom_katakana_validation_filter($result, $tag)
 {
-	if ('your-hiragana-field' == $tag->name) {
+	if ('your-katakana-field' == $tag->name) {
 		$value = isset($_POST[$tag->name]) ? trim(wp_unslash(strtr((string)$_POST[$tag->name], "\n", " "))) : '';
 
-		if (!preg_match("/^[ぁ-ん]+$/u", $value)) {
-			$result->invalidate($tag, "ひらがなで入力してください。");
+		// 全角カタカナ: ァ-ヶー、半角カタカナ: ｦ-ﾟ
+		if (!preg_match("/^[ァ-ヶーｦ-ﾟ\s]+$/u", $value)) {
+			$result->invalidate($tag, "カタカナで入力してください。");
 		}
 	}
 

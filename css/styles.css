@@ -1919,6 +1919,7 @@ input::placeholder {
 .p-form__field input[type=text],
 .p-form__field input[type=tel],
 .p-form__field input[type=email],
+.p-form__field select,
 .p-form__field input[type=date] {
   width: 100%;
   background: #f2f2f2;
@@ -1929,6 +1930,7 @@ input::placeholder {
 .p-form__field input[type=text]::placeholder,
 .p-form__field input[type=tel]::placeholder,
 .p-form__field input[type=email]::placeholder,
+.p-form__field select::placeholder,
 .p-form__field input[type=date]::placeholder {
   color: #999;
 }
@@ -2066,12 +2068,29 @@ input::placeholder {
   }
 }
 
+.wpcf7-form-control-wrap {
+  display: block;
+}
+
+.wpcf7-form-control-wrap + .wpcf7-form-control-wrap {
+  margin-top: 0.625rem;
+}
+@media screen and (min-width: 768px) {
+  .wpcf7-form-control-wrap + .wpcf7-form-control-wrap {
+    margin-top: 1.25rem;
+  }
+}
+
 .p-header {
   background: #fcf3ef;
   height: 4.375rem;
+  position: fixed;
+  width: 100%;
+  z-index: 9999;
 }
 @media screen and (min-width: 768px) {
   .p-header {
+    position: static;
     height: initial;
     padding-top: 1.6875rem;
     padding-bottom: 1.875rem;
@@ -3326,7 +3345,7 @@ input::placeholder {
   }
 }
 
-.p-link__card {
+.p-link__link {
   filter: drop-shadow(0 0 10px rgba(0, 0, 0, 0.1));
   border-radius: 0.625rem;
   padding-left: 0.9375rem;
@@ -3342,7 +3361,7 @@ input::placeholder {
   gap: 0.9375rem;
 }
 @media screen and (min-width: 768px) {
-  .p-link__card {
+  .p-link__link {
     margin-left: initial;
     margin-right: initial;
     max-width: initial;
@@ -3376,7 +3395,7 @@ input::placeholder {
 
 .p-mv {
   background: #fff;
-  padding-top: 1.25rem;
+  padding-top: 5.625rem;
   padding-bottom: 1.25rem;
 }
 @media screen and (min-width: 768px) {
@@ -3500,6 +3519,15 @@ input::placeholder {
   font-size: 0.875rem;
   font-weight: 700;
   flex-shrink: 0;
+}
+
+.p-page-mv {
+  padding-top: 4.375rem;
+}
+@media screen and (min-width: 768px) {
+  .p-page-mv {
+    padding-top: initial;
+  }
 }
 
 .p-page-mv__content {

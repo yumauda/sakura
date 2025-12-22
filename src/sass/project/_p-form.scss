@@ -412,6 +412,7 @@ input::placeholder {
   input[type="text"],
   input[type="tel"],
   input[type="email"],
+  select,
   input[type="date"] {
     width: 100%;
     background: #f2f2f2;
@@ -543,5 +544,14 @@ input::placeholder {
 
   @include mq(md) {
     margin-top: rem(52);
+  }
+}
+.wpcf7-form-control-wrap {
+  display: block;
+}
+.wpcf7-form-control-wrap + .wpcf7-form-control-wrap {
+  margin-top: rem(10);
+  @include mq(md) {
+    margin-top: rem(20);
   }
 }

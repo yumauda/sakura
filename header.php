@@ -7,7 +7,7 @@
     <meta name="format-detection" content="telephone=no" />
     <!-- meta情報 -->
     <meta property="og:image" content="<?php echo get_template_directory_uri() ?>/images/common/ogp.jpg" />
-    <?php if (is_home() || is_front_page()) : ?>
+    <?php if (is_front_page()) : ?>
         <title>遺産相続や遺産整理・不動産登記のことなら西東京市田無のさくら司法書士事務所</title>
         <meta name="description" content="遺産相続や遺産整理・不動産登記のことなら西東京市田無のさくら司法書士事務所にお任せください。西東京市を中心に多摩エリアを得意とする司法書士事務所です。" />
         <meta name="keywords" content="相続,司法書士,田無" />
@@ -17,8 +17,8 @@
         <meta property="og:site_name" content="遺産相続や遺産整理・不動産登記のことなら西東京市田無のさくら司法書士事務所" />
         <meta property="og:description" content="遺産相続や遺産整理・不動産登記のことなら西東京市田無のさくら司法書士事務所にお任せください。西東京市を中心に多摩エリアを得意とする司法書士事務所です。" />
     <?php elseif (is_page('adult')) : ?>
-        <title>大人の矯正・成人矯正｜大倉山ファミリア矯正歯科（横浜市港北区）</title>
-        <meta name="description" content="横浜市港北区大倉山の、痛くない・目立たない矯正専門歯科。マウスピース矯正(インビザライン)なども子供から大人まで安心の定額制です。" />
+        <title></title>
+        <meta name="description" content="" />
         <meta name="keywords" content="矯正歯科,港北区,大倉山" />
         <meta property="og:title" content="大人の矯正｜大倉山ファミリア矯正歯科（横浜市港北区）" />
         <meta property="og:type" content="article">
@@ -27,7 +27,7 @@
         <meta property="og:site_name" content="大倉山ファミリア矯正歯科（横浜市港北区）" />
         <meta property="og:description" content="横浜市大倉山の、痛くない・目立たない矯正専門歯科。マウスピース矯正(インビザラン)なども子供から大人まで安心の定額制です。" />
     <?php elseif (is_page((array('contact', 'confirm')))) : ?>
-        <title>お問い合わせ｜大倉山ファミリア矯正歯科（横浜市港北区）</title>
+        <title></title>
         <meta name="description" content="横浜市港北区大倉山の、痛くない・目立たない矯正専門歯科。マウスピース矯正(インビザライン)なども子供から大人まで安心の定額制です。" />
         <meta name="keywords" content="矯正歯科,港北区,大倉山" />
         <meta property="og:title" content="お問い合わせ｜大倉山ファミリア矯正歯科（横浜市港北区）" />
@@ -37,7 +37,7 @@
         <meta property="og:site_name" content="大倉山ファミリア矯正歯科（横浜市港北区）" />
         <meta property="og:description" content="横浜市大倉山の、痛くない・目立たない矯正専門歯科。マウスピース矯正(インビザラン)なども子供から大人まで安心の定額制です。" />
     <?php elseif (is_page('thanks')) : ?>
-        <title>送信完了｜大倉山ファミリア矯正歯科（横浜市港北区）</title>
+        <title></title>
         <meta name="description" content="横浜市港北区大倉山の、痛くない・目立たない矯正専門歯科。マウスピース矯正(インビザライン)なども子供から大人まで安心の定額制です。" />
         <meta name="keywords" content="矯正歯科,港北区,大倉山" />
         <meta property="og:title" content="送信完了｜大倉山ファミリア矯正歯科（横浜市港北区）" />
@@ -47,7 +47,7 @@
         <meta property="og:site_name" content="大倉山ファミリア矯正歯科（横浜市港北区）" />
         <meta property="og:description" content="横浜市大倉山の、痛くない・目立たない矯正専門歯科。マウスピース矯正(インビザラン)なども子供から大人まで安心の定額制です。" />
     <?php elseif (is_single()) : ?>
-        <title><?php the_title() ?>｜大倉山ファミリア矯正歯科（横浜市港北区）</title>
+        <title><?php the_title() ?></title>
         <meta name="description" content="横浜市港北区大倉山の、痛くない・目立たない矯正専門歯科。マウスピース矯正(インビザライン)なども子供から大人まで安心の定額制です。" />
         <meta name="keywords" content="矯正歯科,港北区,大倉山" />
         <meta property="og:title" content="<?php the_title() ?>｜大倉山ファミリア矯正歯科（横浜市港北区）" />
@@ -97,12 +97,34 @@
         })(document);
     </script>
     <?php if (is_404()) : ?>
-        <meta http-equiv="refresh" content=" 3; url=<?php echo esc_url(home_url("/")); ?>">
+        <meta http-equiv="refresh" content="3; url=<?php echo esc_url(home_url("/")); ?>">
     <?php endif; ?>
     <?php wp_head() ?>
+    <!-- Google Tag Manager -->
+    <script>
+        (function(w, d, s, l, i) {
+            w[l] = w[l] || [];
+            w[l].push({
+                'gtm.start': new Date().getTime(),
+                event: 'gtm.js'
+            });
+            var f = d.getElementsByTagName(s)[0],
+                j = d.createElement(s),
+                dl = l != 'dataLayer' ? '&l=' + l : '';
+            j.async = true;
+            j.src =
+                'https://www.googletagmanager.com/gtm.js?id=' + i + dl;
+            f.parentNode.insertBefore(j, f);
+        })(window, document, 'script', 'dataLayer', 'GTM-NKZJXW4T');
+    </script>
+    <!-- End Google Tag Manager -->
 </head>
 
 <body <?php body_class(); ?>>
+    <!-- Google Tag Manager (noscript) -->
+    <noscript><iframe src="https://www.googletagmanager.com/ns.html?id=GTM-NKZJXW4T"
+            height="0" width="0" style="display:none;visibility:hidden"></iframe></noscript>
+    <!-- End Google Tag Manager (noscript) -->
     <header class="p-header">
         <div class="l-inner">
             <div class="p-header__content">

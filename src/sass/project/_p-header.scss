@@ -3,7 +3,11 @@
 .p-header {
   background: #fcf3ef;
   height: rem(70);
+  position: fixed;
+  width: 100%;
+  z-index: 9999;
   @include mq(md) {
+    position: static;
     height: initial;
     padding-top: rem(27);
     padding-bottom: rem(30);

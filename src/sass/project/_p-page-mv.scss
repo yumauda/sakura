@@ -1,6 +1,10 @@
 @use "../global" as *;
 
 .p-page-mv {
+  padding-top: rem(70);
+  @include mq(md) {
+    padding-top: initial;
+  }
 }
 
 .p-page-mv__content {
