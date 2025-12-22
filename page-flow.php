@@ -135,6 +135,33 @@
               </ul>
             </div>
             <p class="p-inheritance__smallAttention">※上記書類は全て、依頼人様に代わって当事務所で取得（作成）可能です。</p>
+
+            <div class="p-inheritance__heir-section">
+              <h3 class="c-page-title">相続人となる者</h3>
+              <div class="p-inheritance__heir-content">
+                <div class="p-inheritance__heir-image">
+                  <figure class="p-inheritance__heir-figure">
+                    <img src="<?php echo get_template_directory_uri() ?>/images/common/wife.png" alt="相続人となる者" width="300" height="250">
+                  </figure>
+                </div>
+                <div class="p-inheritance__heir-text">
+                  <p class="c-main-text">
+                    相続人になる者は、法律（民法）によって定められているため親族であれば誰でも相続人（法定相続人）になるわけではありません。
+                  </p>
+                  <p class="c-main-text">
+                    法定相続人として認められる者は、被相続人（死亡者）の配偶者（内縁は不可）及び被相続人の血族である子（養子も含む）、親、兄弟姉妹です。
+                  </p>
+                  <p class="c-main-text">
+                    ここで注意しなければならないことは、<span class="c-main-text--black">配偶者は常に法定相続人</span>となりますが、<span class="c-main-text--black">子、親、兄弟姉妹については、それぞれ第１順位→子・第２順位→親・第３順位→兄弟姉妹と優先順位がつけられており、</span><span>上位の者が存在する（若しくは相続権を失っていない）場合、後順位の者は法定相続人になれない</span>ということです。
+                  </p>
+                  <p class="c-main-text">
+                    なお、配偶者が存在しない場合の法定相続人は、子→親→兄弟姉妹の順になります。
+                  </p>
+                </div>
+
+              </div>
+            </div>
+
             <table class="p-inheritance__table">
               <thead class="p-inheritance__table-head">
                 <tr>
@@ -326,14 +353,21 @@
             </div>
 
           </div>
-
-
-
-
           <div class="p-inheritance__section mt87">
             <div class="p-inheritance__btn-wrapper">
               <a href="#" class="p-inheritance__btn">
-                次のページ：相続放棄
+                <p class="p-inheritance__btn-text">
+                  次のページ：相続放棄
+                </p>
+                <div class="p-inheritance__btn-arrow">
+                  <svg
+                    xmlns="http://www.w3.org/2000/svg"
+                    xmlns:xlink="http://www.w3.org/1999/xlink"
+                    width="12" height="12">
+                    <path fill-rule="evenodd"
+                      d="M5.683,-0.003 L4.684,0.948 L9.290,5.325 L-0.001,5.325 L-0.001,6.669 L9.290,6.669 L4.684,11.047 L5.683,11.997 L11.997,5.996 L5.683,-0.003 Z" />
+                  </svg>
+                </div>
               </a>
             </div>
           </div>

@@ -429,3 +429,8 @@
             </ul>
         </div>
     </header>
+    <div class="p-floating">
+        <a href="<?php echo esc_url(home_url('/contact')); ?>" class="p-floating__link">
+            <img decoding="async" loading="lazy" src="<?php echo get_template_directory_uri() ?>/images/common/floating_pc.png" alt="ご相談・お問い合わせ" width="69" height="240">
+        </a>
+    </div>

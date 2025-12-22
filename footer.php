@@ -67,7 +67,7 @@
         </div>
     </div>
     <div class="p-footer__contact-sp">
-        <a href="#" class="p-footer__contact-link">
+        <a href="<?php echo esc_url(home_url('/contact')); ?>" class="p-footer__contact-link">
             <div class="p-footer__contact-link-icon">
                 <img decoding="async" loading="lazy" src="<?php echo get_template_directory_uri(); ?>/images/common/mail_sp.png" alt="" width="16" height="12">
             </div>

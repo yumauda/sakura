@@ -1,0 +1,24 @@
+@use "../global" as *;
+
+.p-floating {
+  display: none;
+  @include mq(md) {
+    position: fixed;
+    right: 0;
+    top: 50%;
+    transform: translateY(-50%);
+    z-index: 999;
+    display: block;
+  }
+}
+
+.p-floating__link {
+  display: block;
+  width: rem(69);
+}
+.p-floating__link img {
+  width: 100%;
+  height: auto;
+  object-fit: cover;
+  object-position: center center;
+}

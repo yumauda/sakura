@@ -332,23 +332,33 @@
   position: relative;
   border-radius: rem(12);
   background: #fff;
-  color: #e77492;
   border: 1px solid #e77492;
   border-radius: 9999px;
-  font-size: rem(15);
+  transition: 0.3s ease-in-out;
 }
-.p-inheritance__btn::before {
+.p-inheritance__btn:hover {
+  background: #ee819d;
+}
+.p-inheritance__btn-text {
+  font-size: rem(15);
+  color: #e77492;
+  transition: 0.3s ease-in-out;
+}
+.p-inheritance__btn:hover .p-inheritance__btn-text {
+  color: #fff;
+}
+.p-inheritance__btn-arrow {
   position: absolute;
-  content: "";
-  background: url(../images/common/btn_arrow.png);
-  background-repeat: no-repeat;
-  background-position: center;
-  background-size: cover;
-  width: rem(12);
-  height: rem(12);
+  right: rem(15);
   top: 50%;
   transform: translateY(-50%);
-  right: rem(15);
+}
+.p-inheritance__btn-arrow svg path {
+  fill: #ee819d;
+  transition: 0.3s ease-in-out;
+}
+.p-inheritance__btn:hover .p-inheritance__btn-arrow svg path {
+  fill: #fff;
 }
 .p-inheritance__flow {
   margin-top: rem(30);
@@ -776,4 +786,79 @@
 }
 .mt29 {
   margin-top: rem(29);
+}
+
+// 相続人セクション
+.p-inheritance__heir-section {
+  margin-top: rem(40);
+  margin-bottom: rem(40);
+  @include mq(md) {
+    margin-top: rem(60);
+    margin-bottom: rem(60);
+  }
+}
+
+.p-inheritance__heir-title {
+  font-size: rem(20);
+  font-weight: 700;
+  color: #000;
+  padding-bottom: rem(15);
+  border-bottom: 2px solid #ee819d;
+  margin-bottom: rem(25);
+  @include mq(md) {
+    font-size: rem(24);
+    margin-bottom: rem(30);
+  }
+}
+
+.p-inheritance__heir-content {
+  margin-top: rem(40);
+}
+
+.p-inheritance__heir-text {
+  @include mq(md) {
+    flex: 1;
+  }
+}
+
+.p-inheritance__heir-paragraph {
+  font-size: rem(15);
+  line-height: 1.8;
+  color: #000;
+  @include mq(md) {
+    font-size: rem(16);
+  }
+
+  + .p-inheritance__heir-paragraph {
+    margin-top: rem(20);
+  }
+}
+
+.p-inheritance__heir-bold {
+  font-weight: 700;
+}
+
+.p-inheritance__heir-red {
+  color: #cc0000;
+  font-weight: 700;
+}
+
+.p-inheritance__heir-image {
+  flex-shrink: 0;
+  width: 100%;
+  @include mq(md) {
+    float: right;
+    width: rem(300);
+    margin-left: rem(50);
+  }
+}
+
+.p-inheritance__heir-figure {
+  width: 100%;
+
+  img {
+    width: 100%;
+    height: auto;
+    object-fit: contain;
+  }
 }

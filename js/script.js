@@ -229,14 +229,14 @@ jQuery(".p-drawer-icon").on("click", function (e) {
 });
 window.addEventListener("scroll", function () {
   var scrollPosition = window.pageYOffset || document.documentElement.scrollTop;
-  var element = document.querySelector(".p-footer__floating");
+  var element = document.querySelector(".p-footer__contact-sp");
 
   if (window.innerWidth <= 768) {
     // 768px以下のデバイスでのみ動作
     if (scrollPosition > 700) {
-      element.style.opacity = "1";
+      element.classList.add("is-visible");
     } else {
-      element.style.opacity = "0";
+      element.classList.remove("is-visible");
     }
   }
 });

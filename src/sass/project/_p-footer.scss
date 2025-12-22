@@ -3,6 +3,7 @@
 .p-footer {
   background: #fcf3ef;
   padding-top: rem(40);
+  padding-bottom: rem(64);
   @include mq(md) {
     padding-top: rem(52);
     padding-bottom: rem(50);
@@ -131,9 +132,21 @@
 .p-footer__contact-sp {
   text-align: center;
   margin-top: rem(32);
+  position: fixed;
+  z-index: 999;
+  opacity: 0;
+  visibility: hidden;
+  bottom: 0;
+  left: 0;
+  right: 0;
+  transition: 0.3s ease-in-out;
   @include mq(md) {
     display: none;
   }
+}
+.p-footer__contact-sp.is-visible {
+  opacity: 1;
+  visibility: visible;
 }
 
 .p-footer__contact-link {
