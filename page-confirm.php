@@ -177,35 +177,35 @@
                   <div class="swiper-slide">
                     <a href="#" class="p-sidebar__slide-link">
                       <figure class="p-sidebar__slide-img">
-                        <img decoding="async" loading="lazy" src="<?php echo get_template_directory_uri() ?>/images/common/mv_01.webp" alt="遺産整理" width="180" height="180">
+                        <img src="<?php echo get_template_directory_uri() ?>/images/common/mv_01.webp" alt="遺産整理">
                       </figure>
                     </a>
                   </div>
                   <div class="swiper-slide">
                     <a href="#" class="p-sidebar__slide-link">
                       <figure class="p-sidebar__slide-img">
-                        <img decoding="async" loading="lazy" src="<?php echo get_template_directory_uri() ?>/images/common/mv_02.webp" alt="遺産整理" width="180" height="180">
+                        <img src="<?php echo get_template_directory_uri() ?>/images/common/mv_02.webp" alt="遺産整理">
                       </figure>
                     </a>
                   </div>
                   <div class="swiper-slide">
                     <a href="#" class="p-sidebar__slide-link">
                       <figure class="p-sidebar__slide-img">
-                        <img decoding="async" loading="lazy" src="<?php echo get_template_directory_uri() ?>/images/common/mv_03.webp" alt="遺産整理" width="180" height="180">
+                        <img src="<?php echo get_template_directory_uri() ?>/images/common/mv_03.webp" alt="遺産整理">
                       </figure>
                     </a>
                   </div>
                   <div class="swiper-slide">
                     <a href="#" class="p-sidebar__slide-link">
                       <figure class="p-sidebar__slide-img">
-                        <img decoding="async" loading="lazy" src="<?php echo get_template_directory_uri() ?>/images/common/mv_04.webp" alt="遺産整理" width="180" height="180">
+                        <img src="<?php echo get_template_directory_uri() ?>/images/common/mv_04.webp" alt="遺産整理">
                       </figure>
                     </a>
                   </div>
                   <div class="swiper-slide">
                     <a href="#" class="p-sidebar__slide-link">
                       <figure class="p-sidebar__slide-img">
-                        <img decoding="async" loading="lazy" src="<?php echo get_template_directory_uri() ?>/images/common/mv_05.webp" alt="遺産整理" width="180" height="180">
+                        <img src="<?php echo get_template_directory_uri() ?>/images/common/mv_05.webp" alt="遺産整理">
                       </figure>
                     </a>
                   </div>

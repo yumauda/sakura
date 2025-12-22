@@ -181,16 +181,22 @@
 }
 
 .p-inheritance__number-list {
-  display: flex;
-  align-items: center;
   padding-top: rem(16);
   padding-bottom: rem(16);
   border-bottom: 1px solid #ccc;
   gap: rem(8);
-  font-size: rem(17);
   line-height: 2;
   color: #000;
   counter-increment: item 1;
+  font-size: rem(16);
+  padding-left: rem(28);
+  position: relative;
+  @include mq(md) {
+    font-size: rem(17);
+    display: flex;
+    align-items: center;
+    padding-left: initial;
+  }
 
   &:first-child {
     counter-increment: item 1;
@@ -202,6 +208,8 @@
   }
 
   &::before {
+    position: absolute;
+    left: 0;
     content: counter(item) "";
     color: #fff;
     display: flex;
@@ -212,6 +220,18 @@
     width: rem(20);
     height: rem(20);
     border-radius: 9999px;
+    top: rem(24);
+    @include mq(md) {
+      top: rem(-4);
+      position: static;
+    }
+  }
+  &:first-child::before {
+    top: rem(8);
+    @include mq(md) {
+      top: rem(-4);
+      position: static;
+    }
   }
 }
 

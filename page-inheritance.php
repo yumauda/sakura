@@ -133,8 +133,20 @@
               </div>
             </div>
             <div class="p-inheritance__btn-wrapper">
+
               <a href="#" class="p-inheritance__btn">
-                次のページ：遺産整理業務
+                <p class="p-inheritance__btn-text">
+                  次のページ：遺産整理業務
+                </p>
+                <div class="p-inheritance__btn-arrow">
+                  <svg
+                    xmlns="http://www.w3.org/2000/svg"
+                    xmlns:xlink="http://www.w3.org/1999/xlink"
+                    width="12" height="12">
+                    <path fill-rule="evenodd"
+                      d="M5.683,-0.003 L4.684,0.948 L9.290,5.325 L-0.001,5.325 L-0.001,6.669 L9.290,6.669 L4.684,11.047 L5.683,11.997 L11.997,5.996 L5.683,-0.003 Z" />
+                  </svg>
+                </div>
               </a>
             </div>
 
@@ -263,35 +275,35 @@
                   <div class="swiper-slide">
                     <a href="#" class="p-sidebar__slide-link">
                       <figure class="p-sidebar__slide-img">
-                        <img decoding="async" loading="lazy" src="<?php echo get_template_directory_uri() ?>/images/common/mv_01.webp" alt="遺産整理" width="180" height="180">
+                        <img src="<?php echo get_template_directory_uri() ?>/images/common/mv_01.webp" alt="遺産整理">
                       </figure>
                     </a>
                   </div>
                   <div class="swiper-slide">
                     <a href="#" class="p-sidebar__slide-link">
                       <figure class="p-sidebar__slide-img">
-                        <img decoding="async" loading="lazy" src="<?php echo get_template_directory_uri() ?>/images/common/mv_02.webp" alt="遺産整理" width="180" height="180">
+                        <img src="<?php echo get_template_directory_uri() ?>/images/common/mv_02.webp" alt="遺産整理">
                       </figure>
                     </a>
                   </div>
                   <div class="swiper-slide">
                     <a href="#" class="p-sidebar__slide-link">
                       <figure class="p-sidebar__slide-img">
-                        <img decoding="async" loading="lazy" src="<?php echo get_template_directory_uri() ?>/images/common/mv_03.webp" alt="遺産整理" width="180" height="180">
+                        <img src="<?php echo get_template_directory_uri() ?>/images/common/mv_03.webp" alt="遺産整理">
                       </figure>
                     </a>
                   </div>
                   <div class="swiper-slide">
                     <a href="#" class="p-sidebar__slide-link">
                       <figure class="p-sidebar__slide-img">
-                        <img decoding="async" loading="lazy" src="<?php echo get_template_directory_uri() ?>/images/common/mv_04.webp" alt="遺産整理" width="180" height="180">
+                        <img src="<?php echo get_template_directory_uri() ?>/images/common/mv_04.webp" alt="遺産整理">
                       </figure>
                     </a>
                   </div>
                   <div class="swiper-slide">
                     <a href="#" class="p-sidebar__slide-link">
                       <figure class="p-sidebar__slide-img">
-                        <img decoding="async" loading="lazy" src="<?php echo get_template_directory_uri() ?>/images/common/mv_05.webp" alt="遺産整理" width="180" height="180">
+                        <img src="<?php echo get_template_directory_uri() ?>/images/common/mv_05.webp" alt="遺産整理">
                       </figure>
                     </a>
                   </div>
@@ -300,12 +312,7 @@
                 <!-- If we need pagination -->
                 <div class="swiper-pagination"></div>
 
-                <!-- If we need navigation buttons -->
-                <div class="swiper-button-prev"></div>
-                <div class="swiper-button-next"></div>
 
-                <!-- If we need scrollbar -->
-                <div class="swiper-scrollbar"></div>
               </div>
             </div>
             <!-- Slider main container -->

@@ -2687,16 +2687,24 @@ input::placeholder {
 }
 
 .p-inheritance__number-list {
-  display: flex;
-  align-items: center;
   padding-top: 1rem;
   padding-bottom: 1rem;
   border-bottom: 1px solid #ccc;
   gap: 0.5rem;
-  font-size: 1.0625rem;
   line-height: 2;
   color: #000;
   counter-increment: item 1;
+  font-size: 1rem;
+  padding-left: 1.75rem;
+  position: relative;
+}
+@media screen and (min-width: 768px) {
+  .p-inheritance__number-list {
+    font-size: 1.0625rem;
+    display: flex;
+    align-items: center;
+    padding-left: initial;
+  }
 }
 .p-inheritance__number-list:first-child {
   counter-increment: item 1;
@@ -2707,6 +2715,8 @@ input::placeholder {
   border-bottom: initial;
 }
 .p-inheritance__number-list::before {
+  position: absolute;
+  left: 0;
   content: counter(item) "";
   color: #fff;
   display: flex;
@@ -2717,6 +2727,22 @@ input::placeholder {
   width: 1.25rem;
   height: 1.25rem;
   border-radius: 9999px;
+  top: 1.5rem;
+}
+@media screen and (min-width: 768px) {
+  .p-inheritance__number-list::before {
+    top: -0.25rem;
+    position: static;
+  }
+}
+.p-inheritance__number-list:first-child::before {
+  top: 0.5rem;
+}
+@media screen and (min-width: 768px) {
+  .p-inheritance__number-list:first-child::before {
+    top: -0.25rem;
+    position: static;
+  }
 }
 
 .p-inheritance__number-list span {
