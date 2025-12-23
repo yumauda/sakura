@@ -3563,6 +3563,7 @@ input::placeholder {
   background: #fff;
   padding-top: 5.625rem;
   padding-bottom: 1.25rem;
+  overflow-x: clip;
 }
 @media screen and (min-width: 768px) {
   .p-mv {
@@ -3599,7 +3600,12 @@ input::placeholder {
   display: flex;
   align-items: center;
   justify-content: center;
-  gap: 1.25rem;
+  gap: 0.3125rem;
+}
+@media screen and (min-width: 768px) {
+  .p-mv .swiper-pagination {
+    gap: 1.25rem;
+  }
 }
 
 .p-mv .swiper-slide-prev,
@@ -5008,7 +5014,6 @@ input::placeholder {
 }
 @media screen and (min-width: 768px) {
   .p-top-news__title {
-    margin-top: initial;
     font-size: 1.875rem;
   }
 }

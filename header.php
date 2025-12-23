@@ -7,10 +7,10 @@
     <meta name="format-detection" content="telephone=no" />
     <!-- meta情報 -->
     <meta property="og:image" content="<?php echo get_template_directory_uri() ?>/images/common/ogp.jpg" />
+    <meta name="keywords" content="相続,司法書士,田無" />
     <?php if (is_front_page()) : ?>
         <title>遺産相続や遺産整理・不動産登記のことなら西東京市田無のさくら司法書士事務所</title>
         <meta name="description" content="遺産相続や遺産整理・不動産登記のことなら西東京市田無のさくら司法書士事務所にお任せください。西東京市を中心に多摩エリアを得意とする司法書士事務所です。" />
-        <meta name="keywords" content="相続,司法書士,田無" />
         <meta property="og:title" content="遺産相続や遺産整理・不動産登記のことなら西東京市田無のさくら司法書士事務所" />
         <meta property="og:type" content="website">
         <meta property="og:url" content="https://www.shihou.cc/">
@@ -19,43 +19,43 @@
     <?php elseif (is_page('adult')) : ?>
         <title></title>
         <meta name="description" content="" />
-        <meta name="keywords" content="矯正歯科,港北区,大倉山" />
-        <meta property="og:title" content="大人の矯正｜大倉山ファミリア矯正歯科（横浜市港北区）" />
+        <meta name="keywords" content="" />
+        <meta property="og:title" content="" />
         <meta property="og:type" content="article">
-        <meta property="og:url" content="https://familiar-kyousei.com/adult">
+        <meta property="og:url" content="">
         <meta property="og:image" content="<?php echo get_template_directory_uri() ?>/images/common/ogp.jpg" />
-        <meta property="og:site_name" content="大倉山ファミリア矯正歯科（横浜市港北区）" />
-        <meta property="og:description" content="横浜市大倉山の、痛くない・目立たない矯正専門歯科。マウスピース矯正(インビザラン)なども子供から大人まで安心の定額制です。" />
+        <meta property="og:site_name" content="" />
+        <meta property="og:description" content="" />
     <?php elseif (is_page((array('contact', 'confirm')))) : ?>
         <title></title>
-        <meta name="description" content="横浜市港北区大倉山の、痛くない・目立たない矯正専門歯科。マウスピース矯正(インビザライン)なども子供から大人まで安心の定額制です。" />
-        <meta name="keywords" content="矯正歯科,港北区,大倉山" />
-        <meta property="og:title" content="お問い合わせ｜大倉山ファミリア矯正歯科（横浜市港北区）" />
+        <meta name="description" content="" />
+        <meta name="keywords" content="" />
+        <meta property="og:title" content="" />
         <meta property="og:type" content="article">
-        <meta property="og:url" content="https://familiar-kyousei.com/contact">
+        <meta property="og:url" content="">
         <meta property="og:image" content="<?php echo get_template_directory_uri() ?>/images/common/ogp.jpg" />
-        <meta property="og:site_name" content="大倉山ファミリア矯正歯科（横浜市港北区）" />
-        <meta property="og:description" content="横浜市大倉山の、痛くない・目立たない矯正専門歯科。マウスピース矯正(インビザラン)なども子供から大人まで安心の定額制です。" />
+        <meta property="og:site_name" content="" />
+        <meta property="og:description" content="" />
     <?php elseif (is_page('thanks')) : ?>
         <title></title>
-        <meta name="description" content="横浜市港北区大倉山の、痛くない・目立たない矯正専門歯科。マウスピース矯正(インビザライン)なども子供から大人まで安心の定額制です。" />
-        <meta name="keywords" content="矯正歯科,港北区,大倉山" />
-        <meta property="og:title" content="送信完了｜大倉山ファミリア矯正歯科（横浜市港北区）" />
+        <meta name="description" content="" />
+        <meta name="keywords" content="" />
+        <meta property="og:title" content="" />
         <meta property="og:type" content="article">
-        <meta property="og:url" content="https://familiar-kyousei.com/thanks">
+        <meta property="og:url" content="">
         <meta property="og:image" content="<?php echo get_template_directory_uri() ?>/images/common/ogp.jpg" />
-        <meta property="og:site_name" content="大倉山ファミリア矯正歯科（横浜市港北区）" />
-        <meta property="og:description" content="横浜市大倉山の、痛くない・目立たない矯正専門歯科。マウスピース矯正(インビザラン)なども子供から大人まで安心の定額制です。" />
+        <meta property="og:site_name" content="" />
+        <meta property="og:description" content="" />
     <?php elseif (is_single()) : ?>
         <title><?php the_title() ?></title>
-        <meta name="description" content="横浜市港北区大倉山の、痛くない・目立たない矯正専門歯科。マウスピース矯正(インビザライン)なども子供から大人まで安心の定額制です。" />
-        <meta name="keywords" content="矯正歯科,港北区,大倉山" />
-        <meta property="og:title" content="<?php the_title() ?>｜大倉山ファミリア矯正歯科（横浜市港北区）" />
+        <meta name="description" content="" />
+        <meta name="keywords" content="" />
+        <meta property="og:title" content="<?php the_title() ?>" />
         <meta property="og:type" content="article">
-        <meta property="og:url" content="https://familiar-kyousei.com/adult">
+        <meta property="og:url" content="">
         <meta property="og:image" content="<?php echo get_template_directory_uri() ?>/images/common/ogp.jpg" />
-        <meta property="og:site_name" content="大倉山ファミリア矯正歯科（横浜市港北区）" />
-        <meta property="og:description" content="横浜市大倉山の、痛くない・目立たない矯正専門歯科。マウスピース矯正(インビザラン)なども子供から大人まで安心の定額制です。" />
+        <meta property="og:site_name" content="" />
+        <meta property="og:description" content="" />
 
     <?php endif; ?>
     <meta name="twitter:card" content="summary_large_image">
@@ -190,10 +190,10 @@
                                     <div class="p-drawer-accordion__content js-drawer-content">
                                         <ul class="p-drawer-accordion__sub-lists">
                                             <li class="p-drawer-accordion__sub-list">
-                                                <a href="#" class="p-drawer-accordion__sub-link">遺産相続</a>
+                                                <a href="<?php echo esc_url(home_url('/inheritance')); ?>" class="p-drawer-accordion__sub-link">遺産相続</a>
                                             </li>
                                             <li class="p-drawer-accordion__sub-list">
-                                                <a href="#" class="p-drawer-accordion__sub-link">遺産整理業務</a>
+                                                <a href="<?php echo esc_url(home_url('/flow')); ?>" class="p-drawer-accordion__sub-link">遺産整理業務</a>
                                             </li>
                                             <li class="p-drawer-accordion__sub-list">
                                                 <a href="#" class="p-drawer-accordion__sub-link">遺産登記費用の概算</a>
@@ -296,10 +296,10 @@
                                 <a href="<?php echo esc_url(home_url('/price')); ?>" class="p-drawer-content__link">料金表</a>
                             </li>
                             <li class="p-drawer-content__list">
-                                <a href="#" class="p-drawer-content__link">事務所案内</a>
+                                <a href="<?php echo esc_url(home_url('/office')); ?>" class="p-drawer-content__link">事務所案内</a>
                             </li>
                             <li class="p-drawer-content__list">
-                                <a href="#" class="p-drawer-content__link">司法書士紹介</a>
+                                <a href="<?php echo esc_url(home_url('/introduce')); ?>" class="p-drawer-content__link">司法書士紹介</a>
                             </li>
                             <li class="p-drawer-content__list">
                                 <a href="<?php echo esc_url(home_url('/question')); ?>" class="p-drawer-content__link">よくある質問</a>
@@ -308,7 +308,7 @@
                                 <a href="<?php echo esc_url(home_url('/blog')); ?>" class="p-drawer-content__link">所長ブログ</a>
                             </li>
                             <li class="p-drawer-content__list">
-                                <a href="#" class="p-drawer-content__link">個人情報保護方針</a>
+                                <a href="<?php echo esc_url(home_url('/privacy')); ?>" class="p-drawer-content__link">個人情報保護方針</a>
                             </li>
                         </ul>
                         <div class="p-drawer-content__footer">
