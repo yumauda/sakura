@@ -604,15 +604,22 @@ select::-ms-expand {
 
 .p-breadcrumbs__lists {
   display: flex;
+  overflow-x: auto;
   align-items: center;
-  flex-wrap: wrap;
   gap: 0.625rem;
+}
+@media screen and (min-width: 768px) {
+  .p-breadcrumbs__lists {
+    overflow-x: initial;
+    flex-wrap: wrap;
+  }
 }
 
 .p-breadcrumbs__list {
   color: #000;
   font-weight: 400;
   font-size: 0.75rem;
+  white-space: nowrap;
 }
 @media screen and (min-width: 768px) {
   .p-breadcrumbs__list {
@@ -1686,12 +1693,14 @@ select::-ms-expand {
   display: flex;
   justify-content: center;
   flex-direction: column;
-  margin-top: 2.5rem;
+  align-items: center;
   gap: 0.9375rem;
+  margin-top: 1.25rem;
 }
 @media screen and (min-width: 768px) {
   .p-form__btn-wrapper {
     gap: 0.625rem;
+    margin-top: 2.5rem;
     flex-direction: row;
   }
 }

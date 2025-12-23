@@ -8,19 +8,26 @@
 }
 
 .p-breadcrumbs__content {
+  @include mq(md) {
+  }
 }
 
 .p-breadcrumbs__lists {
   display: flex;
+  overflow-x: auto;
   align-items: center;
-  flex-wrap: wrap;
   gap: rem(10);
+  @include mq(md) {
+    overflow-x: initial;
+    flex-wrap: wrap;
+  }
 }
 
 .p-breadcrumbs__list {
   color: #000;
   font-weight: 400;
   font-size: rem(12);
+  white-space: nowrap;
   @include mq(md) {
     font-size: rem(14);
   }

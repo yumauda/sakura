@@ -158,10 +158,12 @@
   display: flex;
   justify-content: center;
   flex-direction: column;
-  margin-top: rem(40);
+  align-items: center;
   gap: rem(15);
+  margin-top: rem(20);
   @include mq(md) {
     gap: rem(10);
+    margin-top: rem(40);
     flex-direction: row;
   }
 
