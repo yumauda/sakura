@@ -145,19 +145,19 @@
                     </div>
                     <ul class="p-header__lists">
                         <li class="p-header__list">
-                            <a href="#" class="p-header__link">ホーム</a>
+                            <a href="<?php echo esc_url(home_url('/')); ?>" class="p-header__link">ホーム</a>
                         </li>
                         <li class="p-header__list">
-                            <a href="#" class="p-header__link">事務所案内</a>
+                            <a href="<?php echo esc_url(home_url('/office')); ?>" class="p-header__link">事務所案内</a>
                         </li>
                         <li class="p-header__list">
-                            <a href="#" class="p-header__link">司法書士紹介</a>
+                            <a href="<?php echo esc_url(home_url('/introduce')); ?>" class="p-header__link">司法書士紹介</a>
                         </li>
                         <li class="p-header__list">
-                            <a href="#" class="p-header__link">よくある質問</a>
+                            <a href="<?php echo esc_url(home_url('/question')); ?>" class="p-header__link">よくある質問</a>
                         </li>
                         <li class="p-header__list">
-                            <a href="#" class="p-header__link">所長ブログ</a>
+                            <a href="<?php echo esc_url(home_url('/blog')); ?>" class="p-header__link">所長ブログ</a>
                         </li>
                     </ul>
                 </nav>
@@ -293,7 +293,7 @@
                                 <a href="#" class="p-drawer-content__link">その他業務</a>
                             </li>
                             <li class="p-drawer-content__list">
-                                <a href="#" class="p-drawer-content__link">料金表</a>
+                                <a href="<?php echo esc_url(home_url('/price')); ?>" class="p-drawer-content__link">料金表</a>
                             </li>
                             <li class="p-drawer-content__list">
                                 <a href="#" class="p-drawer-content__link">事務所案内</a>
@@ -302,10 +302,10 @@
                                 <a href="#" class="p-drawer-content__link">司法書士紹介</a>
                             </li>
                             <li class="p-drawer-content__list">
-                                <a href="#" class="p-drawer-content__link">よくある質問</a>
+                                <a href="<?php echo esc_url(home_url('/question')); ?>" class="p-drawer-content__link">よくある質問</a>
                             </li>
                             <li class="p-drawer-content__list">
-                                <a href="#" class="p-drawer-content__link">所長ブログ</a>
+                                <a href="<?php echo esc_url(home_url('/blog')); ?>" class="p-drawer-content__link">所長ブログ</a>
                             </li>
                             <li class="p-drawer-content__list">
                                 <a href="#" class="p-drawer-content__link">個人情報保護方針</a>
@@ -324,7 +324,7 @@
             </div>
             <ul class="p-header__page-lists">
                 <li class="p-header__page-list">
-                    <a href="#" class="p-header__page-link">
+                    <a href="<?php echo esc_url(home_url('/inheritance')); ?>" class="p-header__page-link">
                         <div class="p-header__page-icon">
                             <svg
                                 xmlns="http://www.w3.org/2000/svg"
@@ -412,7 +412,7 @@
                 </li>
 
                 <li class="p-header__page-list">
-                    <a href="#" class="p-header__page-link">
+                    <a href="<?php echo esc_url(home_url('/price')); ?>" class="p-header__page-link">
                         <div class="p-header__page-icon">
                             <svg
                                 xmlns="http://www.w3.org/2000/svg"

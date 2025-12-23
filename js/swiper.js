@@ -28,6 +28,7 @@ const slider2 = new Swiper(".slider-main", {
     prevEl: ".swiper-button-prev",
   },
 });
+
 const slider3 = new Swiper(".slider3", {
   slidesPerView: 1.2,
   centeredSlides: true,

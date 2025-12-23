@@ -76,6 +76,10 @@
   &:hover {
     background-color: #f9f9f9;
   }
+
+  &.is-current {
+    background-color: #fdedf1;
+  }
 }
 .p-sidebar__menu-item:last-child .p-sidebar__menu-link {
   border-bottom: initial;
@@ -164,7 +168,6 @@
   max-height: 0;
   overflow: hidden;
   transition: max-height 0.3s ease;
-  background-color: #f9f9f9;
 
   .p-sidebar__menu-item--parent.is-open & {
     max-height: rem(500);
@@ -193,6 +196,10 @@
   &:hover {
     background-color: #efefef;
   }
+
+  &.is-current {
+    background-color: #fdedf1;
+  }
 }
 .p-sidebar__submenu-link::before {
   position: absolute;
@@ -216,6 +223,9 @@
   top: 50%;
   transform: translateY(-50%);
   right: rem(16);
+}
+.p-sidebar__submenu-item:last-child .p-sidebar__submenu-link {
+  border-bottom: 1px solid #cccccc;
 }
 .p-sidebar__slider-wrapper {
   margin-top: rem(15);

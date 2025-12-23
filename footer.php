@@ -32,7 +32,7 @@
                         <a href="<?php echo esc_url(home_url('/')); ?>" class="p-footer__link">法務サポート</a>
                         <ul class="p-footer__subLists">
                             <li class="p-footer__subList">
-                                <a href="<?php echo esc_url(home_url('/')); ?>" class="p-footer__subLink">遺産相続</a>
+                                <a href="<?php echo esc_url(home_url('/inheritance')); ?>" class="p-footer__subLink">遺産相続</a>
                             </li>
                             <li class="p-footer__subList">
                                 <a href="<?php echo esc_url(home_url('/')); ?>" class="p-footer__subLink">相続の知識</a>
@@ -52,15 +52,15 @@
                         </ul>
                     </li>
                     <li class="p-footer__list">
-                        <a href="<?php echo esc_url(home_url('/')); ?>" class="p-footer__link">料金表</a>
-                        <a href="<?php echo esc_url(home_url('/')); ?>" class="p-footer__link">事務所案内</a>
-                        <a href="<?php echo esc_url(home_url('/')); ?>" class="p-footer__link">司法書士紹介</a>
-                        <a href="<?php echo esc_url(home_url('/')); ?>" class="p-footer__link">よくある質問</a>
+                        <a href="<?php echo esc_url(home_url('/price')); ?>" class="p-footer__link">料金表</a>
+                        <a href="<?php echo esc_url(home_url('/office')); ?>" class="p-footer__link">事務所案内</a>
+                        <a href="<?php echo esc_url(home_url('/introduce')); ?>" class="p-footer__link">司法書士紹介</a>
+                        <a href="<?php echo esc_url(home_url('/question')); ?>" class="p-footer__link">よくある質問</a>
                     </li>
                     <li class="p-footer__list">
-                        <a href="<?php echo esc_url(home_url('/')); ?>" class="p-footer__link">所長ブログ</a>
-                        <a href="<?php echo esc_url(home_url('/')); ?>" class="p-footer__link">個人情報保護方針</a>
-                        <a href="<?php echo esc_url(home_url('/')); ?>" class="p-footer__link">お問い合わせ</a>
+                        <a href="<?php echo esc_url(home_url('/blog')); ?>" class="p-footer__link">所長ブログ</a>
+                        <a href="<?php echo esc_url(home_url('/privacy')); ?>" class="p-footer__link">個人情報保護方針</a>
+                        <a href="<?php echo esc_url(home_url('/contact')); ?>" class="p-footer__link">お問い合わせ</a>
                     </li>
                 </ul>
             </div>

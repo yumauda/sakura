@@ -1,0 +1,168 @@
+<?php get_header(); ?>
+<main>
+  <section class="p-page-mv">
+    <div class="l-inner">
+      <div class="p-page-mv__content">
+        <figure class="p-page-mv__img">
+          <picture>
+            <source srcset="<?php echo get_template_directory_uri() ?>/images/common/page_mv_bg.webp" media="(min-width: 768px)" width="1500" height="150" />
+            <img src="<?php echo get_template_directory_uri() ?>/images/common/page_mv_bg_sp.webp" alt="" width="380" height="100">
+          </picture>
+        </figure>
+        <h2 class="p-page-mv__title"><?php the_title(); ?></h2>
+
+      </div>
+    </div>
+  </section>
+  <?php get_template_part('includes/breadcrumbs'); ?>
+
+
+
+  <section class="p-inheritance">
+    <div class="l-inner">
+      <div class="p-inheritance__container">
+        <!-- メインコンテンツ -->
+        <!-- <section class="p-price">
+          <div class="p-price__content">
+            <h3 class="c-page-title">遺産相続</h3>
+            <div class="p-price__block">
+              <h4 class="c-page-title--h4">1. 相続手続（家庭裁判所への申立）における費用と書類作成報酬</h4>
+              <table class="p-price__table">
+                <thead>
+                  <tr>
+                    <th>内容</th>
+                    <th>実費</th>
+                    <th>司法書士報酬（税込）</th>
+                  </tr>
+                </thead>
+                <tbody>
+                  <tr>
+                    <td>相続放棄</td>
+                    <td rowspan="3">800円＋切手代</td>
+                    <td rowspan="15">39,600円＋実費</td>
+                  </tr>
+                  <tr>
+                    <td>相続の承認・放棄の期間延長</td>
+                  </tr>
+                  <tr>
+                    <td>限定承認</td>
+                  </tr>
+                  <tr>
+                    <td>遺留分減殺請求</td>
+                    <td rowspan="4">1,200円＋切手代</td>
+                  </tr>
+                  <tr>
+                    <td>寄与分を定める処分</td>
+                  </tr>
+                  <tr>
+                    <td>推定相続人の廃除（遺言）</td>
+                  </tr>
+                  <tr>
+                    <td>推定相続人の廃除</td>
+                  </tr>
+                  <tr>
+                    <td>遺言書の検認</td>
+                    <td rowspan="6">800円＋切手代</td>
+                  </tr>
+                  <tr>
+                    <td>財産の管理者の選任</td>
+                  </tr>
+                  <tr>
+                    <td>遺言執行者の選任</td>
+                  </tr>
+                  <tr>
+                    <td>不在者財産管理人選任</td>
+                  </tr>
+                  <tr>
+                    <td>相続財産管理人選任</td>
+                  </tr>
+                  <tr>
+                    <td>特別代理人選任</td>
+                  </tr>
+                  <tr>
+                    <td>不動産処分禁止の仮処分</td>
+                    <td>切手代等＋登録免許税</td>
+                  </tr>
+                  <tr>
+                    <td>遺産分割調停</td>
+                    <td>200円＋切手代等</td>
+                  </tr>
+                </tbody>
+              </table>
+
+            </div>
+            <div class="p-price__block">
+              <h4 class="c-page-title--h4">2. 遺産分割協議書の作成</h4>
+              <table class="p-price__table p-price__table--separate">
+                <thead>
+                  <tr>
+                    <th>内容</th>
+                    <th>司法書士報酬（税込）</th>
+                  </tr>
+                </thead>
+                <tbody>
+                  <tr>
+                    <td>遺産分割協議書（分割案確定）</td>
+                    <td class="fw700">19,800円～</td>
+                  </tr>
+                  <tr>
+                    <td>相続の承認・放棄の期間延長</td>
+                    <td class="fw700">55,000円～</td>
+                  </tr>
+
+                </tbody>
+              </table>
+
+            </div>
+            <div class="p-price__block">
+              <h4 class="c-page-title--h4">4. 預貯金の名義変更や解約代行業務の料金費用</h4>
+              <table class="p-price__table">
+                <thead>
+                  <tr>
+                    <th>内容</th>
+                    <th>実費</th>
+                    <th>司法書士報酬（税込）</th>
+                  </tr>
+                </thead>
+                <tbody>
+                  <tr>
+                    <td>基本報酬（取得代行費含む）</td>
+                    <td rowspan="2">戸籍代等</td>
+                    <td class="fw700">154,000円</td>
+                  </tr>
+                  <tr>
+                    <td>金融機関1社につき</td>
+                    <td class="fw700">55,000円</td>
+                  </tr>
+
+                </tbody>
+              </table>
+
+            </div>
+            <div class="p-price__block">
+              <h4 class="c-page-title--h4">遺産相続の注意補足事項</h4>
+              <div class="p-price__block-yellow">
+                <div class="p-price__block-yellowIcon">
+                  <img decoding="async" loading="lazy" src="<?php echo get_template_directory_uri() ?>/images/common/price_icon.png" alt="" width="32" height="38">
+                </div>
+                <p class="p-price__block-yellowText">
+                  債権者数や事案の複雑さによって、報酬が増減する場合があります。そして管轄裁判所や申し立ての内容によって、必要となる実費が異なる場合があります。
+                </p>
+              </div>
+
+
+            </div>
+          </div>
+        </section> -->
+        <?php the_content(); ?>
+
+        <?php get_template_part('includes/sidebar-legal'); ?>
+      </div>
+    </div>
+  </section>
+
+
+  <?php get_template_part('includes/contact'); ?>
+
+</main>
+<?php get_footer() ?>

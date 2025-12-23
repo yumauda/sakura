@@ -11,36 +11,7 @@
       </div>
     </div>
   </section>
-  <div class="p-breadcrumbs">
-    <div class="l-inner">
-      <div class="p-breadcrumbs__content">
-        <ul class="p-breadcrumbs__lists">
-          <li class="p-breadcrumbs__list">
-            <a href="#" class="p-breadcrumbs__link">
-              ホーム
-            </a>
-          </li>
-          <li class="p-breadcrumbs__list">
-            <div class="p-breadcrumbs__icon">
-              <svg
-                xmlns="http://www.w3.org/2000/svg"
-                viewBox="0 0 6 10"
-                xmlns:xlink="http://www.w3.org/1999/xlink">
-                <path fill-rule="evenodd" fill="rgb(0, 0, 0)"
-                  d="M4.873,4.999 L0.241,9.563 L0.683,9.999 L5.758,4.999 L0.683,-0.001 L0.241,0.435 L4.873,4.999 Z" />
-              </svg>
-            </div>
-          </li>
-          <li class="p-breadcrumbs__list">
-            <a href="#" class="p-breadcrumbs__link">
-              所長ブログ
-            </a>
-          </li>
-
-        </ul>
-      </div>
-    </div>
-  </div>
+  <?php get_template_part('includes/breadcrumbs'); ?>
 
 
 
@@ -122,44 +93,7 @@
 
         </section>
 
-        <!-- サイドバー -->
-        <aside class="p-inheritance__sidebar p-sidebar">
-          <div class="p-sidebar__menu">
-            <h3 class="p-sidebar__title">カテゴリー</h3>
-            <ul class="p-sidebar__category-list">
-              <?php
-              wp_list_categories(array(
-                'title_li'    => '',
-                'show_count'  => 1,
-                'hierarchical' => 1,
-                'depth'       => 2,
-                'walker'      => new Custom_Category_Walker()
-              ));
-              ?>
-            </ul>
-
-            <!-- Slider main container -->
-            <h3 class="p-sidebar__title mt30">アーカイブ</h3>
-            <ul class="p-sidebar__category-list">
-              <?php
-              $archives = wp_get_archives(array(
-                'type'            => 'yearly',
-                'show_post_count' => 1,
-                'format'          => 'custom',
-                'before'          => '<li class="p-sidebar__category-item">',
-                'after'           => '</li>',
-                'echo'            => 0
-              ));
-              // リンクにカスタムクラスを追加
-              $archives = str_replace('<a href=', '<a class="p-sidebar__category-link" href=', $archives);
-              // 投稿数をリンク内に移動
-              $archives = preg_replace('/<\/a>&nbsp;\((\d+)\)/', ' ($1)</a>', $archives);
-              echo $archives;
-              ?>
-            </ul>
-
-          </div>
-        </aside>
+        <?php get_template_part('includes/sidebar-blog'); ?>
       </div>
     </div>
   </section>

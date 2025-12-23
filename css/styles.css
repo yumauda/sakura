@@ -637,6 +637,11 @@ select::-ms-expand {
   height: 0.625rem;
 }
 
+.p-breadcrumbs__link--current {
+  cursor: default;
+  pointer-events: none;
+}
+
 .p-contact {
   background: #ee819d;
   position: relative;
@@ -3579,6 +3584,29 @@ input::placeholder {
   height: auto;
 }
 
+/* Swiper自体は見せる */
+.p-mv .swiper {
+  overflow: visible;
+}
+
+/* 画像単体は切る（角丸・はみ出し防止） */
+.p-mv__img {
+  overflow: hidden;
+  border-radius: 1rem;
+}
+
+.p-mv .swiper-pagination {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  gap: 1.25rem;
+}
+
+.p-mv .swiper-slide-prev,
+.p-mv .swiper-slide-next {
+  opacity: 0.5;
+}
+
 .p-mv .swiper-pagination {
   margin-top: 0.625rem;
 }
@@ -3605,6 +3633,17 @@ input::placeholder {
 .p-mv .swiper-pagination-bullet-active {
   background: #ee819d;
   border: 1px solid #ee819d;
+}
+
+/* Swiper自体は見せる */
+.p-mv .swiper {
+  overflow: visible;
+}
+
+/* 画像単体は切る（角丸・はみ出し防止） */
+.p-mv__img {
+  overflow: hidden;
+  border-radius: 1rem;
 }
 
 .p-news__link {
@@ -4083,7 +4122,7 @@ input::placeholder {
 }
 
 .p-price__btn:hover {
-  background: #fff;
+  background: #ee819d;
 }
 
 .p-price__btn-text {
@@ -4372,6 +4411,9 @@ input::placeholder {
 .p-sidebar__menu-link:hover {
   background-color: #f9f9f9;
 }
+.p-sidebar__menu-link.is-current {
+  background-color: #fdedf1;
+}
 
 .p-sidebar__menu-item:last-child .p-sidebar__menu-link {
   border-bottom: initial;
@@ -4464,7 +4506,6 @@ input::placeholder {
   max-height: 0;
   overflow: hidden;
   transition: max-height 0.3s ease;
-  background-color: #f9f9f9;
 }
 .p-sidebar__menu-item--parent.is-open .p-sidebar__submenu {
   max-height: 31.25rem;
@@ -4491,6 +4532,9 @@ input::placeholder {
 .p-sidebar__submenu-link:hover {
   background-color: #efefef;
 }
+.p-sidebar__submenu-link.is-current {
+  background-color: #fdedf1;
+}
 
 .p-sidebar__submenu-link::before {
   position: absolute;
@@ -4515,6 +4559,10 @@ input::placeholder {
   top: 50%;
   transform: translateY(-50%);
   right: 1rem;
+}
+
+.p-sidebar__submenu-item:last-child .p-sidebar__submenu-link {
+  border-bottom: 1px solid #cccccc;
 }
 
 .p-sidebar__slider-wrapper {

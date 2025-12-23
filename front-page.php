@@ -4,11 +4,10 @@
   <div class="p-mv">
     <div class="l-inner">
       <div class="p-mv__content">
-        <!-- Slider main container -->
+        
         <div class="swiper slider-main">
-          <!-- Additional required wrapper -->
-          <div class="swiper-wrapper">
-            <!-- Slides -->
+          
+          <div class="swiper-wrapper slider__items">
             <div class="swiper-slide">
               <a href="#" class="p-mv__slide__link">
                 <figure class="p-mv__img">
@@ -47,10 +46,8 @@
 
 
           </div>
-          <!-- If we need pagination -->
           <div class="swiper-pagination"></div>
 
-          <!-- If we need navigation buttons -->
           <div class="swiper-button-prev"></div>
           <div class="swiper-button-next"></div>
 
@@ -100,7 +97,7 @@
           </figure>
         </div>
         <div class="p-about__btn-wrapper">
-          <a href="#" class="c-btn">
+          <a href="<?php echo esc_url(home_url('/office')); ?>" class="c-btn">
             <p class="c-btn__text">事務所案内</p>
             <div class="c-btn__arrow">
               <svg
@@ -112,7 +109,7 @@
               </svg>
             </div>
           </a>
-          <a href="#" class="c-btn">
+          <a href="<?php echo esc_url(home_url('/introduce')); ?>" class="c-btn">
             <p class="c-btn__text">司法書士紹介</p>
             <div class="c-btn__arrow">
               <svg
@@ -204,7 +201,7 @@
         <p class="c-main-text">当事務所では、徹底した秘密厳守と、司法書士及び専従スタッフによる親身な対応により、スムーズかつ的確な手続きをサポートさせていただきます。相続や遺産整理の問題でお悩みの方に司法書士との<span>相談を初回無料</span>でお受けしておりますので、まずは無料相談で相続に関する疑問点、不安点などを解消して下さい。</p>
       </div>
       <div class="p-service__btn">
-        <a href="#" class="c-btn">
+        <a href="<?php echo esc_url(home_url('/inheritance')); ?>" class="c-btn">
           <p class="c-btn__text">遺産相続</p>
           <div class="c-btn__arrow">
             <svg
@@ -284,7 +281,6 @@
         </div>
         <div class="p-top-news__right">
           <?php
-          // パラメータの設定
           $args = array(
             'posts_per_page' => 4,
             'post_status' => 'publish',
@@ -292,7 +288,6 @@
             'orderby' => 'date',
           );
 
-          // WP_Queryインスタンスの生成
           $my_query = new WP_Query($args);
           if ($my_query->have_posts()) :
             while ($my_query->have_posts()) : $my_query->the_post();
@@ -431,6 +426,7 @@
       </div>
     </div>
   </section>
+  <!-- <?php the_content(); ?> -->
   <?php get_template_part('includes/contact'); ?>
 
 </main>

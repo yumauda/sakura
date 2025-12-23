@@ -1,0 +1,90 @@
+<?php get_header(); ?>
+<main>
+  <section class="p-page-mv">
+    <div class="l-inner">
+      <div class="p-page-mv__content">
+        <figure class="p-page-mv__img">
+          <img decoding="async" loading="lazy" src="<?php echo get_template_directory_uri() ?>/images/common/page_mv_bg.webp" alt="" width="1500" height="150">
+        </figure>
+        <h2 class="p-page-mv__title"><?php the_title(); ?></h2>
+
+      </div>
+    </div>
+  </section>
+  <?php get_template_part('includes/breadcrumbs'); ?>
+
+
+
+  <section class="p-inheritance">
+    <div class="l-inner">
+      <div class="p-inheritance__container">
+        <!-- メインコンテンツ -->
+        <!-- <section class="p-price">
+          <div class="p-price__content">
+            <h3 class="c-page-title">代表司法書士</h3>
+            <figure class="p-price__profile">
+              <img decoding="async" loading="lazy" src="<?php echo get_template_directory_uri() ?>/images/common/profile.jpg" alt="代表司法書士" width="200" height="200">
+            </figure>
+            <div class="p-price__block">
+              <table class="p-price__table p-price__table--half">
+                <tbody>
+                  <tr>
+                    <td>氏名</td>
+                    <td>志村 理（しむら おさむ）</td>
+                  </tr>
+                  <tr>
+                    <td>資格</td>
+                    <td class="border-bottom-none">
+                      <ul class="p-price__list">
+                        <li class="p-price__list-item">
+                          司法書士登録番号 東京第3974号
+                        </li>
+                        <li class="p-price__list-item">
+                          簡裁訴訟代理認定番号 第501103号
+                        </li>
+                      </ul>
+                    </td>
+                  </tr>
+                </tbody>
+              </table>
+            </div>
+
+          </div>
+          <div class="p-price__content">
+            <h3 class="c-page-title">主な会務・役歴</h3>
+           
+            <div class="p-price__block">
+              <dl class="p-price__dl">
+                <div class="p-price__dlRow">
+                  <dt class="p-price__dt">2023～2024年</dt>
+                  <dd class="p-price__dd">
+                    <p class="p-price__dd-text">東京司法書士会 田無支部 支部長</p>
+                    <p class="p-price__dd-text">清瀬市 きよせ権利擁護センター 事例検討委員会 委員</p>
+                  </dd>
+                </div>
+                <div class="p-price__dlRow">
+                  <dt class="p-price__dt">2020～2022年</dt>
+                  <dd class="p-price__dd">
+                    <p class="p-price__dd-text">清瀬市 きよせ権利擁護センター 事例検討委員会 委員</p>
+                    <p class="p-price__dd-text">清瀬市 きよせ権利擁護センター 運営委員会 委員</p>
+                    <p class="p-price__dd-text">清瀬市 きよせ権利擁護センター 法人後見準備支援検討会 委員</p>
+                  </dd>
+                </div>
+              </dl>
+            </div>
+
+          </div>
+          
+        </section> -->
+        <?php the_content(); ?>
+
+        <?php get_template_part('includes/sidebar-legal'); ?>
+      </div>
+    </div>
+  </section>
+
+
+  <?php get_template_part('includes/contact'); ?>
+
+</main>
+<?php get_footer() ?>

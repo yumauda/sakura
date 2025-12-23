@@ -1,0 +1,129 @@
+<?php get_header(); ?>
+<main>
+  <section class="p-page-mv">
+    <div class="l-inner">
+      <div class="p-page-mv__content">
+        <figure class="p-page-mv__img">
+          <img decoding="async" loading="lazy" src="<?php echo get_template_directory_uri() ?>/images/common/page_mv_bg.webp" alt="" width="1500" height="150">
+        </figure>
+        <h2 class="p-page-mv__title"><?php the_title(); ?></h2>
+
+      </div>
+    </div>
+  </section>
+  <?php get_template_part('includes/breadcrumbs'); ?>
+
+
+
+  <section class="p-inheritance">
+    <div class="l-inner">
+      <div class="p-inheritance__container">
+        <!-- メインコンテンツ -->
+        <!-- <section class="p-price">
+          <div class="p-price__content">
+            <h3 class="c-page-title">全般的な質問</h3>
+
+            <div class="p-qa__block">
+              <details class="p-qa__content p-qa__box js-details is-opened" open>
+                <summary class="p-qa__summary js-summary is-opened">
+                  <h4 class="p-qa__ttl">
+                    一般歯科との違いは何ですか？
+                  </h4>
+                </summary>
+                <div class="p-qa__inner js-content">
+                  <div class="p-qa__wrap">
+                    <div class="p-qa__content p-qa__content--open01">
+                      <p class="p-qa__txt">当事務所では、事前にお見積りを提示いたします。<br>
+                        事前に正確な費用を算出することができない場合には、まずおおよその概算金額をお伝えし、算出が可能となった時点で正確な金額をお伝えします。</p>
+                      <p class="p-qa__txt">当事務所では、事前にお見積りを提示いたします。<br>
+                        事前に正確な費用を算出することができない場合には、まずおおよその概算金額をお伝えし、算出が可能となった時点で正確な金額をお伝えします。</p>
+                      <p class="p-qa__txt">具体的な料金に関しては<a href="#" class="p-qa__link">「料金表」ページ</a>をご覧ください。</p>
+
+                    </div>
+                  </div>
+                </div>
+              </details>
+              <details class="p-qa__content p-qa__box js-details">
+                <summary class="p-qa__summary js-summary">
+                  <h4 class="p-qa__ttl">
+                    一般歯科との違いは何ですか？
+                  </h4>
+                </summary>
+                <div class="p-qa__inner js-content">
+                  <div class="p-qa__wrap">
+                    <div class="p-qa__content p-qa__content--open01">
+                      <p class="p-qa__txt">当事務所では、事前にお見積りを提示いたします。<br>
+                        事前に正確な費用を算出することができない場合には、まずおおよその概算金額をお伝えし、算出が可能となった時点で正確な金額をお伝えします。</p>
+                      <p class="p-qa__txt">当事務所では、事前にお見積りを提示いたします。<br>
+                        事前に正確な費用を算出することができない場合には、まずおおよその概算金額をお伝えし、算出が可能となった時点で正確な金額をお伝えします。</p>
+                      <p class="p-qa__txt">具体的な料金に関しては<a href="#" class="p-qa__link">「料金表」ページ</a>をご覧ください。</p>
+
+                    </div>
+                  </div>
+                </div>
+              </details>
+            
+            </div>
+
+          </div>
+          <div class="p-price__content">
+            <h3 class="c-page-title">全般的な質問</h3>
+
+            <div class="p-qa__block">
+              <details class="p-qa__content p-qa__box js-details is-opened" open>
+                <summary class="p-qa__summary js-summary is-opened">
+                  <h4 class="p-qa__ttl">
+                    一般歯科との違いは何ですか？
+                  </h4>
+                </summary>
+                <div class="p-qa__inner js-content">
+                  <div class="p-qa__wrap">
+                    <div class="p-qa__content p-qa__content--open01">
+                      <p class="p-qa__txt">当事務所では、事前にお見積りを提示いたします。<br>
+                        事前に正確な費用を算出することができない場合には、まずおおよその概算金額をお伝えし、算出が可能となった時点で正確な金額をお伝えします。</p>
+                      <p class="p-qa__txt">当事務所では、事前にお見積りを提示いたします。<br>
+                        事前に正確な費用を算出することができない場合には、まずおおよその概算金額をお伝えし、算出が可能となった時点で正確な金額をお伝えします。</p>
+                      <p class="p-qa__txt">具体的な料金に関しては<a href="#" class="p-qa__link">「料金表」ページ</a>をご覧ください。</p>
+
+                    </div>
+                  </div>
+                </div>
+              </details>
+              <details class="p-qa__content p-qa__box js-details">
+                <summary class="p-qa__summary js-summary">
+                  <h4 class="p-qa__ttl">
+                    一般歯科との違いは何ですか？
+                  </h4>
+                </summary>
+                <div class="p-qa__inner js-content">
+                  <div class="p-qa__wrap">
+                    <div class="p-qa__content p-qa__content--open01">
+                      <p class="p-qa__txt">当事務所では、事前にお見積りを提示いたします。<br>
+                        事前に正確な費用を算出することができない場合には、まずおおよその概算金額をお伝えし、算出が可能となった時点で正確な金額をお伝えします。</p>
+                      <p class="p-qa__txt">当事務所では、事前にお見積りを提示いたします。<br>
+                        事前に正確な費用を算出することができない場合には、まずおおよその概算金額をお伝えし、算出が可能となった時点で正確な金額をお伝えします。</p>
+                      <p class="p-qa__txt">具体的な料金に関しては<a href="#" class="p-qa__link">「料金表」ページ</a>をご覧ください。</p>
+
+                    </div>
+                  </div>
+                </div>
+              </details>
+
+            </div>
+
+          </div>
+
+
+        </section> -->
+        <?php the_content(); ?>
+
+        <?php get_template_part('includes/sidebar-legal'); ?>
+      </div>
+    </div>
+  </section>
+
+
+  <?php get_template_part('includes/contact'); ?>
+
+</main>
+<?php get_footer() ?>

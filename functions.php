@@ -437,3 +437,63 @@ class Custom_Category_Walker extends Walker_Category {
 		$output .= "</li>\n";
 	}
 }
+
+/**
+ * テーマディレクトリURLを返すショートコード
+ * 使い方: [theme_url]/images/sample.jpg
+ */
+function theme_url_shortcode() {
+	return get_template_directory_uri();
+}
+add_shortcode('theme_url', 'theme_url_shortcode');
+
+/**
+ * 最新の投稿一覧を表示するショートコード
+ * 使い方: [latest_posts num="4"]
+ * パラメータ:
+ *   num: 表示する投稿数（デフォルト: 4）
+ */
+function latest_posts_shortcode($atts) {
+	// ショートコードの属性を取得
+	$atts = shortcode_atts(array(
+		'num' => 4,
+	), $atts);
+
+	$args = array(
+		'posts_per_page' => intval($atts['num']),
+		'post_status' => 'publish',
+		'post_type' => 'post',
+		'orderby' => 'date',
+	);
+
+	$my_query = new WP_Query($args);
+	$output = '';
+
+	if ($my_query->have_posts()) :
+		while ($my_query->have_posts()) : $my_query->the_post();
+			ob_start();
+			?>
+			<a href="<?php the_permalink(); ?>" class="p-top-news__link">
+				<div class="p-top-news__category">
+					<time datetime="<?php the_time('Y-m-d'); ?>" class="p-top-news__time"><?php the_time('Y.m.d'); ?></time>
+					<p class="p-top-news__category-text">
+						<?php
+						$categories = get_the_category();
+						if (!empty($categories)) {
+							echo esc_html($categories[0]->name);
+						}
+						?>
+					</p>
+				</div>
+				<p class="p-top-news__link-title"><?php the_title(); ?></p>
+			</a>
+			<?php
+			$output .= ob_get_clean();
+		endwhile;
+	endif;
+
+	wp_reset_postdata();
+
+	return $output;
+}
+add_shortcode('latest_posts', 'latest_posts_shortcode');
