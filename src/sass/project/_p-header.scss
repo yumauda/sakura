@@ -9,7 +9,7 @@
   @include mq(md) {
     position: static;
     height: initial;
-    padding-top: rem(27);
+    padding-top: rem(20);
     padding-bottom: rem(30);
   }
 }
@@ -89,7 +89,7 @@
 .p-header__lists {
   display: none;
   @include mq(md) {
-    margin-top: rem(20);
+    margin-top: rem(12);
     display: flex;
     gap: rem(39);
     align-items: center;
@@ -126,6 +126,10 @@
   gap: rem(9);
   border-right: 1px solid #000;
 }
+.p-header__page-list:first-child .p-header__page-link {
+  border-left: 1px solid #000;
+}
+
 
 .p-header__page-icon {
   width: rem(20);

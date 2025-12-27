@@ -146,9 +146,8 @@
       line-height: 1.8;
       text-align: left;
       font-size: rem(15);
-      @include mq(md){
+      @include mq(md) {
         font-size: rem(17);
-        
       }
     }
 
@@ -220,4 +219,10 @@
       padding: 0;
     }
   }
+}
+
+.p-single__content table tr:first-child th,
+.p-single__content table tr:first-child td {
+  background: #fdedf1;
+  font-weight: 700;
 }

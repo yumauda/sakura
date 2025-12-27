@@ -57,7 +57,12 @@
                   <div class="p-news__content">
                     <p class="p-news__title">
                       <?php the_title(); ?>
-                      <?php if ($post_count === 1 && !is_paged()) : ?>
+                      <?php
+                      $post_date = get_the_date('U'); // Unixタイムスタンプで取得
+                      $current_date = current_time('timestamp');
+                      $days_diff = ($current_date - $post_date) / (60 * 60 * 24);
+                      if ($days_diff <= 7) :
+                      ?>
                         <span class="p-news__new">NEW</span>
                       <?php endif; ?>
                     </p>

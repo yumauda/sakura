@@ -56,6 +56,11 @@
     gap: rem(20);
   }
 }
+.p-mv .swiper-slide {
+  /* width: auto  !important;
+  flex-shrink: 0 !important;
+  box-sizing: border-box; */
+}
 .p-mv .swiper-slide-prev,
 .p-mv .swiper-slide-next {
   opacity: 0.5;

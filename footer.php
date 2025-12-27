@@ -12,7 +12,7 @@
                 </div>
                 <div class="p-footer__address">
                     <p class="p-footer__address-text">
-                        〒188-0011 <br class="u-mobile">東京都西東京市田無町5-2-17-304 <a href="#">[地図]</a><br>
+                        〒188-0011 <br class="u-mobile">東京都西東京市田無町5-2-17-304 <a href="https://maps.app.goo.gl/LYeEyak4zKD49ThFA" target="_blank" rel="noopener noreferrer">[地図]</a><br>
                         平日 9:00-18:00（休日:土日祝）<br>
                         代表司法書士：志村 理<br>
                         東京司法書士会所属 第3974号

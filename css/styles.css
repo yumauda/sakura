@@ -752,10 +752,14 @@ select::-ms-expand {
 }
 @media screen and (min-width: 768px) {
   .p-contact__btn {
-    padding-top: 2.5rem;
-    height: initial;
-    padding-bottom: 2.5rem;
-    display: block;
+    padding-top: initial;
+    height: 12.5rem;
+    padding-bottom: initial;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
+    gap: 1.25rem;
   }
 }
 
@@ -781,7 +785,7 @@ select::-ms-expand {
 }
 @media screen and (min-width: 768px) {
   .p-contact__tel {
-    margin-top: 1.5625rem;
+    margin-top: initial;
   }
 }
 
@@ -790,7 +794,7 @@ select::-ms-expand {
 }
 @media screen and (min-width: 768px) {
   .p-contact__tel--mail {
-    font-size: 1.75rem;
+    font-size: 1.375rem;
   }
 }
 
@@ -803,7 +807,7 @@ select::-ms-expand {
 }
 @media screen and (min-width: 768px) {
   .p-contact__btn-text {
-    margin-top: 1.25rem;
+    margin-top: initial;
   }
 }
 
@@ -2146,7 +2150,7 @@ input::placeholder {
   .p-header {
     position: static;
     height: initial;
-    padding-top: 1.6875rem;
+    padding-top: 1.25rem;
     padding-bottom: 1.875rem;
   }
 }
@@ -2236,7 +2240,7 @@ input::placeholder {
 }
 @media screen and (min-width: 768px) {
   .p-header__lists {
-    margin-top: 1.25rem;
+    margin-top: 0.75rem;
     display: flex;
     gap: 2.4375rem;
     align-items: center;
@@ -2268,6 +2272,10 @@ input::placeholder {
   justify-content: center;
   gap: 0.5625rem;
   border-right: 1px solid #000;
+}
+
+.p-header__page-list:first-child .p-header__page-link {
+  border-left: 1px solid #000;
 }
 
 .p-header__page-icon {
@@ -3617,6 +3625,12 @@ input::placeholder {
   }
 }
 
+.p-mv .swiper-slide {
+  /* width: auto  !important;
+  flex-shrink: 0 !important;
+  box-sizing: border-box; */
+}
+
 .p-mv .swiper-slide-prev,
 .p-mv .swiper-slide-next {
   opacity: 0.5;
@@ -4122,6 +4136,11 @@ input::placeholder {
   display: flex;
   align-items: center;
   justify-content: center;
+}
+@media screen and (min-width: 768px) {
+  .p-price__btn-wrapper {
+    margin-top: 3.75rem;
+  }
 }
 
 .p-price__btn {
@@ -4930,6 +4949,12 @@ input::placeholder {
 .p-single__content pre code {
   background: none;
   padding: 0;
+}
+
+.p-single__content table tr:first-child th,
+.p-single__content table tr:first-child td {
+  background: #fdedf1;
+  font-weight: 700;
 }
 
 .p-support {
