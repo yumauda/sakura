@@ -1,63 +1,12 @@
 <!DOCTYPE html>
 <html lang="ja">
 
-<head>
+<head prefix="og: http://ogp.me/ns# fb: http://ogp.me/ns/fb# article: http://ogp.me/ns/article#">
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width,initial-scale=1.0" />
     <meta name="format-detection" content="telephone=no" />
     <!-- meta情報 -->
     <meta property="og:image" content="<?php echo get_template_directory_uri() ?>/images/common/ogp.jpg" />
-    <meta name="keywords" content="相続,司法書士,田無" />
-    <?php if (is_front_page()) : ?>
-        <title>遺産相続や遺産整理・不動産登記のことなら西東京市田無のさくら司法書士事務所</title>
-        <meta name="description" content="遺産相続や遺産整理・不動産登記のことなら西東京市田無のさくら司法書士事務所にお任せください。西東京市を中心に多摩エリアを得意とする司法書士事務所です。" />
-        <meta property="og:title" content="遺産相続や遺産整理・不動産登記のことなら西東京市田無のさくら司法書士事務所" />
-        <meta property="og:type" content="website">
-        <meta property="og:url" content="https://www.shihou.cc/">
-        <meta property="og:site_name" content="遺産相続や遺産整理・不動産登記のことなら西東京市田無のさくら司法書士事務所" />
-        <meta property="og:description" content="遺産相続や遺産整理・不動産登記のことなら西東京市田無のさくら司法書士事務所にお任せください。西東京市を中心に多摩エリアを得意とする司法書士事務所です。" />
-    <?php elseif (is_page('adult')) : ?>
-        <title></title>
-        <meta name="description" content="" />
-        <meta name="keywords" content="" />
-        <meta property="og:title" content="" />
-        <meta property="og:type" content="article">
-        <meta property="og:url" content="">
-        <meta property="og:image" content="<?php echo get_template_directory_uri() ?>/images/common/ogp.jpg" />
-        <meta property="og:site_name" content="" />
-        <meta property="og:description" content="" />
-    <?php elseif (is_page((array('contact', 'confirm')))) : ?>
-        <title></title>
-        <meta name="description" content="" />
-        <meta name="keywords" content="" />
-        <meta property="og:title" content="" />
-        <meta property="og:type" content="article">
-        <meta property="og:url" content="">
-        <meta property="og:image" content="<?php echo get_template_directory_uri() ?>/images/common/ogp.jpg" />
-        <meta property="og:site_name" content="" />
-        <meta property="og:description" content="" />
-    <?php elseif (is_page('thanks')) : ?>
-        <title></title>
-        <meta name="description" content="" />
-        <meta name="keywords" content="" />
-        <meta property="og:title" content="" />
-        <meta property="og:type" content="article">
-        <meta property="og:url" content="">
-        <meta property="og:image" content="<?php echo get_template_directory_uri() ?>/images/common/ogp.jpg" />
-        <meta property="og:site_name" content="" />
-        <meta property="og:description" content="" />
-    <?php elseif (is_single()) : ?>
-        <title><?php the_title() ?></title>
-        <meta name="description" content="" />
-        <meta name="keywords" content="" />
-        <meta property="og:title" content="<?php the_title() ?>" />
-        <meta property="og:type" content="article">
-        <meta property="og:url" content="">
-        <meta property="og:image" content="<?php echo get_template_directory_uri() ?>/images/common/ogp.jpg" />
-        <meta property="og:site_name" content="" />
-        <meta property="og:description" content="" />
-
-    <?php endif; ?>
     <meta name="twitter:card" content="summary_large_image">
     <meta name="twitter:image" content="<?php echo get_template_directory_uri() ?>/images/common/ogp.jpg">
 
@@ -151,10 +100,10 @@
                             <a href="<?php echo esc_url(home_url('/office')); ?>" class="p-header__link">事務所案内</a>
                         </li>
                         <li class="p-header__list">
-                            <a href="<?php echo esc_url(home_url('/introduce')); ?>" class="p-header__link">司法書士紹介</a>
+                            <a href="<?php echo esc_url(home_url('/judicial')); ?>" class="p-header__link">司法書士紹介</a>
                         </li>
                         <li class="p-header__list">
-                            <a href="<?php echo esc_url(home_url('/question')); ?>" class="p-header__link">よくある質問</a>
+                            <a href="<?php echo esc_url(home_url('/faq')); ?>" class="p-header__link">よくある質問</a>
                         </li>
                         <li class="p-header__list">
                             <a href="<?php echo esc_url(home_url('/blog')); ?>" class="p-header__link">所長ブログ</a>
@@ -190,16 +139,16 @@
                                     <div class="p-drawer-accordion__content js-drawer-content">
                                         <ul class="p-drawer-accordion__sub-lists">
                                             <li class="p-drawer-accordion__sub-list">
-                                                <a href="<?php echo esc_url(home_url('/inheritance')); ?>" class="p-drawer-accordion__sub-link">遺産相続</a>
+                                                <a href="<?php echo esc_url(home_url('/succession')); ?>" class="p-drawer-accordion__sub-link">遺産相続</a>
                                             </li>
                                             <li class="p-drawer-accordion__sub-list">
-                                                <a href="<?php echo esc_url(home_url('/flow')); ?>" class="p-drawer-accordion__sub-link">遺産整理業務</a>
+                                                <a href="<?php echo esc_url(home_url('/succession/belongingsafter/')); ?>" class="p-drawer-accordion__sub-link">遺産整理業務</a>
                                             </li>
                                             <li class="p-drawer-accordion__sub-list">
-                                                <a href="#" class="p-drawer-accordion__sub-link">遺産登記費用の概算</a>
+                                                <a href="<?php echo esc_url(home_url('/succession/flow/')); ?>" class="p-drawer-accordion__sub-link">遺産整理業務の流れ</a>
                                             </li>
                                             <li class="p-drawer-accordion__sub-list">
-                                                <a href="#" class="p-drawer-accordion__sub-link">相続放棄</a>
+                                                <a href="<?php echo esc_url(home_url('/succession/houki/')); ?>" class="p-drawer-accordion__sub-link">相続放棄</a>
                                             </li>
                                         </ul>
                                     </div>
@@ -214,13 +163,28 @@
                                     <div class="p-drawer-accordion__content js-drawer-content">
                                         <ul class="p-drawer-accordion__sub-lists">
                                             <li class="p-drawer-accordion__sub-list">
-                                                <a href="#" class="p-drawer-accordion__sub-link">相続の基礎知識</a>
+                                                <a href="<?php echo esc_url(home_url('/knowledge')); ?>" class="p-drawer-accordion__sub-link">相続の基礎知識</a>
                                             </li>
                                             <li class="p-drawer-accordion__sub-list">
-                                                <a href="#" class="p-drawer-accordion__sub-link">相続手続きの流れ</a>
+                                                <a href="<?php echo esc_url(home_url('/knowledge/heir/')); ?>" class="p-drawer-accordion__sub-link">相続人となる者</a>
                                             </li>
                                             <li class="p-drawer-accordion__sub-list">
-                                                <a href="#" class="p-drawer-accordion__sub-link">相続税について</a>
+                                                <a href="<?php echo esc_url(home_url('/knowledge/souzokubun/')); ?>" class="p-drawer-accordion__sub-link">法定相続分</a>
+                                            </li>
+                                            <li class="p-drawer-accordion__sub-list">
+                                                <a href="<?php echo esc_url(home_url('/knowledge/isanbunkatsu/')); ?>" class="p-drawer-accordion__sub-link">遺産分割</a>
+                                            </li>
+                                            <li class="p-drawer-accordion__sub-list">
+                                                <a href="<?php echo esc_url(home_url('/knowledge/necessity/')); ?>" class="p-drawer-accordion__sub-link">相続の必要書類</a>
+                                            </li>
+                                            <li class="p-drawer-accordion__sub-list">
+                                                <a href="<?php echo esc_url(home_url('/knowledge/tax/')); ?>" class="p-drawer-accordion__sub-link">相続税・贈与税</a>
+                                            </li>
+                                            <li class="p-drawer-accordion__sub-list">
+                                                <a href="<?php echo esc_url(home_url('/knowledge/tokubetu/')); ?>" class="p-drawer-accordion__sub-link">特別受益・生前贈与・寄与分</a>
+                                            </li>
+                                            <li class="p-drawer-accordion__sub-list">
+                                                <a href="<?php echo esc_url(home_url('/knowledge/mediate/')); ?>" class="p-drawer-accordion__sub-link">調停・審判・相続人不明</a>
                                             </li>
                                         </ul>
                                     </div>
@@ -235,14 +199,21 @@
                                     <div class="p-drawer-accordion__content js-drawer-content">
                                         <ul class="p-drawer-accordion__sub-lists">
                                             <li class="p-drawer-accordion__sub-list">
-                                                <a href="#" class="p-drawer-accordion__sub-link">遺言</a>
+                                                <a href="<?php echo esc_url(home_url('/testament')); ?>" class="p-drawer-accordion__sub-link">遺言</a>
                                             </li>
                                             <li class="p-drawer-accordion__sub-list">
-                                                <a href="#" class="p-drawer-accordion__sub-link">遺言書作成</a>
+                                                <a href="<?php echo esc_url(home_url('/testament/necessity/')); ?>" class="p-drawer-accordion__sub-link">遺言の必要性と相続</a>
                                             </li>
                                             <li class="p-drawer-accordion__sub-list">
-                                                <a href="#" class="p-drawer-accordion__sub-link">公正証書遺言</a>
+                                                <a href="<?php echo esc_url(home_url('/testament/bequeath/')); ?>" class="p-drawer-accordion__sub-link">遺贈とは</a>
                                             </li>
+                                            <li class="p-drawer-accordion__sub-list">
+                                                <a href="<?php echo esc_url(home_url('/testament/autograph/')); ?>" class="p-drawer-accordion__sub-link">自筆証書・公正証書・秘密証書遺言</a>
+                                            </li>
+                                            <li class="p-drawer-accordion__sub-list">
+                                                <a href="<?php echo esc_url(home_url('/testament/executor/')); ?>" class="p-drawer-accordion__sub-link">遺言執行者</a>
+                                            </li>
+                                            
                                         </ul>
                                     </div>
                                 </details>
@@ -256,14 +227,24 @@
                                     <div class="p-drawer-accordion__content js-drawer-content">
                                         <ul class="p-drawer-accordion__sub-lists">
                                             <li class="p-drawer-accordion__sub-list">
-                                                <a href="#" class="p-drawer-accordion__sub-link">不動産登記</a>
+                                                <a href="<?php echo esc_url(home_url('/registration')); ?>" class="p-drawer-accordion__sub-link">不動産登記</a>
                                             </li>
                                             <li class="p-drawer-accordion__sub-list">
-                                                <a href="#" class="p-drawer-accordion__sub-link">所有権移転登記</a>
+                                                <a href="<?php echo esc_url(home_url('/registration/souzoku/')); ?>" class="p-drawer-accordion__sub-link">相続登記について</a>
                                             </li>
                                             <li class="p-drawer-accordion__sub-list">
-                                                <a href="#" class="p-drawer-accordion__sub-link">抵当権設定・抹消</a>
+                                                <a href="<?php echo esc_url(home_url('/registration/zouyo/')); ?>" class="p-drawer-accordion__sub-link">贈与登記について</a>
                                             </li>
+                                            <li class="p-drawer-accordion__sub-list">
+                                                <a href="<?php echo esc_url(home_url('/registration/zaisan/')); ?>" class="p-drawer-accordion__sub-link">離婚による財産分与登記</a>
+                                            </li>
+                                            <li class="p-drawer-accordion__sub-list">
+                                                <a href="<?php echo esc_url(home_url('/registration/syoyu/')); ?>" class="p-drawer-accordion__sub-link">売買による所有権移転登記</a>
+                                            </li>
+                                            <li class="p-drawer-accordion__sub-list">
+                                                <a href="<?php echo esc_url(home_url('/registration/massyou/')); ?>" class="p-drawer-accordion__sub-link">抵当権抹消登記</a>
+                                            </li>
+                                            
                                         </ul>
                                     </div>
                                 </details>
@@ -277,32 +258,50 @@
                                     <div class="p-drawer-accordion__content js-drawer-content">
                                         <ul class="p-drawer-accordion__sub-lists">
                                             <li class="p-drawer-accordion__sub-list">
-                                                <a href="#" class="p-drawer-accordion__sub-link">成年後見</a>
+                                                <a href="<?php echo esc_url(home_url('/guardian')); ?>" class="p-drawer-accordion__sub-link">成年後見</a>
                                             </li>
                                             <li class="p-drawer-accordion__sub-list">
-                                                <a href="#" class="p-drawer-accordion__sub-link">任意後見</a>
+                                                <a href="<?php echo esc_url(home_url('/guardian/meyasu/')); ?>" class="p-drawer-accordion__sub-link">成年後見制度を利用する目安</a>
                                             </li>
                                             <li class="p-drawer-accordion__sub-list">
-                                                <a href="#" class="p-drawer-accordion__sub-link">後見申立て</a>
+                                                <a href="<?php echo esc_url(home_url('/guardian/whats/')); ?>" class="p-drawer-accordion__sub-link">法定後見とは</a>
+                                            </li>
+                                            <li class="p-drawer-accordion__sub-list">
+                                                <a href="<?php echo esc_url(home_url('/guardian/flow/')); ?>" class="p-drawer-accordion__sub-link">法定後見開始までの流れ</a>
+                                            </li>
+                                            <li class="p-drawer-accordion__sub-list">
+                                                <a href="<?php echo esc_url(home_url('/guardian/optional/')); ?>" class="p-drawer-accordion__sub-link">任意後見とは</a>
+                                            </li>
+                                            <li class="p-drawer-accordion__sub-list">
+                                                <a href="<?php echo esc_url(home_url('/guardian/katsuyou/')); ?>" class="p-drawer-accordion__sub-link">任意後見の活用</a>
+                                            </li>
+                                            <li class="p-drawer-accordion__sub-list">
+                                                <a href="<?php echo esc_url(home_url('/guardian/flow2/')); ?>" class="p-drawer-accordion__sub-link">任意後見手続きの流れ</a>
+                                            </li>
+                                            <li class="p-drawer-accordion__sub-list">
+                                                <a href="<?php echo esc_url(home_url('/guardian/center/')); ?>" class="p-drawer-accordion__sub-link">成年後見センター・リーガルサポート、関連制度</a>
+                                            </li>
+                                            <li class="p-drawer-accordion__sub-list">
+                                                <a href="<?php echo esc_url(home_url('/guardian/gokai/')); ?>" class="p-drawer-accordion__sub-link">成年後見制度に対する誤解</a>
                                             </li>
                                         </ul>
                                     </div>
                                 </details>
                             </li>
                             <li class="p-drawer-content__list">
-                                <a href="#" class="p-drawer-content__link">その他業務</a>
+                                <a href="<?php echo esc_url(home_url('/others')); ?>" class="p-drawer-content__link">その他業務</a>
                             </li>
                             <li class="p-drawer-content__list">
-                                <a href="<?php echo esc_url(home_url('/price')); ?>" class="p-drawer-content__link">料金表</a>
+                                <a href="<?php echo esc_url(home_url('/fee')); ?>" class="p-drawer-content__link">料金表</a>
                             </li>
                             <li class="p-drawer-content__list">
                                 <a href="<?php echo esc_url(home_url('/office')); ?>" class="p-drawer-content__link">事務所案内</a>
                             </li>
                             <li class="p-drawer-content__list">
-                                <a href="<?php echo esc_url(home_url('/introduce')); ?>" class="p-drawer-content__link">司法書士紹介</a>
+                                <a href="<?php echo esc_url(home_url('/judicial')); ?>" class="p-drawer-content__link">司法書士紹介</a>
                             </li>
                             <li class="p-drawer-content__list">
-                                <a href="<?php echo esc_url(home_url('/question')); ?>" class="p-drawer-content__link">よくある質問</a>
+                                <a href="<?php echo esc_url(home_url('/faq')); ?>" class="p-drawer-content__link">よくある質問</a>
                             </li>
                             <li class="p-drawer-content__list">
                                 <a href="<?php echo esc_url(home_url('/blog')); ?>" class="p-drawer-content__link">所長ブログ</a>
@@ -315,7 +314,7 @@
                             <a href="tel:0424693092" class="p-drawer-content__contact">
                                 <img decoding="async" loading="lazy" src="<?php echo get_template_directory_uri() ?>/images/common/drawer_tel.png" alt="" width="340" height="80">
                             </a>
-                            <a href="<?php echo esc_url(home_url('/contact')); ?>" class="p-drawer-content__contact">
+                            <a href="<?php echo esc_url(home_url('/form')); ?>" class="p-drawer-content__contact">
                                 <img decoding="async" loading="lazy" src="<?php echo get_template_directory_uri() ?>/images/common/drawer_mail.png" alt="" width="340" height="80">
                             </a>
                         </div>
@@ -324,7 +323,7 @@
             </div>
             <ul class="p-header__page-lists">
                 <li class="p-header__page-list">
-                    <a href="<?php echo esc_url(home_url('/inheritance')); ?>" class="p-header__page-link">
+                    <a href="<?php echo esc_url(home_url('/succession')); ?>" class="p-header__page-link">
                         <div class="p-header__page-icon">
                             <svg
                                 xmlns="http://www.w3.org/2000/svg"
@@ -339,7 +338,7 @@
                 </li>
 
                 <li class="p-header__page-list">
-                    <a href="#" class="p-header__page-link">
+                    <a href="<?php echo esc_url(home_url('/knowledge')); ?>" class="p-header__page-link">
                         <div class="p-header__page-icon">
                             <svg
                                 xmlns="http://www.w3.org/2000/svg"
@@ -355,7 +354,7 @@
 
 
                 <li class="p-header__page-list">
-                    <a href="#" class="p-header__page-link">
+                    <a href="<?php echo esc_url(home_url('/testament')); ?>" class="p-header__page-link">
                         <div class="p-header__page-icon">
                             <svg
                                 xmlns="http://www.w3.org/2000/svg"
@@ -369,7 +368,7 @@
                     </a>
                 </li>
                 <li class="p-header__page-list">
-                    <a href="#" class="p-header__page-link">
+                    <a href="<?php echo esc_url(home_url('/registration')); ?>" class="p-header__page-link">
                         <div class="p-header__page-icon">
                             <svg
                                 xmlns="http://www.w3.org/2000/svg"
@@ -383,7 +382,7 @@
                     </a>
                 </li>
                 <li class="p-header__page-list">
-                    <a href="#" class="p-header__page-link">
+                    <a href="<?php echo esc_url(home_url('/guardian')); ?>" class="p-header__page-link">
                         <div class="p-header__page-icon">
                             <svg
                                 xmlns="http://www.w3.org/2000/svg"
@@ -397,7 +396,7 @@
                     </a>
                 </li>
                 <li class="p-header__page-list">
-                    <a href="#" class="p-header__page-link">
+                    <a href="<?php echo esc_url(home_url('/others')); ?>" class="p-header__page-link">
                         <div class="p-header__page-icon">
                             <svg
                                 xmlns="http://www.w3.org/2000/svg"
@@ -412,7 +411,7 @@
                 </li>
 
                 <li class="p-header__page-list">
-                    <a href="<?php echo esc_url(home_url('/price')); ?>" class="p-header__page-link">
+                    <a href="<?php echo esc_url(home_url('/fee')); ?>" class="p-header__page-link">
                         <div class="p-header__page-icon">
                             <svg
                                 xmlns="http://www.w3.org/2000/svg"
@@ -430,7 +429,7 @@
         </div>
     </header>
     <div class="p-floating">
-        <a href="<?php echo esc_url(home_url('/contact')); ?>" class="p-floating__link">
+        <a href="<?php echo esc_url(home_url('/form')); ?>" class="p-floating__link">
             <img decoding="async" loading="lazy" src="<?php echo get_template_directory_uri() ?>/images/common/floating_pc.png" alt="ご相談・お問い合わせ" width="69" height="240">
         </a>
     </div>

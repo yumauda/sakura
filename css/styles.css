@@ -3478,6 +3478,12 @@ input::placeholder {
   object-fit: contain;
 }
 
+@media screen and (min-width: 768px) {
+  .p-inheritance__sidebar {
+    margin-left: auto;
+  }
+}
+
 .p-link {
   background: #fcf3ef;
   padding-top: 3.125rem;

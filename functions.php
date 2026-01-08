@@ -9,10 +9,13 @@
  *
  * @codex https://wpdocs.osdn.jp/%E9%96%A2%E6%95%B0%E3%83%AA%E3%83%95%E3%82%A1%E3%83%AC%E3%83%B3%E3%82%B9/add_theme_support
  */
+
+
 function my_setup()
 {
 	add_theme_support('post-thumbnails'); /* アイキャッチ */
 	add_theme_support('automatic-feed-links'); /* RSSフィード */
+	add_theme_support('title-tag');
 	add_theme_support(
 		'html5',
 		array( /* HTML5のタグで出力 */
@@ -25,6 +28,8 @@ function my_setup()
 	);
 }
 add_action('after_setup_theme', 'my_setup');
+
+
 
 /**
  * CSSとJavaScriptの読み込み
@@ -409,16 +414,20 @@ add_filter('file_is_displayable_image', 'webp_is_displayable', 10, 2);
 /**
  * カスタムカテゴリーWalker - サイドバー用
  */
-class Custom_Category_Walker extends Walker_Category {
-	public function start_lvl(&$output, $depth = 0, $args = array()) {
+class Custom_Category_Walker extends Walker_Category
+{
+	public function start_lvl(&$output, $depth = 0, $args = array())
+	{
 		$output .= '<ul class="children">';
 	}
 
-	public function end_lvl(&$output, $depth = 0, $args = array()) {
+	public function end_lvl(&$output, $depth = 0, $args = array())
+	{
 		$output .= '</ul>';
 	}
 
-	public function start_el(&$output, $category, $depth = 0, $args = array(), $id = 0) {
+	public function start_el(&$output, $category, $depth = 0, $args = array(), $id = 0)
+	{
 		$cat_name = apply_filters('list_cats', $category->name, $category);
 		$link = '<a class="p-sidebar__category-link" href="' . esc_url(get_term_link($category)) . '">';
 
@@ -433,7 +442,8 @@ class Custom_Category_Walker extends Walker_Category {
 		$output .= '<li class="p-sidebar__category-item">' . $link;
 	}
 
-	public function end_el(&$output, $page, $depth = 0, $args = array()) {
+	public function end_el(&$output, $page, $depth = 0, $args = array())
+	{
 		$output .= "</li>\n";
 	}
 }
@@ -442,10 +452,21 @@ class Custom_Category_Walker extends Walker_Category {
  * テーマディレクトリURLを返すショートコード
  * 使い方: [theme_url]/images/sample.jpg
  */
-function theme_url_shortcode() {
+function theme_url_shortcode()
+{
 	return get_template_directory_uri();
 }
 add_shortcode('theme_url', 'theme_url_shortcode');
+
+/**
+ * サイトURLを返すショートコード
+ * 使い方: [site_url]/wp-content/uploads/...
+ */
+function site_url_shortcode()
+{
+	return home_url();
+}
+add_shortcode('site_url', 'site_url_shortcode');
 
 /**
  * 最新の投稿一覧を表示するショートコード
@@ -453,7 +474,8 @@ add_shortcode('theme_url', 'theme_url_shortcode');
  * パラメータ:
  *   num: 表示する投稿数（デフォルト: 4）
  */
-function latest_posts_shortcode($atts) {
+function latest_posts_shortcode($atts)
+{
 	// ショートコードの属性を取得
 	$atts = shortcode_atts(array(
 		'num' => 4,
@@ -472,7 +494,7 @@ function latest_posts_shortcode($atts) {
 	if ($my_query->have_posts()) :
 		while ($my_query->have_posts()) : $my_query->the_post();
 			ob_start();
-			?>
+?>
 			<a href="<?php the_permalink(); ?>" class="p-top-news__link">
 				<div class="p-top-news__category">
 					<time datetime="<?php the_time('Y-m-d'); ?>" class="p-top-news__time"><?php the_time('Y.m.d'); ?></time>
@@ -497,7 +519,7 @@ function latest_posts_shortcode($atts) {
 					<?php endif; ?>
 				</p>
 			</a>
-			<?php
+<?php
 			$output .= ob_get_clean();
 		endwhile;
 	endif;
@@ -507,3 +529,49 @@ function latest_posts_shortcode($atts) {
 	return $output;
 }
 add_shortcode('latest_posts', 'latest_posts_shortcode');
+
+// キーワード入力用メタボックスを追加
+add_action('add_meta_boxes', function () {
+	add_meta_box(
+		'meta_keywords_box',
+		'Meta Keywords',
+		function ($post) {
+			$value = get_post_meta($post->ID, '_meta_keywords', true);
+			echo '<input type="text" style="width:100%" name="meta_keywords" value="' . esc_attr($value) . '" placeholder="例：相続, 司法書士, 田無">';
+		},
+		['page', 'post'],
+		'normal',
+		'default'
+	);
+});
+
+// 保存処理
+add_action('save_post', function ($post_id) {
+	if (isset($_POST['meta_keywords'])) {
+		update_post_meta(
+			$post_id,
+			'_meta_keywords',
+			sanitize_text_field($_POST['meta_keywords'])
+		);
+	}
+});
+
+
+add_action('enqueue_block_editor_assets', function () {
+	$css = '
+	/* HTMLブロック / コード系入力欄の縦サイズを広げる */
+	.wp-block-html textarea,
+	.wp-block-code textarea,
+	.block-editor-plain-text,
+	.components-textarea-control__input {
+	  min-height: 600px !important;
+	  height: 600px !important;
+	  resize: vertical !important; /* 手でさらに伸ばせる */
+	  line-height: 1.7;
+	  font-size: 14px;
+	}
+	';
+	wp_register_style('my-editor-css', false);
+	wp_enqueue_style('my-editor-css');
+	wp_add_inline_style('my-editor-css', $css);
+});

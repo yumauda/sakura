@@ -5,14 +5,14 @@ const slider2 = new Swiper(".slider-main", {
   centeredSlides: true,
   loop: true,
   spaceBetween: 10,
-  initialSlide: 0,
+  
   breakpoints: {
     768: {
-      effect: "slide",
-      slidesPerView: 2.2,
+      slidesPerView: 2,
+      loop: true,
       slidesPerGroup: 1,
       spaceBetween: 40,
-      centeredSlides: true,
+      centeredSlides: false,
       autoplay: {
         delay: 3000,
         disableOnInteraction: false,

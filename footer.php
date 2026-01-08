@@ -32,42 +32,42 @@
                         <a href="<?php echo esc_url(home_url('/')); ?>" class="p-footer__link">法務サポート</a>
                         <ul class="p-footer__subLists">
                             <li class="p-footer__subList">
-                                <a href="<?php echo esc_url(home_url('/inheritance')); ?>" class="p-footer__subLink">遺産相続</a>
+                                <a href="<?php echo esc_url(home_url('/succession')); ?>" class="p-footer__subLink">遺産相続</a>
                             </li>
                             <li class="p-footer__subList">
-                                <a href="<?php echo esc_url(home_url('/')); ?>" class="p-footer__subLink">相続の知識</a>
+                                <a href="<?php echo esc_url(home_url('/knowledge')); ?>" class="p-footer__subLink">相続の知識</a>
                             </li>
                             <li class="p-footer__subList">
-                                <a href="<?php echo esc_url(home_url('/')); ?>" class="p-footer__subLink">遺言</a>
+                                <a href="<?php echo esc_url(home_url('/testament')); ?>" class="p-footer__subLink">遺言</a>
                             </li>
                             <li class="p-footer__subList">
-                                <a href="<?php echo esc_url(home_url('/')); ?>" class="p-footer__subLink">不動産登記</a>
+                                <a href="<?php echo esc_url(home_url('/registration')); ?>" class="p-footer__subLink">不動産登記</a>
                             </li>
                             <li class="p-footer__subList">
-                                <a href="<?php echo esc_url(home_url('/')); ?>" class="p-footer__subLink">成年後見</a>
+                                <a href="<?php echo esc_url(home_url('/guardian')); ?>" class="p-footer__subLink">成年後見</a>
                             </li>
                             <li class="p-footer__subList">
-                                <a href="<?php echo esc_url(home_url('/')); ?>" class="p-footer__subLink">その他業務</a>
+                                <a href="<?php echo esc_url(home_url('/others')); ?>" class="p-footer__subLink">その他業務</a>
                             </li>
                         </ul>
                     </li>
                     <li class="p-footer__list">
-                        <a href="<?php echo esc_url(home_url('/price')); ?>" class="p-footer__link">料金表</a>
+                        <a href="<?php echo esc_url(home_url('/fee')); ?>" class="p-footer__link">料金表</a>
                         <a href="<?php echo esc_url(home_url('/office')); ?>" class="p-footer__link">事務所案内</a>
-                        <a href="<?php echo esc_url(home_url('/introduce')); ?>" class="p-footer__link">司法書士紹介</a>
-                        <a href="<?php echo esc_url(home_url('/question')); ?>" class="p-footer__link">よくある質問</a>
+                        <a href="<?php echo esc_url(home_url('/judicial')); ?>" class="p-footer__link">司法書士紹介</a>
+                        <a href="<?php echo esc_url(home_url('/faq')); ?>" class="p-footer__link">よくある質問</a>
                     </li>
                     <li class="p-footer__list">
-                        <a href="<?php echo esc_url(home_url('/blog')); ?>" class="p-footer__link">所長ブログ</a>
+                        <a href="<?php echo esc_url(home_url('/blog')); ?>" class="p-footer__link">所長ブログ</a></a>
                         <a href="<?php echo esc_url(home_url('/privacy')); ?>" class="p-footer__link">個人情報保護方針</a>
-                        <a href="<?php echo esc_url(home_url('/contact')); ?>" class="p-footer__link">お問い合わせ</a>
+                        <a href="<?php echo esc_url(home_url('/form')); ?>" class="p-footer__link">お問い合わせ</a>
                     </li>
                 </ul>
             </div>
         </div>
     </div>
     <div class="p-footer__contact-sp">
-        <a href="<?php echo esc_url(home_url('/contact')); ?>" class="p-footer__contact-link">
+        <a href="<?php echo esc_url(home_url('/form')); ?>" class="p-footer__contact-link">
             <div class="p-footer__contact-link-icon">
                 <img decoding="async" loading="lazy" src="<?php echo get_template_directory_uri(); ?>/images/common/mail_sp.png" alt="" width="16" height="12">
             </div>

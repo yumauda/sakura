@@ -882,3 +882,8 @@
     object-fit: contain;
   }
 }
+.p-inheritance__sidebar {
+  @include mq(md) {
+    margin-left: auto;
+  }
+}

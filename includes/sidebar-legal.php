@@ -13,8 +13,10 @@ $menu_items = array(
   'inheritance' => array(
     'title' => '遺産相続',
     'items' => array(
-      array('url' => home_url('/inheritance'), 'text' => '遺産相続', 'slug' => 'inheritance'),
-      array('url' => home_url('/flow'), 'text' => '遺産整理業務の流れ', 'slug' => 'flow'),
+      array('url' => home_url('/succession'), 'text' => '遺産相続', 'slug' => 'succession'),
+      array('url' => home_url('/succession/belongingsafter'), 'text' => '遺産整理業務', 'slug' => 'belongingsafter'),
+      array('url' => home_url('/succession/flow'), 'text' => '遺産整理業務の流れ', 'slug' => 'flow'),
+      array('url' => home_url('/succession/houki'), 'text' => '相続放棄', 'slug' => 'houki'),
       // 他のページがある場合は追加
       // array('url' => home_url('/your-page'), 'text' => 'ページ名', 'slug' => 'your-page'),
     )
@@ -22,6 +24,14 @@ $menu_items = array(
   'knowledge' => array(
     'title' => '遺産の知識',
     'items' => array(
+      array('url' => home_url('/knowledge'), 'text' => '相続の基礎知識', 'slug' => 'knowledge'),
+      array('url' => home_url('/knowledge/heir'), 'text' => '相続人となる者', 'slug' => 'heir'),
+      array('url' => home_url('/knowledge/souzokubun'), 'text' => '法定相続分', 'slug' => 'souzokubun'),
+      array('url' => home_url('/knowledge/isanbunkatsu'), 'text' => '遺産分割', 'slug' => 'isanbunkatsu'),
+      array('url' => home_url('/knowledge/necessity'), 'text' => '相続の必要書類', 'slug' => 'necessity'),
+      array('url' => home_url('/knowledge/tax'), 'text' => '相続税・贈与税', 'slug' => 'tax'),
+      array('url' => home_url('/knowledge/tokubetu'), 'text' => '特別受益・生前贈与・寄与分', 'slug' => 'tokubetu'),
+      array('url' => home_url('/knowledge/mediate'), 'text' => '調停・審判・相続人不明', 'slug' => 'mediate'),
       // 実際のページURLとスラッグを設定
       // array('url' => home_url('/knowledge-page'), 'text' => 'ページ名', 'slug' => 'knowledge-page'),
     )
@@ -29,18 +39,38 @@ $menu_items = array(
   'will' => array(
     'title' => '遺言',
     'items' => array(
+      array('url' => home_url('/testament'), 'text' => '遺言', 'slug' => 'testament'),
+      array('url' => home_url('/testament/necessity'), 'text' => '遺言の必要性と相続', 'slug' => 'necessity'),
+      array('url' => home_url('/testament/bequeath'), 'text' => '遺贈とは', 'slug' => 'bequeath'),
+      array('url' => home_url('/testament/autograph'), 'text' => '自筆証書・公正証書・秘密証書遺言', 'slug' => 'autograph'),
+      array('url' => home_url('/testament/executor'), 'text' => '遺言執行者', 'slug' => 'executor'),
       // 実際のページURLとスラッグを設定
     )
   ),
   'realestate' => array(
     'title' => '不動産登記',
     'items' => array(
+      array('url' => home_url('/registration'), 'text' => '不動産登記', 'slug' => 'registration'),
+      array('url' => home_url('/registration/souzoku'), 'text' => '相続登記について', 'slug' => 'souzoku'),
+      array('url' => home_url('/registration/zouyo'), 'text' => '贈与登記について', 'slug' => 'zouyo'),
+      array('url' => home_url('/registration/zaisan'), 'text' => '離婚による財産分与登記', 'slug' => 'zaisan'),
+      array('url' => home_url('/registration/syoyu'), 'text' => '売買による所有権移転登記', 'slug' => 'syoyu'),
+      array('url' => home_url('/registration/massyou'), 'text' => '抵当権抹消登記', 'slug' => 'massyou'),
       // 実際のページURLとスラッグを設定
     )
   ),
   'guardian' => array(
     'title' => '成年後見',
     'items' => array(
+      array('url' => home_url('/guardian'), 'text' => '成年後見', 'slug' => 'guardian'),
+      array('url' => home_url('/guardian/meyasu'), 'text' => '成年後見制度を利用する目安', 'slug' => 'meyasu'),
+      array('url' => home_url('/guardian/whats'), 'text' => '法定後見とは', 'slug' => 'whats'),
+      array('url' => home_url('/guardian/flow'), 'text' => '法定後見開始までの流れ', 'slug' => 'flow'),
+      array('url' => home_url('/guardian/optional'), 'text' => '任意後見とは', 'slug' => 'optional'),
+      array('url' => home_url('/guardian/katsuyou'), 'text' => '任意後見の活用', 'slug' => 'katsuyou'),
+      array('url' => home_url('/guardian/flow2'), 'text' => '任意後見手続きの流れ', 'slug' => 'flow2'),
+      array('url' => home_url('/guardian/center'), 'text' => '成年後見センター・リーガルサポート、関連制度', 'slug' => 'center'),
+      array('url' => home_url('/guardian/gokai'), 'text' => '成年後見制度に対する誤解', 'slug' => 'gokai'),
       // 実際のページURLとスラッグを設定
     )
   ),
@@ -90,10 +120,10 @@ foreach ($menu_items as $key => $section) {
       <?php endforeach; ?>
 
       <li class="p-sidebar__menu-item">
-        <a href="#other-contracts" class="p-sidebar__menu-link">その他業務</a>
+        <a href="<?php echo esc_url(home_url('/others')); ?>" class="p-sidebar__menu-link">その他業務</a>
       </li>
       <li class="p-sidebar__menu-item">
-        <a href="<?php echo esc_url(home_url('/price')); ?>" class="p-sidebar__menu-link <?php echo ($current_page_slug === 'price') ? 'is-current' : ''; ?>">料金表</a>
+        <a href="<?php echo esc_url(home_url('/fee')); ?>" class="p-sidebar__menu-link <?php echo ($current_page_slug === 'price') ? 'is-current' : ''; ?>">料金表</a>
       </li>
     </ul>
     <div class="p-sidebar__slider-wrapper">
@@ -151,10 +181,10 @@ foreach ($menu_items as $key => $section) {
         <a href="<?php echo esc_url(home_url('/office')); ?>" class="p-sidebar__menu-link <?php echo ($current_page_slug === 'office') ? 'is-current' : ''; ?>">事務所案内</a>
       </li>
       <li class="p-sidebar__menu-item">
-        <a href="<?php echo esc_url(home_url('/introduce')); ?>" class="p-sidebar__menu-link <?php echo ($current_page_slug === 'introduce') ? 'is-current' : ''; ?>">司法書士紹介</a>
+        <a href="<?php echo esc_url(home_url('/judicial')); ?>" class="p-sidebar__menu-link <?php echo ($current_page_slug === 'judicial') ? 'is-current' : ''; ?>">司法書士紹介</a>
       </li>
       <li class="p-sidebar__menu-item">
-        <a href="<?php echo esc_url(home_url('/question')); ?>" class="p-sidebar__menu-link <?php echo ($current_page_slug === 'question') ? 'is-current' : ''; ?>">よくある質問</a>
+        <a href="<?php echo esc_url(home_url('/faq')); ?>" class="p-sidebar__menu-link <?php echo ($current_page_slug === 'faq') ? 'is-current' : ''; ?>">よくある質問</a>
       </li>
       <li class="p-sidebar__menu-item">
         <a href="<?php echo esc_url(home_url('/blog')); ?>" class="p-sidebar__menu-link <?php echo (is_home() || is_singular('post')) ? 'is-current' : ''; ?>">所長ブログ</a>
