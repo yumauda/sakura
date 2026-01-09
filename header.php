@@ -213,6 +213,9 @@
                                             <li class="p-drawer-accordion__sub-list">
                                                 <a href="<?php echo esc_url(home_url('/testament/executor/')); ?>" class="p-drawer-accordion__sub-link">遺言執行者</a>
                                             </li>
+                                            <li class="p-drawer-accordion__sub-list">
+                                                <a href="<?php echo esc_url(home_url('/testament/white/')); ?>" class="p-drawer-accordion__sub-link">遺言書の書き方、作成の流れ</a>
+                                            </li>
                                             
                                         </ul>
                                     </div>

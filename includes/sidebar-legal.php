@@ -44,6 +44,7 @@ $menu_items = array(
       array('url' => home_url('/testament/bequeath'), 'text' => '遺贈とは', 'slug' => 'bequeath'),
       array('url' => home_url('/testament/autograph'), 'text' => '自筆証書・公正証書・秘密証書遺言', 'slug' => 'autograph'),
       array('url' => home_url('/testament/executor'), 'text' => '遺言執行者', 'slug' => 'executor'),
+      array('url' => home_url('/testament/white'), 'text' => '遺言書の書き方、作成の流れ', 'slug' => 'white'),
       // 実際のページURLとスラッグを設定
     )
   ),
