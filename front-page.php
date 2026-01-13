@@ -1,7 +1,7 @@
 <?php get_header(); ?>
 <link rel="stylesheet" href="<?php echo get_template_directory_uri(); ?>/css/scroll-hint.css">
 <main>
-  <!-- <div class="p-mv">
+  <div class="p-mv">
     <div class="l-inner">
       <div class="p-mv__content">
         
@@ -9,35 +9,35 @@
           
           <div class="swiper-wrapper slider__items">
             <div class="swiper-slide">
-              <a href="#" class="p-mv__slide__link">
+              <a href="<?php echo esc_url(home_url('/succession')); ?>" class="p-mv__slide__link">
                 <figure class="p-mv__img">
                   <img src="<?php echo get_template_directory_uri() ?>/images/common/mv_01.webp" alt="遺産整理（遺産相続）・相続手続きでお困りの方" width="580" height="400">
                 </figure>
               </a>
             </div>
             <div class="swiper-slide">
-              <a href="#" class="p-mv__slide__link">
+              <a href="<?php echo esc_url(home_url('/succession/belongingsafter')); ?>" class="p-mv__slide__link">
                 <figure class="p-mv__img">
                   <img src="<?php echo get_template_directory_uri() ?>/images/common/mv_02.webp" alt="相続登記や不動産の購入・生前贈与をお考えの方" width="580" height="400">
                 </figure>
               </a>
             </div>
             <div class="swiper-slide">
-              <a href="#" class="p-mv__slide__link">
+              <a href="<?php echo esc_url(home_url('/knowledge')); ?>" class="p-mv__slide__link">
                 <figure class="p-mv__img">
                   <img src="<?php echo get_template_directory_uri() ?>/images/common/mv_03.webp" alt="法定相続分など相続の基本的な知識を知りたい方" width="580" height="400">
                 </figure>
               </a>
             </div>
             <div class="swiper-slide">
-              <a href="#" class="p-mv__slide__link">
+              <a href="<?php echo esc_url(home_url('/testament')); ?>" class="p-mv__slide__link">
                 <figure class="p-mv__img">
                   <img src="<?php echo get_template_directory_uri() ?>/images/common/mv_04.webp" alt="残された家族へ遺言書の作成を考えている方" width="580" height="400">
                 </figure>
               </a>
             </div>
             <div class="swiper-slide">
-              <a href="#" class="p-mv__slide__link">
+              <a href="<?php echo esc_url(home_url('/guardian')); ?>" class="p-mv__slide__link">
                 <figure class="p-mv__img">
                   <img src="<?php echo get_template_directory_uri() ?>/images/common/mv_05.webp" alt="どなたかに後見をしてもらいたいと考えている方" width="580" height="400">
                 </figure>
@@ -135,39 +135,39 @@
         <div class="p-support__text">
           <p class="c-main-text">当事務所が対応できるサポートや情報は以下の通りです。遺産相続、遺言書作成、不動産登記、成年後見など、皆さまの暮らしや事業に関わる法的手続きを幅広くサポートいたします。開業以来の長い専門知識と経験を活かし、安心と信頼のサービスを提供しております。</p>
         </div>
-        <ul class="p-support__grid">
-          <li class="p-support__grid-item">
+        <div class="p-support__grid">
+          <a href="<?php echo esc_url(home_url('/succession')); ?>" class="p-support__grid-item">
             <figure class="p-support__grid-itemImg">
               <img decoding="async" loading="lazy" src="<?php echo get_template_directory_uri() ?>/images/common/support_1.webp" alt="遺産相続" width="180" height="170">
             </figure>
-          </li>
-          <li class="p-support__grid-item">
+          </a>
+          <a href="<?php echo esc_url(home_url('/knowledge')); ?>" class="p-support__grid-item">
             <figure class="p-support__grid-itemImg">
               <img decoding="async" loading="lazy" src="<?php echo get_template_directory_uri() ?>/images/common/support_2.webp" alt="相続の知識" width="180" height="170">
             </figure>
-          </li>
-          <li class="p-support__grid-item">
+          </a>
+          <a href="<?php echo esc_url(home_url('/testament')); ?>" class="p-support__grid-item">
             <figure class="p-support__grid-itemImg">
               <img decoding="async" loading="lazy" src="<?php echo get_template_directory_uri() ?>/images/common/support_3.webp" alt="遺言" width="180" height="170">
             </figure>
-          </li>
-          <li class="p-support__grid-item">
+          </a>
+          <a href="<?php echo esc_url(home_url('/registration')); ?>" class="p-support__grid-item">
             <figure class="p-support__grid-itemImg">
               <img decoding="async" loading="lazy" src="<?php echo get_template_directory_uri() ?>/images/common/support_4.webp" alt="不動産登記" width="180" height="170">
             </figure>
-          </li>
-          <li class="p-support__grid-item">
+          </a>
+          <a href="<?php echo esc_url(home_url('/guardian')); ?>" class="p-support__grid-item">  
             <figure class="p-support__grid-itemImg">
               <img decoding="async" loading="lazy" src="<?php echo get_template_directory_uri() ?>/images/common/support_5.webp" alt="成年後見" width="180" height="170">
             </figure>
-          </li>
-          <li class="p-support__grid-item">
+          </a>
+          <a href="<?php echo esc_url(home_url('/others')); ?>" class="p-support__grid-item">
             <figure class="p-support__grid-itemImg">
               <img decoding="async" loading="lazy" src="<?php echo get_template_directory_uri() ?>/images/common/support_6.webp" alt="その他" width="180" height="170">
             </figure>
-          </li>
+          </a>
 
-        </ul>
+        </div>
 
       </div>
     </div>
@@ -435,8 +435,8 @@
         </ul>
       </div>
     </div>
-  </section> -->
-  <?php the_content(); ?>
+  </section>
+  <!-- <?php the_content(); ?> -->
   <?php get_template_part('includes/contact'); ?>
 
 </main>

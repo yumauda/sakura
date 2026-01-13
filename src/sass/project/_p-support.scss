@@ -37,6 +37,9 @@
     grid-template-columns: repeat(6, 1fr);
   }
 }
+.p-support__grid-item {
+  display: block;
+}
 
 .p-support__grid-itemImg img {
   width: 100%;
