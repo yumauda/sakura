@@ -9,14 +9,14 @@
           
           <div class="swiper-wrapper slider__items">
             <div class="swiper-slide">
-              <a href="<?php echo esc_url(home_url('/succession')); ?>" class="p-mv__slide__link">
+              <a href="<?php echo esc_url(home_url('/succession/belongingsafter')); ?>" class="p-mv__slide__link">
                 <figure class="p-mv__img">
                   <img src="<?php echo get_template_directory_uri() ?>/images/common/mv_01.webp" alt="遺産整理（遺産相続）・相続手続きでお困りの方" width="580" height="400">
                 </figure>
               </a>
             </div>
             <div class="swiper-slide">
-              <a href="<?php echo esc_url(home_url('/succession/belongingsafter')); ?>" class="p-mv__slide__link">
+              <a href="<?php echo esc_url(home_url('/registration')); ?>" class="p-mv__slide__link">
                 <figure class="p-mv__img">
                   <img src="<?php echo get_template_directory_uri() ?>/images/common/mv_02.webp" alt="相続登記や不動産の購入・生前贈与をお考えの方" width="580" height="400">
                 </figure>
@@ -88,7 +88,7 @@
                 </div>
               </div>
               <div class="p-about__mapBtn-wrapper">
-                <a href="https://maps.app.goo.gl/LYeEyak4zKD49ThFA" class="p-about__mapBtn" target="_blank" rel="noopener noreferrer">アクセスマップ</a>
+                <a href="/office#access" class="p-about__mapBtn">アクセスマップ</a>
               </div>
             </div>
           </div>

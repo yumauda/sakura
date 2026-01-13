@@ -133,35 +133,35 @@ foreach ($menu_items as $key => $section) {
         <div class="swiper-wrapper">
           <!-- Slides -->
           <div class="swiper-slide">
-            <a href="#" class="p-sidebar__slide-link">
+            <a href="<?php echo esc_url(home_url('/succession/belongingsafter')); ?>" class="p-sidebar__slide-link">
               <figure class="p-sidebar__slide-img">
                 <img src="<?php echo get_template_directory_uri() ?>/images/common/mv_01.webp" alt="遺産整理">
               </figure>
             </a>
           </div>
           <div class="swiper-slide">
-            <a href="#" class="p-sidebar__slide-link">
+            <a href="<?php echo esc_url(home_url('/registration')); ?>" class="p-sidebar__slide-link">
               <figure class="p-sidebar__slide-img">
                 <img src="<?php echo get_template_directory_uri() ?>/images/common/mv_02.webp" alt="遺産整理">
               </figure>
             </a>
           </div>
           <div class="swiper-slide">
-            <a href="#" class="p-sidebar__slide-link">
+            <a href="<?php echo esc_url(home_url('/knowledge')); ?>" class="p-sidebar__slide-link">
               <figure class="p-sidebar__slide-img">
                 <img src="<?php echo get_template_directory_uri() ?>/images/common/mv_03.webp" alt="遺産整理">
               </figure>
             </a>
           </div>
           <div class="swiper-slide">
-            <a href="#" class="p-sidebar__slide-link">
+            <a href="<?php echo esc_url(home_url('/testament')); ?>" class="p-sidebar__slide-link">
               <figure class="p-sidebar__slide-img">
                 <img src="<?php echo get_template_directory_uri() ?>/images/common/mv_04.webp" alt="遺産整理">
               </figure>
             </a>
           </div>
           <div class="swiper-slide">
-            <a href="#" class="p-sidebar__slide-link">
+            <a href="<?php echo esc_url(home_url('/guardian')); ?>" class="p-sidebar__slide-link">
               <figure class="p-sidebar__slide-img">
                 <img src="<?php echo get_template_directory_uri() ?>/images/common/mv_05.webp" alt="遺産整理">
               </figure>
@@ -205,7 +205,7 @@ foreach ($menu_items as $key => $section) {
       </div>
       <ul class="p-sidebar__menu-list">
         <li class="p-sidebar__menu-item">
-          <a href="https://maps.app.goo.gl/LYeEyak4zKD49ThFA" class="p-sidebar__menu-link" target="_blank" rel="noopener noreferrer">アクセス</a>
+          <a href="/office#access" class="p-sidebar__menu-link">アクセス</a>
         </li>
 
       </ul>
