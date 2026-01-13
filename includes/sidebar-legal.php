@@ -22,13 +22,13 @@ $menu_items = array(
     )
   ),
   'knowledge' => array(
-    'title' => '遺産の知識',
+    'title' => '相続の知識',
     'items' => array(
       array('url' => home_url('/knowledge'), 'text' => '相続の基礎知識', 'slug' => 'knowledge'),
       array('url' => home_url('/knowledge/heir'), 'text' => '相続人となる者', 'slug' => 'heir'),
       array('url' => home_url('/knowledge/souzokubun'), 'text' => '法定相続分', 'slug' => 'souzokubun'),
       array('url' => home_url('/knowledge/isanbunkatsu'), 'text' => '遺産分割', 'slug' => 'isanbunkatsu'),
-      array('url' => home_url('/knowledge/necessity'), 'text' => '相続の必要書類', 'slug' => 'necessity'),
+      array('url' => home_url('/knowledge/necessity'), 'text' => '遺言の必要性と相続', 'slug' => 'necessity'),
       array('url' => home_url('/knowledge/tax'), 'text' => '相続税・贈与税', 'slug' => 'tax'),
       array('url' => home_url('/knowledge/tokubetu'), 'text' => '特別受益・生前贈与・寄与分', 'slug' => 'tokubetu'),
       array('url' => home_url('/knowledge/mediate'), 'text' => '調停・審判・相続人不明', 'slug' => 'mediate'),
@@ -133,7 +133,7 @@ foreach ($menu_items as $key => $section) {
         <div class="swiper-wrapper">
           <!-- Slides -->
           <div class="swiper-slide">
-            <a href="<?php echo esc_url(home_url('/succession/belongingsafter')); ?>" class="p-sidebar__slide-link">
+            <a href="<?php echo esc_url(home_url('/succession')); ?>" class="p-sidebar__slide-link">
               <figure class="p-sidebar__slide-img">
                 <img src="<?php echo get_template_directory_uri() ?>/images/common/mv_01.webp" alt="遺産整理">
               </figure>

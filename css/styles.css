@@ -1437,7 +1437,7 @@ select::-ms-expand {
 }
 
 .p-footer__subLists {
-  margin-top: 1.25rem;
+  margin-top: 0.625rem;
 }
 
 .p-footer__subLink {
@@ -1501,6 +1501,10 @@ select::-ms-expand {
   color: #fff;
   font-size: 0.9375rem;
   font-weight: 400;
+}
+
+.p-footer__link--pointerNon {
+  pointer-events: none;
 }
 
 .p-form {
@@ -2723,9 +2727,6 @@ input::placeholder {
 @media screen and (min-width: 768px) {
   .p-inheritance__number-list {
     font-size: 1.0625rem;
-    display: flex;
-    align-items: center;
-    padding-left: initial;
   }
 }
 .p-inheritance__number-list:first-child {
@@ -2741,30 +2742,17 @@ input::placeholder {
   left: 0;
   content: counter(item) "";
   color: #fff;
-  display: flex;
-  align-items: center;
-  justify-content: center;
   font-size: 0.75rem;
   background: #ee819d;
   width: 1.25rem;
   height: 1.25rem;
   border-radius: 9999px;
   top: 1.5rem;
-}
-@media screen and (min-width: 768px) {
-  .p-inheritance__number-list::before {
-    top: -0.25rem;
-    position: static;
-  }
+  text-align: center;
+  line-height: 1.6;
 }
 .p-inheritance__number-list:first-child::before {
   top: 0.5rem;
-}
-@media screen and (min-width: 768px) {
-  .p-inheritance__number-list:first-child::before {
-    top: -0.25rem;
-    position: static;
-  }
 }
 
 .p-inheritance__number-list span {
@@ -2900,6 +2888,8 @@ input::placeholder {
   border: 1px solid #e77492;
   border-radius: 9999px;
   transition: 0.3s ease-in-out;
+  padding-left: 1.25rem;
+  padding-right: 1.875rem;
 }
 
 .p-inheritance__btn:hover {
@@ -3054,10 +3044,17 @@ input::placeholder {
   margin-top: 1.25rem;
   background-color: #fff8eb;
   border: 1px solid #f59b5f;
-  padding-top: 1.875rem;
-  padding-bottom: 1.875rem;
   text-align: center;
   margin-left: 1.5rem;
+  padding: 1.25rem 1rem;
+}
+@media screen and (min-width: 768px) {
+  .p-inheritance__flow-box {
+    padding-top: 1.875rem;
+    padding-bottom: 1.875rem;
+    padding-left: initial;
+    padding-right: initial;
+  }
 }
 
 .p-inheritance__flow-boxText {
@@ -3085,10 +3082,15 @@ input::placeholder {
   margin-top: 2.375rem;
   background: #fff8eb;
   border: 1px solid #f59b5f;
-  padding-top: 1.875rem;
-  padding-left: 1.875rem;
-  padding-bottom: 1.6875rem;
-  padding-right: 1.5rem;
+  padding: 1.25rem;
+}
+@media screen and (min-width: 768px) {
+  .p-inheritance__onlyBox {
+    padding-top: 1.875rem;
+    padding-left: 1.875rem;
+    padding-bottom: 1.6875rem;
+    padding-right: 1.5rem;
+  }
 }
 
 .p-inheritance__onlyBox-title {
@@ -3101,7 +3103,12 @@ input::placeholder {
   margin-top: 1.25rem;
   counter-reset: item;
   list-style: none;
-  padding-left: 1rem;
+  padding-left: 0.25rem;
+}
+@media screen and (min-width: 768px) {
+  .p-inheritance__onlyBox-lists {
+    padding-left: 1rem;
+  }
 }
 
 .p-inheritance__onlyBox-list {
@@ -3258,10 +3265,16 @@ input::placeholder {
 }
 
 .p-inheritance__fast-tableCell {
-  padding: 0.8125rem;
-  font-size: 1rem;
   color: #000;
   border: 1px solid #ccc;
+  font-size: 0.875rem;
+  padding: 0.625rem 0.5rem;
+}
+@media screen and (min-width: 768px) {
+  .p-inheritance__fast-tableCell {
+    padding: 0.8125rem;
+    font-size: 1rem;
+  }
 }
 
 .fw700 {
@@ -3428,8 +3441,12 @@ input::placeholder {
   margin-top: 2.5rem;
 }
 
+.p-inheritance__heir-text {
+  margin-top: 1.25rem;
+}
 @media screen and (min-width: 768px) {
   .p-inheritance__heir-text {
+    margin-top: initial;
     flex: 1;
   }
 }
@@ -5431,7 +5448,7 @@ input::placeholder {
   top: 50%;
   transform: translateY(-50%);
   left: 0;
-  height: 1.875rem;
+  height: 100%;
 }
 @media screen and (min-width: 768px) {
   .c-page-title::before {

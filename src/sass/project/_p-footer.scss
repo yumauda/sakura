@@ -105,7 +105,7 @@
   margin-top: rem(15);
 }
 .p-footer__subLists {
-  margin-top: rem(20);
+  margin-top: rem(10);
 }
 
 .p-footer__subList {
@@ -167,4 +167,7 @@
   color: #fff;
   font-size: rem(15);
   font-weight: 400;
+}
+.p-footer__link--pointerNon {
+  pointer-events: none;
 }

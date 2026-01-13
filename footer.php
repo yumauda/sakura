@@ -29,7 +29,7 @@
                         <a href="<?php echo esc_url(home_url('/')); ?>" class="p-footer__link">ホーム</a>
                     </li>
                     <li class="p-footer__list">
-                        <a href="<?php echo esc_url(home_url('/')); ?>" class="p-footer__link">法務サポート</a>
+                        <a href="<?php echo esc_url(home_url('/')); ?>" class="p-footer__link p-footer__link--pointerNon">法務サポート</a>
                         <ul class="p-footer__subLists">
                             <li class="p-footer__subList">
                                 <a href="<?php echo esc_url(home_url('/succession')); ?>" class="p-footer__subLink">遺産相続</a>

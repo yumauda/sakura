@@ -19,7 +19,7 @@
   top: 50%;
   transform: translateY(-50%);
   left: 0;
-  height: rem(30);
+  height: 100%;
   @include mq(md) {
     height: rem(40);
   }

@@ -193,9 +193,6 @@
   position: relative;
   @include mq(md) {
     font-size: rem(17);
-    display: flex;
-    align-items: center;
-    padding-left: initial;
   }
 
   &:first-child {
@@ -212,26 +209,17 @@
     left: 0;
     content: counter(item) "";
     color: #fff;
-    display: flex;
-    align-items: center;
-    justify-content: center;
     font-size: rem(12);
     background: #ee819d;
     width: rem(20);
     height: rem(20);
     border-radius: 9999px;
     top: rem(24);
-    @include mq(md) {
-      top: rem(-4);
-      position: static;
-    }
+    text-align: center;
+    line-height: 1.6;
   }
   &:first-child::before {
     top: rem(8);
-    @include mq(md) {
-      top: rem(-4);
-      position: static;
-    }
   }
 }
 
@@ -355,6 +343,8 @@
   border: 1px solid #e77492;
   border-radius: 9999px;
   transition: 0.3s ease-in-out;
+  padding-left: rem(20);
+  padding-right: rem(30);
 }
 .p-inheritance__btn:hover {
   background: #ee819d;
@@ -484,10 +474,15 @@
   margin-top: rem(20);
   background-color: #fff8eb;
   border: 1px solid #f59b5f;
-  padding-top: rem(30);
-  padding-bottom: rem(30);
   text-align: center;
   margin-left: rem(24);
+  padding: rem(20) rem(16);
+  @include mq(md) {
+    padding-top: rem(30);
+    padding-bottom: rem(30);
+    padding-left: initial;
+    padding-right: initial;
+  }
 }
 
 .p-inheritance__flow-boxText {
@@ -513,10 +508,13 @@
   margin-top: rem(38);
   background: #fff8eb;
   border: 1px solid #f59b5f;
-  padding-top: rem(30);
-  padding-left: rem(30);
-  padding-bottom: rem(27);
-  padding-right: rem(24);
+  padding: rem(20);
+  @include mq(md) {
+    padding-top: rem(30);
+    padding-left: rem(30);
+    padding-bottom: rem(27);
+    padding-right: rem(24);
+  }
 }
 
 .p-inheritance__onlyBox-title {
@@ -529,7 +527,10 @@
   margin-top: rem(20);
   counter-reset: item;
   list-style: none;
-  padding-left: rem(16);
+  padding-left: rem(4);
+  @include mq(md) {
+    padding-left: rem(16);
+  }
 }
 
 .p-inheritance__onlyBox-list {
@@ -687,10 +688,14 @@
 }
 
 .p-inheritance__fast-tableCell {
-  padding: rem(13);
-  font-size: rem(16);
   color: #000;
   border: 1px solid #ccc;
+  font-size: rem(14);
+  padding: rem(10) rem(8);
+  @include mq(md) {
+    padding: rem(13);
+    font-size: rem(16);
+  }
 }
 .fw700 {
   font-weight: 700;
@@ -836,7 +841,9 @@
 }
 
 .p-inheritance__heir-text {
+  margin-top: rem(20);
   @include mq(md) {
+    margin-top: initial;
     flex: 1;
   }
 }
