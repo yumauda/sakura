@@ -575,3 +575,4 @@ add_action('enqueue_block_editor_assets', function () {
 	wp_enqueue_style('my-editor-css');
 	wp_add_inline_style('my-editor-css', $css);
 });
+

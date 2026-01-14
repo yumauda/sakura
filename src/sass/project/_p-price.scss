@@ -22,7 +22,7 @@
 .p-price__block + .p-price__block {
   margin-top: rem(35);
   @include mq(md) {
-    margin-top: rem(80);
+    margin-top: rem(60);
   }
 }
 

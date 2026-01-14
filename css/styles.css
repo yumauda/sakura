@@ -1910,7 +1910,7 @@ input::placeholder {
 @media screen and (min-width: 768px) {
   .p-form__label {
     vertical-align: middle;
-    width: 24%;
+    width: 29%;
     display: table-cell;
     font-size: 1.0625rem;
     padding-left: 1.25rem;
@@ -2663,7 +2663,7 @@ input::placeholder {
 
 .p-inheritance__example-item {
   position: relative;
-  padding-left: 1.25rem;
+  padding-left: 1.75rem;
   line-height: 2;
   color: #000;
   font-size: 1rem;
@@ -3057,6 +3057,16 @@ input::placeholder {
   }
 }
 
+.p-inheritance__flow-box--calc {
+  margin-left: initial;
+  margin-top: 1.875rem;
+}
+@media screen and (min-width: 768px) {
+  .p-inheritance__flow-box--calc {
+    margin-top: 2.5rem;
+  }
+}
+
 .p-inheritance__flow-boxText {
   font-size: 1.0625rem;
   color: #000;
@@ -3117,6 +3127,7 @@ input::placeholder {
   line-height: 1.8;
   color: #000;
   padding-left: 1.5rem;
+  font-weight: 400;
   counter-increment: item;
 }
 .p-inheritance__onlyBox-list::before {
@@ -3132,8 +3143,12 @@ input::placeholder {
 }
 
 .p-inheritance__onlyBox-list--red {
-  color: #cc0000;
-  font-weight: 700;
+  color: #cc0000 !important;
+  font-weight: 700 !important;
+}
+.p-inheritance__onlyBox-list--red::before {
+  font-weight: 700 !important;
+  color: #cc0000 !important;
 }
 
 .p-inheritance__smallAttention {
@@ -3146,6 +3161,9 @@ input::placeholder {
 
 .p-inheritance__onlyBox-list--bold {
   font-weight: 700;
+}
+.p-inheritance__onlyBox-list--bold::before {
+  font-weight: 700 !important;
 }
 
 .p-inheritance__table {
@@ -3225,6 +3243,11 @@ input::placeholder {
   font-size: 1rem;
   line-height: 1.8;
   color: #000;
+}
+
+.p-inheritance__onlyBox-normal {
+  font-weight: 400 !important;
+  color: #222 !important;
 }
 
 .p-inheritance__detailTable-listItem {
@@ -3618,6 +3641,12 @@ input::placeholder {
   width: 100vw;
 }
 
+@media screen and (min-width: 768px) {
+  .slider-main {
+    padding-inline: 9.0625rem !important;
+  }
+}
+
 .p-mv__img img {
   aspect-ratio: 580/400;
   object-fit: cover;
@@ -3646,17 +3675,6 @@ input::placeholder {
   .p-mv .swiper-pagination {
     gap: 1.25rem;
   }
-}
-
-.p-mv .swiper-slide {
-  /* width: auto  !important;
-  flex-shrink: 0 !important;
-  box-sizing: border-box; */
-}
-
-.p-mv .swiper-slide-prev,
-.p-mv .swiper-slide-next {
-  opacity: 0.5;
 }
 
 .p-mv .swiper-pagination {
@@ -3942,7 +3960,7 @@ input::placeholder {
 }
 @media screen and (min-width: 768px) {
   .p-price__block + .p-price__block {
-    margin-top: 5rem;
+    margin-top: 3.75rem;
   }
 }
 

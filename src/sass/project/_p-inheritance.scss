@@ -34,6 +34,7 @@
     flex-direction: row;
   }
 }
+
 .p-inheritance__detail {
   width: 100%;
   @include mq(md) {
@@ -124,7 +125,7 @@
 
 .p-inheritance__example-item {
   position: relative;
-  padding-left: rem(20);
+  padding-left: rem(28);
   line-height: 2;
   color: #000;
   font-size: rem(16);
@@ -484,6 +485,13 @@
     padding-right: initial;
   }
 }
+.p-inheritance__flow-box--calc {
+  margin-left: initial;
+  margin-top: rem(30);
+  @include mq(md) {
+    margin-top: rem(40);
+  }
+}
 
 .p-inheritance__flow-boxText {
   font-size: rem(17);
@@ -539,6 +547,7 @@
   line-height: 1.8;
   color: #000;
   padding-left: rem(24);
+  font-weight: 400;
   counter-increment: item;
 
   &::before {
@@ -553,8 +562,12 @@
   margin-top: rem(16);
 }
 .p-inheritance__onlyBox-list--red {
-  color: #cc0000;
-  font-weight: 700;
+  color: #cc0000 !important;
+  font-weight: 700 !important;
+  &::before {
+    font-weight: 700 !important;
+    color: #cc0000 !important;
+  }
 }
 .p-inheritance__smallAttention {
   font-size: rem(14);
@@ -566,6 +579,9 @@
 
 .p-inheritance__onlyBox-list--bold {
   font-weight: 700;
+  &::before {
+    font-weight: 700 !important;
+  }
 }
 
 .p-inheritance__table {
@@ -646,7 +662,10 @@
   line-height: 1.8;
   color: #000;
 }
-
+.p-inheritance__onlyBox-normal {
+  font-weight: 400 !important;
+  color: #222 !important;
+}
 .p-inheritance__detailTable-listItem {
   font-size: rem(16);
   line-height: 1.8;

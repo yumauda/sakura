@@ -14,7 +14,7 @@
                     <p class="p-contact__tel">042-469-3092</p>
                     <p class="p-contact__btn-text">[ 受付時間 ]  平日 9:00-18:00</p>
                 </a>
-                <a href="<?php echo esc_url(home_url('/contact')); ?>" class="p-contact__btn">
+                <a href="<?php echo esc_url(home_url('/form')); ?>" class="p-contact__btn">
                     <div class="p-contact__icon">
                         <img decoding="async" loading="lazy" src="<?php echo get_template_directory_uri() ?>/images/common/contact_mail.png" alt="" width="45" height="35">
                     </div>
