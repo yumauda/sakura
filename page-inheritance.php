@@ -20,8 +20,11 @@
     <div class="l-inner">
       <div class="p-inheritance__container">
         <!-- メインコンテンツ -->
-        <!-- <div class="p-inheritance__main">
+        <div class="p-inheritance__main">
           <div class="p-inheritance__content">
+            <figure class="p-inheritance__illustration">
+              <img decoding="async" loading="lazy" src="<?php echo get_template_directory_uri() ?>/images/common/inheritance_illustration.jpg" alt="遺産相続のイラスト" width="390" height="260">
+            </figure>
             <div class="p-inheritance__detail">
               <h3 class="c-page-title">遺産相続について</h3>
               <div class="p-inheritance__text-wrapper">
@@ -31,12 +34,14 @@
                 <p class="p-inheritance__text">
                   相続で引き継がれる財産には、「現金」や「預貯金」、「不動産」など様々なものがありますが、<span class="p-inheritance__text--bold">相続で引き継がれる財産のことを</span><span class="p-inheritance__text--attention">「遺産」</span>と言います。
                 </p>
+                <p class="p-inheritance__text">
+                  相続で引き継がれる財産には、「現金」や「預貯金」、「不動産」など様々なものがありますが、<span class="p-inheritance__text--bold">相続で引き継がれる財産のことを</span><span class="p-inheritance__text--attention">「遺産」</span>と言います。
+                </p>
               </div>
             </div>
 
-            <figure class="p-inheritance__illustration">
-              <img decoding="async" loading="lazy" src="<?php echo get_template_directory_uri() ?>/images/common/inheritance_illustration.jpg" alt="遺産相続のイラスト" width="390" height="260">
-            </figure>
+
+
           </div>
           <div class="p-inheritance__example">
             <h4 class="c-page-title--h4">遺産の例</h4>
@@ -110,8 +115,8 @@
 
           </div>
 
-        </div> -->
-        <?php the_content(); ?>
+        </div>
+        <!--   <?php the_content(); ?> -->
 
         <?php get_template_part('includes/sidebar-legal'); ?>
       </div>

@@ -26,19 +26,19 @@
 
 .p-inheritance__content {
   display: flex;
-  flex-direction: column;
+  flex-direction: column-reverse;
   width: 100%;
+
   @include mq(md) {
-    align-items: center;
-    gap: rem(50);
-    flex-direction: row;
+    display: flow-root; // これが一番安全（clearfix不要）
   }
 }
 
 .p-inheritance__detail {
   width: 100%;
   @include mq(md) {
-    max-width: rem(400);
+    // max-width: rem(400);
+    max-width: none;
   }
 }
 
@@ -80,8 +80,12 @@
   margin-top: rem(40);
   width: 100%;
   @include mq(md) {
-    margin-top: initial;
-    max-width: rem(390);
+    // margin-top: initial;
+    // max-width: rem(390);
+    float: right;
+    width: rem(390); // 画像の表示幅（必要なら調整）
+    margin: 0 0 rem(16) rem(50); // 下と左に余白（回り込み用）
+    max-width: none;
   }
 }
 .p-inheritance__illustration img {

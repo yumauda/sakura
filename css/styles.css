@@ -2539,14 +2539,12 @@ input::placeholder {
 
 .p-inheritance__content {
   display: flex;
-  flex-direction: column;
+  flex-direction: column-reverse;
   width: 100%;
 }
 @media screen and (min-width: 768px) {
   .p-inheritance__content {
-    align-items: center;
-    gap: 3.125rem;
-    flex-direction: row;
+    display: flow-root;
   }
 }
 
@@ -2555,7 +2553,7 @@ input::placeholder {
 }
 @media screen and (min-width: 768px) {
   .p-inheritance__detail {
-    max-width: 25rem;
+    max-width: none;
   }
 }
 
@@ -2611,8 +2609,10 @@ input::placeholder {
 }
 @media screen and (min-width: 768px) {
   .p-inheritance__illustration {
-    margin-top: initial;
-    max-width: 24.375rem;
+    float: right;
+    width: 24.375rem;
+    margin: 0 0 1rem 3.125rem;
+    max-width: none;
   }
 }
 
