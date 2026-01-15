@@ -20,6 +20,10 @@
             </div>
           </li>';
 
+        // 投稿一覧（home.php）リンク用（設定があれば「投稿ページ」を優先）
+        $posts_page_id = (int) get_option('page_for_posts');
+        $posts_page_url = $posts_page_id ? get_permalink($posts_page_id) : home_url('/blog');
+
         // 固定ページの場合
         if (is_page()) {
           $post_id = get_the_ID();
@@ -47,6 +51,14 @@
         }
         // 投稿ページの場合
         elseif (is_single()) {
+          // 投稿一覧
+          echo $breadcrumb_icon;
+          echo '<li class="p-breadcrumbs__list">';
+          echo '<a href="' . esc_url($posts_page_url) . '" class="p-breadcrumbs__link">';
+          echo 'ブログ';
+          echo '</a>';
+          echo '</li>';
+
           // カテゴリーを取得
           $categories = get_the_category();
           if (!empty($categories)) {
@@ -95,6 +107,14 @@
         // カテゴリーアーカイブページの場合
         elseif (is_category()) {
           $category = get_queried_object();
+
+          // 投稿一覧
+          echo $breadcrumb_icon;
+          echo '<li class="p-breadcrumbs__list">';
+          echo '<a href="' . esc_url($posts_page_url) . '" class="p-breadcrumbs__link">';
+          echo 'ブログ';
+          echo '</a>';
+          echo '</li>';
 
           // 親カテゴリーがある場合
           if ($category->parent != 0) {

@@ -19,7 +19,7 @@
                     </p>
                 </div>
                 <div class="p-footer__small">
-                    <small>© 2025 さくら司法書士事務所.</small>
+                    <small>© 2026 さくら司法書士事務所.</small>
                 </div>
 
             </div>
