@@ -77,11 +77,12 @@
     <header class="p-header">
         <div class="l-inner">
             <div class="p-header__content">
-                <h1 class="p-header__logo">
+                <div class="p-header__logo">
                     <a href="<?php echo esc_url(home_url('/')); ?>" class="p-header__home">
-                        <img src="<?php echo get_template_directory_uri() ?>/images/common/footer_logo.png" alt="さくら司法書士事務所" width="431" height="38">
+                        <h1 class="p-header__logo-text">西東京市の遺産相続や不動産登記のことなら</h1>
+                        <img src="<?php echo get_template_directory_uri() ?>/images/common/header_logo.png" alt="さくら司法書士事務所" width="431" height="38">
                     </a>
-                </h1>
+                </div>
                 <nav class="p-header__nav">
                     <div class="p-header__nav-top">
                         <p class="p-header__nav-text">[ 受付時間 ] 平日 9:00-18:00</p>
@@ -216,7 +217,7 @@
                                             <li class="p-drawer-accordion__sub-list">
                                                 <a href="<?php echo esc_url(home_url('/testament/white/')); ?>" class="p-drawer-accordion__sub-link">遺言書の書き方、作成の流れ</a>
                                             </li>
-                                            
+
                                         </ul>
                                     </div>
                                 </details>
@@ -247,7 +248,7 @@
                                             <li class="p-drawer-accordion__sub-list">
                                                 <a href="<?php echo esc_url(home_url('/registration/massyou/')); ?>" class="p-drawer-accordion__sub-link">抵当権抹消登記</a>
                                             </li>
-                                            
+
                                         </ul>
                                     </div>
                                 </details>

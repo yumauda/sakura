@@ -130,7 +130,6 @@
   border-left: 1px solid #000;
 }
 
-
 .p-header__page-icon {
   width: rem(20);
 }
@@ -155,4 +154,13 @@
   display: inline-block;
   width: rem(30);
   height: rem(30);
+}
+.p-header__logo-text {
+  font-size: rem(9);
+  color: #333;
+  font-weight: 400;
+  margin-bottom: rem(4);
+  @include mq(md) {
+    font-size: rem(13);
+  }
 }

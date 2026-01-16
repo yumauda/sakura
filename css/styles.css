@@ -2311,6 +2311,18 @@ input::placeholder {
   height: 1.875rem;
 }
 
+.p-header__logo-text {
+  font-size: 0.5625rem;
+  color: #333;
+  font-weight: 400;
+  margin-bottom: 0.25rem;
+}
+@media screen and (min-width: 768px) {
+  .p-header__logo-text {
+    font-size: 0.8125rem;
+  }
+}
+
 .p-home-topics__box {
   position: relative;
   z-index: 1;
