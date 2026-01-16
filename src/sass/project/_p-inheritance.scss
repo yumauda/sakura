@@ -86,6 +86,7 @@
     width: rem(390); // 画像の表示幅（必要なら調整）
     margin: 0 0 rem(16) rem(50); // 下と左に余白（回り込み用）
     max-width: none;
+    margin-top: rem(64);
   }
 }
 .p-inheritance__illustration img {

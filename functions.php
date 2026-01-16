@@ -48,16 +48,9 @@ function my_script_init()
 	wp_enqueue_style('swiper-css', get_template_directory_uri() . '/css/swiper-bundle.min.css', array(), filemtime(get_theme_file_path('/css/swiper-bundle.min.css')), 'all');
 	wp_enqueue_script('js-swiper-bundle', get_template_directory_uri() . '/js/swiper.min.js', array('jquery'), filemtime(get_theme_file_path('/js/swiper.min.js')), true);
 	wp_enqueue_script('js-swiper-init', get_template_directory_uri() . '/js/swiper.js', array('jquery'), filemtime(get_theme_file_path('/js/swiper.js')), true);
-	if (is_front_page()) {
-	}
-	if (is_page('banquet') || is_page('restaurant') || is_page('suite-a') || is_page('suite-b') || is_page('twin') || is_page('double') || is_page('single') || is_page('japanese')) {
-		wp_enqueue_style('swiper-css', get_template_directory_uri() . '/css/swiper-bundle.min.css', array(), filemtime(get_theme_file_path('/css/swiper-bundle.min.css')), 'all');
-		wp_enqueue_script('js-swiper-bundle', get_template_directory_uri() . '/js/swiper.min.js', array('jquery'), filemtime(get_theme_file_path('/js/swiper.min.js')), true);
-		wp_enqueue_script('js-swiper-init', get_template_directory_uri() . '/js/swiper.js', array('jquery'), filemtime(get_theme_file_path('/js/swiper.js')), true);
-	}
 
 	// お問い合わせページで郵便番号自動入力を有効化
-	if (is_page('contact')) {
+	if (is_page('form')) {
 		wp_enqueue_script('postal-code', get_template_directory_uri() . '/js/postal-code.js', array('jquery'), filemtime(get_theme_file_path('/js/postal-code.js')), true);
 	}
 

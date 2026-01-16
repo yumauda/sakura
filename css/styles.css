@@ -2613,6 +2613,7 @@ input::placeholder {
     width: 24.375rem;
     margin: 0 0 1rem 3.125rem;
     max-width: none;
+    margin-top: 4rem;
   }
 }
 
