@@ -1,7 +1,7 @@
 <?php get_header(); ?>
 <link rel="stylesheet" href="<?php echo get_template_directory_uri(); ?>/css/scroll-hint.css">
 <main>
-  <div class="p-mv">
+  <!-- <div class="p-mv">
     <div class="l-inner">
       <div class="p-mv__content">
         
@@ -435,8 +435,8 @@
         </ul>
       </div>
     </div>
-  </section>
-  <!-- <?php the_content(); ?> -->
+  </section> -->
+  <?php the_content(); ?>
   <?php get_template_part('includes/contact'); ?>
 
 </main>

@@ -28,7 +28,7 @@ $menu_items = array(
       array('url' => home_url('/knowledge/heir'), 'text' => '相続人となる者', 'slug' => 'heir'),
       array('url' => home_url('/knowledge/souzokubun'), 'text' => '法定相続分', 'slug' => 'souzokubun'),
       array('url' => home_url('/knowledge/isanbunkatsu'), 'text' => '遺産分割', 'slug' => 'isanbunkatsu'),
-      array('url' => home_url('/knowledge/necessity'), 'text' => '遺言の必要性と相続', 'slug' => 'necessity'),
+      array('url' => home_url('/knowledge/necessity'), 'text' => '相続の必要書類', 'slug' => 'necessity'),
       array('url' => home_url('/knowledge/tax'), 'text' => '相続税・贈与税', 'slug' => 'tax'),
       array('url' => home_url('/knowledge/tokubetu'), 'text' => '特別受益・生前贈与・寄与分', 'slug' => 'tokubetu'),
       array('url' => home_url('/knowledge/mediate'), 'text' => '調停・審判・相続人不明', 'slug' => 'mediate'),

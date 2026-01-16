@@ -601,13 +601,17 @@
 }
 
 .p-inheritance__table-headCell {
-  padding: rem(13);
-  font-size: rem(16);
   font-weight: 700;
   color: #fff;
   text-align: left;
   border: 1px solid #ccc;
   width: 25%;
+  font-size: rem(14);
+  padding: rem(10);
+  @include mq(md) {
+    padding: rem(13);
+    font-size: rem(16);
+  }
 }
 
 .p-inheritance__table-body {
@@ -615,9 +619,12 @@
 
 .p-inheritance__table-cell {
   padding: rem(13);
-  font-size: rem(16);
   color: #000;
   border: 1px solid #ccc;
+  font-size: rem(14);
+  @include mq(md) {
+    font-size: rem(16);
+  }
 }
 .p-inheritance__table-cell--bold {
   font-weight: 700;
@@ -635,21 +642,27 @@
 
 .p-inheritance__detailTable-head {
   background: #ee819d;
-  font-size: rem(16);
   font-weight: 700;
   color: #fff;
   text-align: left;
   padding: rem(13);
   border: 1px solid #ccc;
   width: 24%;
+  font-size: rem(14);
+  @include mq(md) {
+    font-size: rem(16);
+  }
 }
 
 .p-inheritance__detailTable-cell {
   padding: rem(13);
-  font-size: rem(15);
   color: #000;
   border: 1px solid #ccc;
   vertical-align: top;
+  font-size: rem(14);
+  @include mq(md) {
+    font-size: rem(15);
+  }
 }
 
 .p-inheritance__detailTable-title {
@@ -670,6 +683,7 @@
 .p-inheritance__onlyBox-normal {
   font-weight: 400 !important;
   color: #222 !important;
+  margin-top: rem(8);
 }
 .p-inheritance__detailTable-listItem {
   font-size: rem(16);
