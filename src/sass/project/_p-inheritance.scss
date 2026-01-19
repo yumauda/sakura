@@ -3,6 +3,7 @@
 .p-inheritance {
   padding-top: rem(66);
   padding-bottom: rem(48);
+
   @include mq(md) {
     padding-top: rem(120);
     padding-bottom: rem(100);
@@ -36,6 +37,7 @@
 
 .p-inheritance__detail {
   width: 100%;
+
   @include mq(md) {
     // max-width: rem(400);
     max-width: none;
@@ -44,33 +46,42 @@
 
 .p-inheritance__text-wrapper {
   margin-top: rem(30);
+
   @include mq(md) {
     margin-top: rem(40);
   }
 }
+
 .mt0 {
   margin-top: initial;
 }
+
 .mt56 {
   margin-top: rem(56);
 }
+
 .p-inheritance__text {
   line-height: 1.8;
   color: #000;
   font-size: rem(16);
+
   @include mq(md) {
     font-size: rem(17);
   }
 }
-.p-inheritance__text + .p-inheritance__text {
+
+.p-inheritance__text+.p-inheritance__text {
   margin-top: rem(28);
+
   @include mq(md) {
     margin-top: rem(37);
   }
 }
+
 .p-inheritance__text--bold {
   font-weight: 700;
 }
+
 .p-inheritance__text--attention {
   font-weight: 700;
   background: linear-gradient(transparent 60%, #fff0b2 60%);
@@ -79,6 +90,7 @@
 .p-inheritance__illustration {
   margin-top: rem(40);
   width: 100%;
+
   @include mq(md) {
     // margin-top: initial;
     // max-width: rem(390);
@@ -89,6 +101,7 @@
     margin-top: rem(64);
   }
 }
+
 .p-inheritance__illustration img {
   width: 100%;
   height: auto;
@@ -98,6 +111,7 @@
 
 .p-inheritance__example {
   margin-top: rem(40);
+
   @include mq(md) {
     margin-top: rem(60);
   }
@@ -105,6 +119,7 @@
 
 .p-inheritance__example-box {
   margin-top: rem(30);
+
   @include mq(md) {
     margin-top: rem(40);
   }
@@ -119,6 +134,7 @@
   background: #fff8eb;
   border: 1px solid #f59b5f;
   padding: rem(26);
+
   @include mq(md) {
     padding-top: rem(20);
     padding-bottom: rem(20);
@@ -134,6 +150,7 @@
   line-height: 2;
   color: #000;
   font-size: rem(16);
+
   @include mq(md) {
     font-size: rem(17);
   }
@@ -174,17 +191,18 @@
     color: #00bcd4;
   }
 }
+
 .p-inheritance__attention-text {
   margin-top: rem(30);
+
   @include mq(md) {
     margin-top: rem(40);
   }
 }
-.p-inheritance__number {
-}
 
-.p-inheritance__number-lists {
-}
+.p-inheritance__number {}
+
+.p-inheritance__number-lists {}
 
 .p-inheritance__number-list {
   padding-top: rem(16);
@@ -197,6 +215,7 @@
   font-size: rem(16);
   padding-left: rem(28);
   position: relative;
+
   @include mq(md) {
     font-size: rem(17);
   }
@@ -205,6 +224,7 @@
     counter-increment: item 1;
     padding-top: initial;
   }
+
   &:last-child {
     padding-bottom: initial;
     border-bottom: initial;
@@ -224,6 +244,7 @@
     text-align: center;
     line-height: 1.6;
   }
+
   &:first-child::before {
     top: rem(8);
   }
@@ -232,17 +253,21 @@
 .p-inheritance__number-list span {
   font-weight: 700;
 }
+
 .mt87 {
   margin-top: rem(54);
+
   @include mq(md) {
     margin-top: rem(87);
   }
 }
+
 .p-inheritance__number {
   background: #fff8eb;
   border: 1px solid #f59b5f;
   margin-top: rem(30);
   padding: rem(26);
+
   @include mq(md) {
     padding-left: rem(30);
     padding-right: rem(30);
@@ -252,15 +277,15 @@
   }
 }
 
-.p-inheritance__number-lists {
-}
+.p-inheritance__number-lists {}
 
-.p-inheritance__number-list {
-}
+.p-inheritance__number-list {}
+
 .p-inheritance__bubble {
   display: flex;
   gap: rem(20);
   margin-top: rem(48);
+
   @include mq(md) {
     margin-top: rem(80);
     gap: rem(30);
@@ -269,13 +294,14 @@
 
 .p-inheritance__bubble-left {
   width: rem(60);
+
   @include mq(md) {
     width: rem(80);
   }
 }
 
-.p-inheritance__bubble-img {
-}
+.p-inheritance__bubble-img {}
+
 .p-inheritance__bubble-img img {
   width: 100%;
   height: auto;
@@ -297,6 +323,7 @@
   border-radius: rem(12);
   position: relative;
   padding: rem(18);
+
   @include mq(md) {
     padding-top: rem(21);
     padding-left: rem(21);
@@ -304,6 +331,7 @@
     padding-bottom: rem(16);
   }
 }
+
 .p-inheritance__right::before {
   position: absolute;
   content: "";
@@ -317,20 +345,25 @@
   left: rem(-14);
   z-index: 1;
 }
+
 .p-inheritance__right-bubbleText {
   line-height: 1.8;
   color: #000;
   font-size: rem(16);
+
   @include mq(md) {
     font-size: rem(17);
   }
 }
+
 .p-inheritance__right-bubbleText span {
   font-weight: 700;
   color: #cc0000;
 }
+
 .p-inheritance__btn-wrapper {
   margin-top: rem(50);
+
   @include mq(md) {
     margin-top: rem(80);
   }
@@ -352,32 +385,40 @@
   padding-left: rem(20);
   padding-right: rem(30);
 }
+
 .p-inheritance__btn:hover {
   background: #ee819d;
 }
+
 .p-inheritance__btn-text {
   font-size: rem(15);
   color: #e77492;
   transition: 0.3s ease-in-out;
 }
+
 .p-inheritance__btn:hover .p-inheritance__btn-text {
   color: #fff;
 }
+
 .p-inheritance__btn-arrow {
   position: absolute;
   right: rem(15);
   top: 50%;
   transform: translateY(-50%);
 }
+
 .p-inheritance__btn-arrow svg path {
   fill: #ee819d;
   transition: 0.3s ease-in-out;
 }
+
 .p-inheritance__btn:hover .p-inheritance__btn-arrow svg path {
   fill: #fff;
 }
+
 .p-inheritance__flow {
   margin-top: rem(30);
+
   @include mq(md) {
     margin-top: rem(62);
   }
@@ -391,10 +432,12 @@
   counter-increment: flow-counter;
   position: relative;
   padding-left: rem(40);
+
   @include mq(md) {
     padding-left: rem(56);
   }
 }
+
 .p-inheritance__flow-list::before {
   position: absolute;
   content: "";
@@ -406,6 +449,7 @@
   margin-top: rem(4);
   left: 0;
 }
+
 .p-inheritance__flow-list:first-child::before,
 .p-inheritance__flow-list:last-child::before {
   position: absolute;
@@ -418,6 +462,7 @@
   margin-top: rem(4);
   left: 0;
 }
+
 .p-inheritance__flow-list::after {
   position: absolute;
   content: "";
@@ -428,10 +473,12 @@
   left: rem(8);
   z-index: -1;
 }
+
 .p-inheritance__flow-list:last-child::after {
   height: 25%;
 }
-.p-inheritance__flow-list + .p-inheritance__flow-list {
+
+.p-inheritance__flow-list+.p-inheritance__flow-list {
   padding-top: rem(20);
 }
 
@@ -441,6 +488,7 @@
   color: #000;
   font-weight: 700;
   font-size: rem(17);
+
   @include mq(md) {
     font-size: rem(18);
   }
@@ -453,6 +501,7 @@
   font-weight: 700;
   color: #000;
   font-size: rem(17);
+
   @include mq(md) {
     font-size: rem(18);
   }
@@ -464,18 +513,22 @@
   padding-left: rem(24);
   font-size: rem(16);
   margin-top: rem(12);
+
   @include mq(md) {
     font-size: rem(17);
     margin-top: rem(20);
   }
 }
+
 .p-inheritance__flow-listText-link {
   color: #3366cc;
   font-weight: 700;
 }
+
 .p-inheritance__flow-listText--bold {
   font-weight: 700;
 }
+
 .p-inheritance__flow-box {
   margin-top: rem(20);
   background-color: #fff8eb;
@@ -483,6 +536,7 @@
   text-align: center;
   margin-left: rem(24);
   padding: rem(20) rem(16);
+
   @include mq(md) {
     padding-top: rem(30);
     padding-bottom: rem(30);
@@ -490,9 +544,11 @@
     padding-right: initial;
   }
 }
+
 .p-inheritance__flow-box--calc {
   margin-left: initial;
   margin-top: rem(30);
+
   @include mq(md) {
     margin-top: rem(40);
   }
@@ -509,6 +565,7 @@
   color: #cc0000;
   font-weight: 700;
 }
+
 .p-inheritance__flow-boxAttention {
   margin-top: rem(20);
   font-weight: 700;
@@ -517,11 +574,13 @@
   line-height: 1.8;
   padding-left: rem(24);
 }
+
 .p-inheritance__onlyBox {
   margin-top: rem(38);
   background: #fff8eb;
   border: 1px solid #f59b5f;
   padding: rem(20);
+
   @include mq(md) {
     padding-top: rem(30);
     padding-left: rem(30);
@@ -541,6 +600,7 @@
   counter-reset: item;
   list-style: none;
   padding-left: rem(4);
+
   @include mq(md) {
     padding-left: rem(16);
   }
@@ -563,17 +623,21 @@
     font-weight: 400;
   }
 }
-.p-inheritance__onlyBox-list + .p-inheritance__onlyBox-list {
+
+.p-inheritance__onlyBox-list+.p-inheritance__onlyBox-list {
   margin-top: rem(16);
 }
+
 .p-inheritance__onlyBox-list--red {
   color: #cc0000 !important;
   font-weight: 700 !important;
+
   &::before {
     font-weight: 700 !important;
     color: #cc0000 !important;
   }
 }
+
 .p-inheritance__smallAttention {
   font-size: rem(14);
   font-weight: 400;
@@ -584,6 +648,7 @@
 
 .p-inheritance__onlyBox-list--bold {
   font-weight: 700;
+
   &::before {
     font-weight: 700 !important;
   }
@@ -608,27 +673,30 @@
   width: 25%;
   font-size: rem(14);
   padding: rem(10);
+
   @include mq(md) {
     padding: rem(13);
     font-size: rem(16);
   }
 }
 
-.p-inheritance__table-body {
-}
+.p-inheritance__table-body {}
 
 .p-inheritance__table-cell {
   padding: rem(13);
   color: #000;
   border: 1px solid #ccc;
   font-size: rem(14);
+
   @include mq(md) {
     font-size: rem(16);
   }
 }
+
 .p-inheritance__table-cell--bold {
   font-weight: 700;
 }
+
 .p-inheritance__table-cell--bg {
   background: #fdedf1;
 }
@@ -649,6 +717,7 @@
   border: 1px solid #ccc;
   width: 24%;
   font-size: rem(14);
+
   @include mq(md) {
     font-size: rem(16);
   }
@@ -660,35 +729,51 @@
   border: 1px solid #ccc;
   vertical-align: top;
   font-size: rem(14);
+
   @include mq(md) {
     font-size: rem(15);
   }
 }
 
 .p-inheritance__detailTable-title {
-  font-size: rem(16);
   font-weight: 700;
   color: #000;
+  font-size: rem(14);
+
+  @include mq(md) {
+    font-size: rem(16);
+  }
 }
 
 .p-inheritance__detailTable-list {
   list-style: disc;
   padding-left: rem(19);
 }
+
 .p-inheritance__detailTable-text {
-  font-size: rem(16);
   line-height: 1.8;
   color: #000;
+  font-size: rem(14);
+  @include mq(md){
+    font-size: rem(16);
+    
+  }
 }
+
 .p-inheritance__onlyBox-normal {
   font-weight: 400 !important;
   color: #222 !important;
   margin-top: rem(8);
 }
+
 .p-inheritance__detailTable-listItem {
-  font-size: rem(16);
   line-height: 1.8;
   color: #000;
+  font-size: rem(14);
+  @include mq(md){
+    
+    font-size: rem(16);
+  }
 }
 
 .p-inheritance__fast {
@@ -714,33 +799,39 @@
 
 .p-inheritance__fast-tableHeadCell {
   padding: rem(13);
-  font-size: rem(16);
+  font-size: rem(14);
   width: 33.33333333333333%;
   font-weight: 700;
   color: #fff;
   border: 1px solid #ccc;
   text-align: left;
+  @include mq(md){
+    font-size: rem(16);
+  }
 }
 
-.p-inheritance__fast-tableBody {
-}
+.p-inheritance__fast-tableBody {}
 
 .p-inheritance__fast-tableCell {
   color: #000;
   border: 1px solid #ccc;
   font-size: rem(14);
   padding: rem(10) rem(8);
+
   @include mq(md) {
     padding: rem(13);
     font-size: rem(16);
   }
 }
+
 .fw700 {
   font-weight: 700;
 }
+
 .bg-pink {
   background: #fdedf1;
 }
+
 .p-inheritance__sample {
   margin-top: rem(40);
 }
@@ -750,6 +841,7 @@
   background: #fbfbfb;
   border: 1px solid #ccc;
   padding: rem(50) rem(30);
+
   @include mq(md) {
     margin-top: rem(40);
     padding-top: rem(80);
@@ -764,6 +856,7 @@
   font-weight: 700;
   color: #000;
   font-size: rem(20);
+
   @include mq(md) {
     font-size: rem(25);
   }
@@ -771,6 +864,7 @@
 
 .p-inheritance__sampleTop {
   margin-top: rem(40);
+
   @include mq(md) {
     margin-top: rem(60);
   }
@@ -780,6 +874,7 @@
   font-size: rem(16);
   line-height: 1.8;
   color: #000;
+
   @include mq(md) {
     font-size: rem(17);
   }
@@ -787,23 +882,27 @@
 
 .p-inheritance__sampleBlock-wrapper {
   margin-top: rem(36);
+
   @include mq(md) {
     margin-top: rem(60);
   }
 }
 
-.p-inheritance__sampleBlock {
-}
-.p-inheritance__sampleBlock + .p-inheritance__sampleBlock {
+.p-inheritance__sampleBlock {}
+
+.p-inheritance__sampleBlock+.p-inheritance__sampleBlock {
   margin-top: rem(40);
+
   @include mq(md) {
     margin-top: rem(60);
   }
 }
+
 .p-inheritance__sampleBlockTitle {
   font-weight: 700;
   color: #000;
   font-size: rem(17);
+
   @include mq(md) {
     font-size: rem(18);
   }
@@ -823,6 +922,7 @@
   padding-left: rem(30);
   counter-increment: sample-counter;
   font-size: rem(16);
+
   @include mq(md) {
     font-size: rem(17);
   }
@@ -835,7 +935,7 @@
     font-weight: 400;
   }
 
-  + .p-inheritance__sampleList {
+  +.p-inheritance__sampleList {
     margin-top: rem(10);
   }
 }
@@ -843,10 +943,12 @@
 .p-inheritance__sampleBottom {
   text-align: right;
   margin-top: rem(37);
+
   @include mq(md) {
     margin-top: rem(56);
   }
 }
+
 .mt29 {
   margin-top: rem(29);
 }
@@ -855,6 +957,7 @@
 .p-inheritance__heir-section {
   margin-top: rem(40);
   margin-bottom: rem(40);
+
   @include mq(md) {
     margin-top: rem(60);
     margin-bottom: rem(60);
@@ -868,6 +971,7 @@
   padding-bottom: rem(15);
   border-bottom: 2px solid #ee819d;
   margin-bottom: rem(25);
+
   @include mq(md) {
     font-size: rem(24);
     margin-bottom: rem(30);
@@ -880,6 +984,7 @@
 
 .p-inheritance__heir-text {
   margin-top: rem(20);
+
   @include mq(md) {
     margin-top: initial;
     flex: 1;
@@ -890,11 +995,12 @@
   font-size: rem(15);
   line-height: 1.8;
   color: #000;
+
   @include mq(md) {
     font-size: rem(16);
   }
 
-  + .p-inheritance__heir-paragraph {
+  +.p-inheritance__heir-paragraph {
     margin-top: rem(20);
   }
 }
@@ -911,6 +1017,7 @@
 .p-inheritance__heir-image {
   flex-shrink: 0;
   width: 100%;
+
   @include mq(md) {
     float: right;
     width: rem(300);
@@ -927,6 +1034,7 @@
     object-fit: contain;
   }
 }
+
 .p-inheritance__sidebar {
   @include mq(md) {
     margin-left: auto;

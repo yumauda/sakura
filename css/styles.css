@@ -3263,9 +3263,14 @@ input::placeholder {
 }
 
 .p-inheritance__detailTable-title {
-  font-size: 1rem;
   font-weight: 700;
   color: #000;
+  font-size: 0.875rem;
+}
+@media screen and (min-width: 768px) {
+  .p-inheritance__detailTable-title {
+    font-size: 1rem;
+  }
 }
 
 .p-inheritance__detailTable-list {
@@ -3274,9 +3279,14 @@ input::placeholder {
 }
 
 .p-inheritance__detailTable-text {
-  font-size: 1rem;
   line-height: 1.8;
   color: #000;
+  font-size: 0.875rem;
+}
+@media screen and (min-width: 768px) {
+  .p-inheritance__detailTable-text {
+    font-size: 1rem;
+  }
 }
 
 .p-inheritance__onlyBox-normal {
@@ -3286,9 +3296,14 @@ input::placeholder {
 }
 
 .p-inheritance__detailTable-listItem {
-  font-size: 1rem;
   line-height: 1.8;
   color: #000;
+  font-size: 0.875rem;
+}
+@media screen and (min-width: 768px) {
+  .p-inheritance__detailTable-listItem {
+    font-size: 1rem;
+  }
 }
 
 .p-inheritance__fast {
@@ -3314,12 +3329,17 @@ input::placeholder {
 
 .p-inheritance__fast-tableHeadCell {
   padding: 0.8125rem;
-  font-size: 1rem;
+  font-size: 0.875rem;
   width: 33.3333333333%;
   font-weight: 700;
   color: #fff;
   border: 1px solid #ccc;
   text-align: left;
+}
+@media screen and (min-width: 768px) {
+  .p-inheritance__fast-tableHeadCell {
+    font-size: 1rem;
+  }
 }
 
 .p-inheritance__fast-tableCell {
