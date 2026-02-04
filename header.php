@@ -107,7 +107,7 @@
                             <a href="<?php echo esc_url(home_url('/faq')); ?>" class="p-header__link">よくある質問</a>
                         </li>
                         <li class="p-header__list">
-                            <a href="<?php echo esc_url(home_url('/blog')); ?>" class="p-header__link">所長ブログ</a>
+                            <a href="<?php echo esc_url(home_url('/blog')); ?>" class="p-header__link">所長のブログ</a>
                         </li>
                     </ul>
                 </nav>
@@ -308,7 +308,7 @@
                                 <a href="<?php echo esc_url(home_url('/faq')); ?>" class="p-drawer-content__link">よくある質問</a>
                             </li>
                             <li class="p-drawer-content__list">
-                                <a href="<?php echo esc_url(home_url('/blog')); ?>" class="p-drawer-content__link">所長ブログ</a>
+                                <a href="<?php echo esc_url(home_url('/blog')); ?>" class="p-drawer-content__link">所長のブログ</a>
                             </li>
                             <li class="p-drawer-content__list">
                                 <a href="<?php echo esc_url(home_url('/privacy')); ?>" class="p-drawer-content__link">個人情報保護方針</a>

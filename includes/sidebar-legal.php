@@ -197,7 +197,7 @@ foreach ($menu_items as $key => $section) {
         <a href="<?php echo esc_url(home_url('/faq')); ?>" class="p-sidebar__menu-link <?php echo ($current_page_slug === 'faq') ? 'is-current' : ''; ?>">よくある質問</a>
       </li>
       <li class="p-sidebar__menu-item">
-        <a href="<?php echo esc_url(home_url('/blog')); ?>" class="p-sidebar__menu-link <?php echo (is_home() || is_singular('post')) ? 'is-current' : ''; ?>">所長ブログ</a>
+        <a href="<?php echo esc_url(home_url('/blog')); ?>" class="p-sidebar__menu-link <?php echo (is_home() || is_singular('post')) ? 'is-current' : ''; ?>">所長のブログ</a>
       </li>
       <li class="p-sidebar__menu-item">
         <a href="<?php echo esc_url(home_url('/privacy')); ?>" class="p-sidebar__menu-link <?php echo ($current_page_slug === 'privacy') ? 'is-current' : ''; ?>">個人情報保護方針</a>

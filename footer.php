@@ -58,7 +58,7 @@
                         <a href="<?php echo esc_url(home_url('/faq')); ?>" class="p-footer__link">よくある質問</a>
                     </li>
                     <li class="p-footer__list">
-                        <a href="<?php echo esc_url(home_url('/blog')); ?>" class="p-footer__link">所長ブログ</a></a>
+                        <a href="<?php echo esc_url(home_url('/blog')); ?>" class="p-footer__link">所長のブログ</a></a>
                         <a href="<?php echo esc_url(home_url('/privacy')); ?>" class="p-footer__link">個人情報保護方針</a>
                         <a href="<?php echo esc_url(home_url('/form')); ?>" class="p-footer__link">お問い合わせ</a>
                     </li>
