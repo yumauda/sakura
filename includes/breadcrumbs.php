@@ -55,7 +55,7 @@
           echo $breadcrumb_icon;
           echo '<li class="p-breadcrumbs__list">';
           echo '<a href="' . esc_url($posts_page_url) . '" class="p-breadcrumbs__link">';
-          echo 'ブログ';
+          echo '所長ブログ';
           echo '</a>';
           echo '</li>';
 
@@ -112,7 +112,7 @@
           echo $breadcrumb_icon;
           echo '<li class="p-breadcrumbs__list">';
           echo '<a href="' . esc_url($posts_page_url) . '" class="p-breadcrumbs__link">';
-          echo 'ブログ';
+          echo '所長ブログ';
           echo '</a>';
           echo '</li>';
 
@@ -149,6 +149,14 @@
         }
         // 日付アーカイブページの場合
         elseif (is_date()) {
+          // 投稿一覧
+          echo $breadcrumb_icon;
+          echo '<li class="p-breadcrumbs__list">';
+          echo '<a href="' . esc_url($posts_page_url) . '" class="p-breadcrumbs__link">';
+          echo '所長ブログ';
+          echo '</a>';
+          echo '</li>';
+
           if (is_day()) {
             // 年
             echo $breadcrumb_icon;
@@ -199,12 +207,12 @@
             echo '</li>';
           }
         }
-        // ブログアーカイブページ（home.php）の場合
+        // 所長ブログアーカイブページ（home.php）の場合
         elseif (is_home()) {
           echo $breadcrumb_icon;
           echo '<li class="p-breadcrumbs__list">';
           echo '<a href="' . esc_url(home_url('/blog')) . '" class="p-breadcrumbs__link p-breadcrumbs__link--current">';
-          echo 'ブログ';
+          echo '所長ブログ';
           echo '</a>';
           echo '</li>';
         }

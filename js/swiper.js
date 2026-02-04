@@ -5,6 +5,10 @@ const slider2 = new Swiper(".slider-main", {
   centeredSlides: true,
   loop: true,
   spaceBetween: 10,
+  autoplay: {
+    delay: 3000,
+    disableOnInteraction: false,
+  },
   
   breakpoints: {
     768: {

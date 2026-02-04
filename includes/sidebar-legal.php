@@ -1,8 +1,13 @@
 <?php
 // 現在のページのスラッグを取得
 $current_page_slug = '';
+$current_page_url = '';
 if (is_page()) {
-  $current_page_slug = get_post_field('post_name', get_post());
+  $post = get_post();
+  if ($post) {
+    $current_page_slug = get_post_field('post_name', $post);
+    $current_page_url = untrailingslashit(get_permalink($post));
+  }
 }
 
 // デバッグ用（削除済み）
@@ -26,8 +31,10 @@ $menu_items = array(
     'items' => array(
       array('url' => home_url('/knowledge'), 'text' => '相続の基礎知識', 'slug' => 'knowledge'),
       array('url' => home_url('/knowledge/heir'), 'text' => '相続人となる者', 'slug' => 'heir'),
+      array('url' => home_url('/knowledge/abatement'), 'text' => '遺留分侵害額請求', 'slug' => 'abatement'),
       array('url' => home_url('/knowledge/souzokubun'), 'text' => '法定相続分', 'slug' => 'souzokubun'),
       array('url' => home_url('/knowledge/isanbunkatsu'), 'text' => '遺産分割', 'slug' => 'isanbunkatsu'),
+      array('url' => home_url('/knowledge/write'), 'text' => '	遺産分割協議書の書き方', 'slug' => 'write'),
       array('url' => home_url('/knowledge/necessity'), 'text' => '相続の必要書類', 'slug' => 'necessity'),
       array('url' => home_url('/knowledge/tax'), 'text' => '相続税・贈与税', 'slug' => 'tax'),
       array('url' => home_url('/knowledge/tokubetu'), 'text' => '特別受益・生前贈与・寄与分', 'slug' => 'tokubetu'),
@@ -81,7 +88,11 @@ $menu_items = array(
 $open_accordion = '';
 foreach ($menu_items as $key => $section) {
   foreach ($section['items'] as $item) {
-    if (!empty($item['slug']) && $item['slug'] === $current_page_slug) {
+    $item_url = !empty($item['url']) ? untrailingslashit($item['url']) : '';
+    $is_match = ($current_page_url && $item_url && $item_url === $current_page_url)
+      || (!$current_page_url && !empty($item['slug']) && $item['slug'] === $current_page_slug);
+
+    if ($is_match) {
       $open_accordion = $key;
       break 2;
     }
@@ -104,11 +115,9 @@ foreach ($menu_items as $key => $section) {
         </button>
         <ul class="p-sidebar__submenu">
           <?php foreach ($section['items'] as $item) :
-            $is_current = (!empty($item['slug']) && $item['slug'] === $current_page_slug);
-            // デバッグ用
-            if ($item['slug'] === 'flow') {
-              echo '<!-- Flow Item - Slug: ' . $item['slug'] . ', Current: ' . $current_page_slug . ', Match: ' . ($is_current ? 'YES' : 'NO') . ' -->';
-            }
+            $item_url = !empty($item['url']) ? untrailingslashit($item['url']) : '';
+            $is_current = ($current_page_url && $item_url && $item_url === $current_page_url)
+              || (!$current_page_url && !empty($item['slug']) && $item['slug'] === $current_page_slug);
           ?>
           <li class="p-sidebar__submenu-item <?php echo $is_current ? 'is-current' : ''; ?>">
             <a href="<?php echo esc_url($item['url']); ?>" class="p-sidebar__submenu-link <?php echo $is_current ? 'is-current' : ''; ?>">
@@ -121,10 +130,10 @@ foreach ($menu_items as $key => $section) {
       <?php endforeach; ?>
 
       <li class="p-sidebar__menu-item">
-        <a href="<?php echo esc_url(home_url('/others')); ?>" class="p-sidebar__menu-link <?php echo ($current_page_slug === 'others') ? 'is-current' : ''; ?>">その他業務</a>
+        <a href="<?php echo esc_url(home_url('/others')); ?>" class="p-sidebar__menu-link">その他業務</a>
       </li>
       <li class="p-sidebar__menu-item">
-        <a href="<?php echo esc_url(home_url('/fee')); ?>" class="p-sidebar__menu-link <?php echo ($current_page_slug === 'fee') ? 'is-current' : ''; ?>">料金表</a>
+        <a href="<?php echo esc_url(home_url('/fee')); ?>" class="p-sidebar__menu-link <?php echo ($current_page_slug === 'price') ? 'is-current' : ''; ?>">料金表</a>
       </li>
     </ul>
     <div class="p-sidebar__slider-wrapper">
@@ -201,7 +210,7 @@ foreach ($menu_items as $key => $section) {
       </div>
       <div class="p-sidebar__map-detail">
         <p class="p-sidebar__map-title">さくら司法書士事務所</p>
-        <p class="p-sidebar__map-text">東京都西東京市田無町5-2-17-304[<a href="https://maps.app.goo.gl/LYeEyak4zKD49ThFA" target="_blank" rel="noopener noreferrer">地図</a>]<br>田無駅北口より徒歩4分</p>
+        <p class="p-sidebar__map-text">東京都西東京市田無町5-2-17 ヨーカ・ルナージュ304[<a href="https://maps.app.goo.gl/LYeEyak4zKD49ThFA" target="_blank" rel="noopener noreferrer">地図</a>]<br>田無駅北口より徒歩4分</p>
       </div>
       <ul class="p-sidebar__menu-list">
         <li class="p-sidebar__menu-item">
