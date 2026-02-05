@@ -55,7 +55,7 @@
           echo $breadcrumb_icon;
           echo '<li class="p-breadcrumbs__list">';
           echo '<a href="' . esc_url($posts_page_url) . '" class="p-breadcrumbs__link">';
-          echo '所長ブログ';
+          echo '所長のブログ';
           echo '</a>';
           echo '</li>';
 
@@ -112,7 +112,7 @@
           echo $breadcrumb_icon;
           echo '<li class="p-breadcrumbs__list">';
           echo '<a href="' . esc_url($posts_page_url) . '" class="p-breadcrumbs__link">';
-          echo '所長ブログ';
+          echo '所長のブログ';
           echo '</a>';
           echo '</li>';
 
@@ -153,7 +153,7 @@
           echo $breadcrumb_icon;
           echo '<li class="p-breadcrumbs__list">';
           echo '<a href="' . esc_url($posts_page_url) . '" class="p-breadcrumbs__link">';
-          echo '所長ブログ';
+          echo '所長のブログ';
           echo '</a>';
           echo '</li>';
 
@@ -207,12 +207,12 @@
             echo '</li>';
           }
         }
-        // 所長ブログアーカイブページ（home.php）の場合
+        // 所長のブログアーカイブページ（home.php）の場合
         elseif (is_home()) {
           echo $breadcrumb_icon;
           echo '<li class="p-breadcrumbs__list">';
           echo '<a href="' . esc_url(home_url('/blog')) . '" class="p-breadcrumbs__link p-breadcrumbs__link--current">';
-          echo '所長ブログ';
+          echo '所長のブログ';
           echo '</a>';
           echo '</li>';
         }

@@ -6,7 +6,7 @@
         <figure class="p-page-mv__img">
           <img decoding="async" loading="lazy" src="<?php echo get_template_directory_uri() ?>/images/common/page_mv_bg.webp" alt="" width="1500" height="150">
         </figure>
-        <h2 class="p-page-mv__title">所長ブログ</h2>
+        <h2 class="p-page-mv__title">所長のブログ</h2>
 
       </div>
     </div>
