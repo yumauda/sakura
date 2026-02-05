@@ -4638,7 +4638,7 @@ input::placeholder {
   transition: max-height 0.3s ease;
 }
 .p-sidebar__menu-item--parent.is-open .p-sidebar__submenu {
-  max-height: 31.25rem;
+  max-height: 32.5rem;
 }
 
 .p-sidebar__submenu-item {

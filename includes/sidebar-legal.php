@@ -130,10 +130,10 @@ foreach ($menu_items as $key => $section) {
       <?php endforeach; ?>
 
       <li class="p-sidebar__menu-item">
-        <a href="<?php echo esc_url(home_url('/others')); ?>" class="p-sidebar__menu-link">その他業務</a>
+        <a href="<?php echo esc_url(home_url('/others')); ?>" class="p-sidebar__menu-link <?php echo ($current_page_url && untrailingslashit(home_url('/others')) === $current_page_url) ? 'is-current' : ''; ?>">その他業務</a>
       </li>
       <li class="p-sidebar__menu-item">
-        <a href="<?php echo esc_url(home_url('/fee')); ?>" class="p-sidebar__menu-link <?php echo ($current_page_slug === 'price') ? 'is-current' : ''; ?>">料金表</a>
+        <a href="<?php echo esc_url(home_url('/fee')); ?>" class="p-sidebar__menu-link <?php echo ($current_page_url && untrailingslashit(home_url('/fee')) === $current_page_url) ? 'is-current' : ''; ?>">料金表</a>
       </li>
     </ul>
     <div class="p-sidebar__slider-wrapper">
