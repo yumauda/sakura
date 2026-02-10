@@ -375,6 +375,28 @@ add_filter('body_class', function ($classes) {
 });
 
 /**
+ * 「Uncategorized」カテゴリーを非表示にする
+ */
+// wp_list_categories から除外
+add_filter('widget_categories_args', function ($cat_args) {
+	$cat_args['exclude'] = array(1); // カテゴリーID: 1 (Uncategorized)
+	return $cat_args;
+});
+
+// get_the_category から除外（投稿のカテゴリー表示）
+add_filter('get_the_categories', function ($categories) {
+	return array_filter($categories, function ($category) {
+		return $category->slug !== 'uncategorized';
+	});
+});
+
+// wp_list_categories から除外（テンプレートで直接使う場合）
+add_filter('widget_categories_dropdown_args', function ($cat_args) {
+	$cat_args['exclude'] = array(1);
+	return $cat_args;
+});
+
+/**
  * WebP画像のサポートを追加
  */
 function enable_webp_upload($mimes)

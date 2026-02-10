@@ -31,8 +31,8 @@ $menu_items = array(
     'items' => array(
       array('url' => home_url('/knowledge'), 'text' => '相続の基礎知識', 'slug' => 'knowledge'),
       array('url' => home_url('/knowledge/heir'), 'text' => '相続人となる者', 'slug' => 'heir'),
-      array('url' => home_url('/knowledge/abatement'), 'text' => '遺留分侵害額請求', 'slug' => 'abatement'),
       array('url' => home_url('/knowledge/souzokubun'), 'text' => '法定相続分', 'slug' => 'souzokubun'),
+      array('url' => home_url('/knowledge/abatement'), 'text' => '遺留分侵害額請求', 'slug' => 'abatement'),
       array('url' => home_url('/knowledge/isanbunkatsu'), 'text' => '遺産分割', 'slug' => 'isanbunkatsu'),
       array('url' => home_url('/knowledge/write'), 'text' => '	遺産分割協議書の書き方', 'slug' => 'write'),
       array('url' => home_url('/knowledge/necessity'), 'text' => '相続の必要書類', 'slug' => 'necessity'),

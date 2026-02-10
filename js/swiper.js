@@ -4,12 +4,13 @@ const slider2 = new Swiper(".slider-main", {
   slidesPerView: 1.2,
   centeredSlides: true,
   loop: true,
+  speed: 800, // スライド切り替わりのスピード（ms）
   spaceBetween: 10,
   autoplay: {
     delay: 5000,
     disableOnInteraction: false,
   },
-  
+
   breakpoints: {
     768: {
       slidesPerView: 2,
@@ -17,6 +18,7 @@ const slider2 = new Swiper(".slider-main", {
       slidesPerGroup: 1,
       spaceBetween: 40,
       centeredSlides: false,
+      speed: 800, // スライド切り替わりのスピード（ms）
       autoplay: {
         delay: 3000,
         disableOnInteraction: false,
