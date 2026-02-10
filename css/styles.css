@@ -2996,7 +2996,7 @@ input::placeholder {
 }
 
 .p-inheritance__flow-list:last-child::after {
-  height: 43%;
+  height: 1.4375rem;
 }
 
 .p-inheritance__flow-list + .p-inheritance__flow-list {

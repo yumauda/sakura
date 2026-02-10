@@ -475,7 +475,7 @@
 }
 
 .p-inheritance__flow-list:last-child::after {
-  height: 43%;
+  height: rem(23);
 }
 
 .p-inheritance__flow-list+.p-inheritance__flow-list {
